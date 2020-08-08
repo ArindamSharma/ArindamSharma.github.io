@@ -115,10 +115,11 @@ body{
 }
 /* ========= left Nav ============= */
 .left-navbar{
-    top: 2rem;
+    top: 0rem;
     z-index: 9;
     display: flex;
     height: 100%;
+    min-height: 300px;
     flex-direction: column;
     justify-content: center;
     position: fixed;
