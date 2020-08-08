@@ -1,15 +1,11 @@
-function myopen(active_id,inactive_id){
-    var active=document.getElementById(active_id);
-    console.log(active);
-    var inactive=document.getElementById(inactive_id);
+function myopen(){
+    var active=document.getElementsByClassName("top-navbar-item-menu")[0];
     var labels=document.getElementsByClassName("left-navbar-item-box-label");
-    console.log(getComputedStyle(labels[0]).fontSize);
-    if(getComputedStyle(active).fontSize!=0){
-        active.style.fontSize="0";
-        inactive.style.fontSize="3rem";
+    if (active.classList.contains('top-navbar-item-menu-toggle')) {
+        active.classList.remove('top-navbar-item-menu-toggle');
         if(getComputedStyle(labels[0]).fontSize=='0px'){
             for(var i=0;i<labels.length;i++){
-                labels[i].style.fontSize="1.5rem";
+                labels[i].style.fontSize="1.25rem";
             }
         }
         else{
@@ -17,15 +13,12 @@ function myopen(active_id,inactive_id){
                 labels[i].style.fontSize="0";
             }
         }
-        // active.style.transform="rotate(180deg)";
-        // inactive.style.transform="rotate(180deg)";
     }
     else{
-        active.style.fontSize="3rem";
-        inactive.style.fontSize="0";
+        active.classList.add('top-navbar-item-menu-toggle');
         if(getComputedStyle(labels[0]).fontSize=='0px'){
             for(var i=0;i<labels.length;i++){
-                labels[i].style.fontSize="1.5rem";
+                labels[i].style.fontSize="1.25rem";
             }
         }
         else{
@@ -33,8 +26,5 @@ function myopen(active_id,inactive_id){
                 labels[i].style.fontSize="0";
             }
         }
-        // active.style.transform="rotate(180deg)";
-        // inactive.style.transform="rotate(180deg)";
     }
-    // console.log("yse");
 }
