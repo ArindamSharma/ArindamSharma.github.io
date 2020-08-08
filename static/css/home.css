@@ -94,7 +94,6 @@ body{
 }
 .top-navbar-item-menu:active .top-navbar-item-menu-line{
     background-color: var(--custom-extra-dark);
-    transition: none;
 }
 .top-navbar-item-menu-line{
     transition: .5s;
