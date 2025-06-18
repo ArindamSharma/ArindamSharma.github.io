@@ -1,0 +1,189 @@
+/* Project Detail Page Styles - Responsive, Modern, and Clean */
+.projectdetail-section {
+  padding: 48px 0 32px 0;
+  background: #f8f9fa;
+}
+.projectdetail-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1976d2;
+  margin-bottom: 36px;
+  letter-spacing: 0.01em;
+  margin-top: 0;
+}
+.projectdetail-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(25,118,210,0.07);
+  padding: 32px 24px;
+}
+.projectdetail-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(25,118,210,0.10);
+}
+.projectdetail-description {
+  color: #444;
+  font-size: 1.08rem;
+  margin: 0 0 8px 0;
+  padding-left: 18px;
+  text-align: left;
+  width: 100%;
+}
+.projectdetail-link {
+  color: #1976d2;
+  font-weight: 600;
+  margin-top: 8px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.projectdetail-link:hover {
+  color: #0d47a1;
+}
+.about-hire-btn {
+  background: linear-gradient(90deg, #1976d2 60%, #21cbf3 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(25,118,210,0.10);
+  transition: background 0.2s, transform 0.2s;
+  margin-top: 24px;
+}
+.about-hire-btn:hover {
+  background: linear-gradient(90deg, #1565c0 60%, #00bcd4 100%);
+  transform: translateY(-2px) scale(1.04);
+}
+.projectdetail-container {
+  max-width: 900px;
+  margin: 40px auto 0 auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.08), 0 1.5px 6px rgba(0,0,0,0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projectdetail-image {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 28px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+.projectdetail-meta {
+  font-size: 1rem;
+  color: #6c7a89;
+  margin-bottom: 18px;
+  text-align: center;
+}
+.projectdetail-desc-para {
+  margin-bottom: 12px;
+}
+.projectdetail-links {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin: 18px 0;
+}
+.projectdetail-link {
+  background: #1a2236;
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.projectdetail-link:hover {
+  background: #3a4a6b;
+}
+.projectdetail-btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #1976d2 60%, #21cbf3 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(25,118,210,0.10);
+  transition: background 0.2s, transform 0.2s;
+  text-decoration: none;
+  margin-right: 8px;
+}
+.projectdetail-btn:hover {
+  background: linear-gradient(90deg, #1565c0 60%, #00bcd4 100%);
+  transform: translateY(-2px) scale(1.04);
+  color: #fff;
+}
+.projectdetail-back-btn {
+  margin-bottom: 18px;
+  align-self: flex-start;
+}
+@media (max-width: 1024px) {
+  .projectdetail-main {
+    padding: 18px 6px;
+    gap: 14px;
+  }
+  .projectdetail-title {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 700px) {
+  .projectdetail-main {
+    padding: 8px 2vw;
+    gap: 8px;
+  }
+  .projectdetail-title {
+    font-size: 1.1rem;
+  }
+  .projectdetail-description {
+    font-size: 0.98rem;
+  }
+  .about-hire-btn {
+    font-size: 1rem;
+    padding: 8px 18px;
+  }
+  .projectdetail-container {
+    padding: 12px;
+    max-width: 98vw;
+  }
+  .projectdetail-title {
+    font-size: 1.5rem;
+  }
+  .projectdetail_description {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .projectdetail-container {
+    margin: 16px 0 0 0;
+    padding: 6px;
+  }
+  .projectdetail-title {
+    font-size: 1.1rem;
+  }
+  .projectdetail-description {
+    font-size: 0.97rem;
+  }
+}

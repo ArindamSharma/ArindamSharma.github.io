@@ -1,0 +1,79 @@
+/* ProjectCard.css - Modern, minimal, and reusable styles for project cards */
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  /* padding: 20px; */
+  /* justify-content: center; */
+  /* align-self: center; */
+  background: #fff;
+  border-radius: 20px;
+  min-height: 260px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(25,118,210,0.07);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.project-card:hover {
+  box-shadow: 0 6px 32px rgba(25,118,210,0.13);
+  transform: translateY(-6px);
+}
+.project-card-img-holder {
+  width: 100%;
+  height: 180px;
+  background: #e9ecef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+  transition: padding 0.3s;
+}
+.project-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+.project-card:hover .project-card-img {
+  transform: scale(1.08);
+}
+.project-info {
+  padding: 0 16px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.project-title {
+  font-size: 1.5rem;
+  color: #1976d2;
+}
+.project-short-desc {
+  color: #444;
+  font-size: 1.01rem;
+  margin: 0 0 8px 0;
+}
+.project-link {
+  color: #1976d2;
+  font-weight: 600;
+  margin-top: 8px;
+  text-decoration: none;
+  transition: color 0.2s;
+  align-self: flex-start;
+}
+.project-link:hover {
+  color: #0d47a1;
+}
+@media (max-width: 700px) {
+  .project-title {
+    font-size: 1rem;
+  }
+  .project-short-desc {
+    font-size: 0.95rem;
+  }
+  .project-card-img {
+    height: 60px;
+  }
+}

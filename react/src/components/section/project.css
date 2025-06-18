@@ -1,0 +1,30 @@
+/* Project section styles */
+
+.projects-section {
+  padding: 48px 32px;
+  background: initial;
+}
+.projects-section h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1976d2;
+  margin-bottom: 36px;
+  letter-spacing: 0.01em;
+}
+.projects-section-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+@media (max-width: 700px) {
+  .projects-section h2 {
+    font-size: 1.3rem;
+  }
+  .projects-section-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}

@@ -1,0 +1,12 @@
+.container {
+  max-width: calc(1920px - 600px); /* Standard Full HD */
+  min-width: 320px;  /* Standard phone size */
+  width: 100%;
+  padding: 16px;
+  /* padding: 0px 16px; */
+  box-sizing: border-box;
+  background-color: inherit;
+}
+
+/* Ensure full viewport height and center content for main sections */
+/* Moved to section CSS files */
