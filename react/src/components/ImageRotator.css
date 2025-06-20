@@ -13,7 +13,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px;
   transition: transform 0.3s;
 }
 .image-rotator-container:hover .image-rotator-img {

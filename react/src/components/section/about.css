@@ -10,12 +10,16 @@
 }
 .profile-photo {
   width: 340px;
+  margin: 24px;
   border-radius: 16px;
   object-fit: cover;
   box-shadow: 0 2px 12px rgba(25,118,210,0.10);
 }
 .about-content {
+  min-width: 300px;
+  width: 100%;
   max-width: 600px;
+  padding: 24px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -54,7 +58,7 @@
   background: linear-gradient(90deg, #1565c0 60%, #00bcd4 100%);
   transform: translateY(-2px) scale(1.04);
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .about-section {
     /* padding-top: px; */
     flex-direction: column;
