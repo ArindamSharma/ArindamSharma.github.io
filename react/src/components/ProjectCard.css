@@ -16,7 +16,7 @@
 }
 .project-card:hover {
   box-shadow: 0 6px 32px rgba(25,118,210,0.13);
-  transform: translateY(-6px);
+  transform: translateY(-6px) ;
 }
 .project-card-img-holder {
   width: 100%;

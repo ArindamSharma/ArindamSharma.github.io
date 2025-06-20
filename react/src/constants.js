@@ -12,9 +12,11 @@ export const PROJECTS = [
 		],
 		link: "https://github.com/ArindamSharma/evolution-using-selection",
 		images: [
-			"https://images.unsplash.com/photo-1519125323398-675f0ddb6308",
-			"https://images.unsplash.com/photo-1519125323398-675f0ddb6308",
-			"https://images.unsplash.com/photo-1519125323398-675f0ddb6308",
+			"https://i.pravatar.cc/300?img=1",
+			"https://i.pravatar.cc/300?img=2",
+			"https://i.pravatar.cc/300?img=3",
+			"https://i.pravatar.cc/300?img=4",
+			"https://i.pravatar.cc/300?img=5",
 		],
 	},
 	{
@@ -25,9 +27,9 @@ export const PROJECTS = [
 		],
 		link: "https://github.com/ArindamSharma/password_manager/tree/master/v3",
 		images: [
-			"https://images.unsplash.com/photo-1519125323398-675f0ddb6308",
-			"https://images.unsplash.com/photo-1519125323398-675f0ddb6308",
-			"https://images.unsplash.com/photo-1519125323398-675f0ddb6308",
+			"https://i.pravatar.cc/300?img=6",
+			"https://i.pravatar.cc/300?img=4",
+			"https://i.pravatar.cc/300?img=5",
 		],
 	},
 	{
@@ -38,9 +40,11 @@ export const PROJECTS = [
 		],
 		link: "https://placements.iiitdm.ac.in",
 		images: [
-			"https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
-			"https://images.unsplash.com/photo-1506744038136-46273834b3fb",
-			"https://images.unsplash.com/photo-1519125323398-675f0ddb6308",
+			"https://i.pravatar.cc/300?img=7",
+			"https://i.pravatar.cc/300?img=8",
+			"https://i.pravatar.cc/300?img=9",
+			"https://i.pravatar.cc/300?img=10",
+			"https://i.pravatar.cc/300?img=11",
 		],
 	},
 	{
@@ -51,8 +55,11 @@ export const PROJECTS = [
 		],
 		link: "https://figma.com/file/yIWU5lGhFELTISPypelHMF/Hakuna-Matata?node-id=658%3A2379",
 		images: [
-			"https://images.unsplash.com/photo-1465101046530-73398c7f28ca",
-			"https://images.unsplash.com/photo-1465101178521-c1a9136a3b99",
+			"https://i.pravatar.cc/300?img=12",
+			"https://i.pravatar.cc/300?img=13",
+			"https://i.pravatar.cc/300?img=14",
+			"https://i.pravatar.cc/300?img=15",
+			"https://i.pravatar.cc/300?img=16",
 		],
 	},
 	{
@@ -63,8 +70,11 @@ export const PROJECTS = [
 		],
 		link: "https://github.com/ArindamSharma/openGl-project-0",
 		images: [
-			"https://images.unsplash.com/photo-1517694712202-14dd9538aa97",
-			"https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
+			"https://i.pravatar.cc/300?img=17",
+			"https://i.pravatar.cc/300?img=18",
+			"https://i.pravatar.cc/300?img=19",
+			"https://i.pravatar.cc/300?img=20",
+			"https://i.pravatar.cc/300?img=21",
 		],
 	},
 	{
@@ -75,8 +85,11 @@ export const PROJECTS = [
 		],
 		link: "https://github.com/ArindamSharma/Image-Processing",
 		images: [
-			"https://images.unsplash.com/photo-1465101046530-73398c7f28ca",
-			"https://images.unsplash.com/photo-1465101178521-c1a9136a3b99",
+			"https://i.pravatar.cc/300?img=22",
+			"https://i.pravatar.cc/300?img=23",
+			"https://i.pravatar.cc/300?img=24",
+			"https://i.pravatar.cc/300?img=25",
+			"https://i.pravatar.cc/300?img=26",
 		],
 	},
 	{
@@ -87,9 +100,11 @@ export const PROJECTS = [
 		],
 		link: "https://github.com/ArindamSharma/neural-network-1",
 		images: [
-			"https://images.unsplash.com/photo-1519125323398-675f0ddb6308",
-			"https://images.unsplash.com/photo-1519125323398-675f0ddb6308",
-			"https://images.unsplash.com/photo-1519125323398-675f0ddb6308",
+			"https://i.pravatar.cc/300?img=27",
+			"https://i.pravatar.cc/300?img=28",
+			"https://i.pravatar.cc/300?img=29",
+			"https://i.pravatar.cc/300?img=30",
+			"https://i.pravatar.cc/300?img=31",
 		],
 	},
 	{
@@ -101,9 +116,11 @@ export const PROJECTS = [
 		],
 		link: "https://github.com/ArindamSharma/Webserver",
 		images: [
-			"https://images.unsplash.com/photo-1519125323398-675f0ddb6308",
-			"https://images.unsplash.com/photo-1519125323398-675f0ddb6308",
-			"https://images.unsplash.com/photo-1519125323398-675f0ddb6308",
+			"https://i.pravatar.cc/300?img=32",
+			"https://i.pravatar.cc/300?img=33",
+			"https://i.pravatar.cc/300?img=34",
+			"https://i.pravatar.cc/300?img=35",
+			"https://i.pravatar.cc/300?img=36",
 		],
 	},
 	{
@@ -114,9 +131,11 @@ export const PROJECTS = [
 		],
 		link: "https://github.com/ArindamSharma/VLSI-Project-Linear-Discriminant-Analysis-LDA",
 		images: [
-			"https://images.unsplash.com/photo-1519125323398-675f0ddb6308",
-			"https://images.unsplash.com/photo-1519125323398-675f0ddb6308",
-			"https://images.unsplash.com/photo-1519125323398-675f0ddb6308",
+			"https://i.pravatar.cc/300?img=37",
+			"https://i.pravatar.cc/300?img=38",
+			"https://i.pravatar.cc/300?img=39",
+			"https://i.pravatar.cc/300?img=40",
+			"https://i.pravatar.cc/300?img=41",
 		],
 	},
 	{
@@ -128,9 +147,11 @@ export const PROJECTS = [
 			"Achieved first position in the competition.",
 		],
 		images: [
-			"https://images.unsplash.com/photo-1519125323398-675f0ddb6308",
-			"https://images.unsplash.com/photo-1519125323398-675f0ddb6308",
-			"https://images.unsplash.com/photo-1519125323398-675f0ddb6308",
+			"https://i.pravatar.cc/300?img=42",
+			"https://i.pravatar.cc/300?img=43",
+			"https://i.pravatar.cc/300?img=44",
+			"https://i.pravatar.cc/300?img=45",
+			"https://i.pravatar.cc/300?img=46",
 		],
 	},
 	{
@@ -140,9 +161,11 @@ export const PROJECTS = [
 			"Skills Used: Python, SQL, HTML, CSS. Packages Used: Flask Framework, jQuery, Ajax.",
 		],
 		images: [
-			"https://images.unsplash.com/photo-1519125323398-675f0ddb6308",
-			"https://images.unsplash.com/photo-1519125323398-675f0ddb6308",
-			"https://images.unsplash.com/photo-1519125323398-675f0ddb6308",
+			"https://i.pravatar.cc/300?img=47",
+			"https://i.pravatar.cc/300?img=48",
+			"https://i.pravatar.cc/300?img=49",
+			"https://i.pravatar.cc/300?img=50",
+			"https://i.pravatar.cc/300?img=51",
 		],
 	},
 ];
@@ -158,11 +181,11 @@ export const EXPERIENCES = [
 			"Collaborated with cross-functional teams to deliver high-quality products.",
 		],
 		images: [
-			"https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
-			"https://images.unsplash.com/photo-1506744038136-46273834b3fb",
-			"https://images.unsplash.com/photo-1465101046530-73398c7f28ca",
-			"https://images.unsplash.com/photo-1465101178521-c1a9136a3b99",
-			"https://images.unsplash.com/photo-1517694712202-14dd9538aa97",
+			"https://i.pravatar.cc/300?img=52",
+			"https://i.pravatar.cc/300?img=53",
+			"https://i.pravatar.cc/300?img=54",
+			"https://i.pravatar.cc/300?img=55",
+			"https://i.pravatar.cc/300?img=56",
 		],
 	},
 	{
@@ -174,10 +197,11 @@ export const EXPERIENCES = [
 			"Worked on cloud deployments and CI/CD pipelines.",
 		],
 		images: [
-			"https://images.unsplash.com/photo-1517694712202-14dd9538aa97",
-			"https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
-			"https://images.unsplash.com/photo-1506744038136-46273834b3fb",
-			"https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
+			"https://i.pravatar.cc/300?img=57",
+			"https://i.pravatar.cc/300?img=58",
+			"https://i.pravatar.cc/300?img=59",
+			"https://i.pravatar.cc/300?img=60",
+			"https://i.pravatar.cc/300?img=61",
 		],
 	},
 ];

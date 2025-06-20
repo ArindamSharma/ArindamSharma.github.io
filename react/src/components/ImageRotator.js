@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./ImageRotator.css";
 
-function ImageRotator({ images = [], interval = 1000, alt = "" }) {
+function ImageRotator({ images = [], interval = 1000, alt = "", showNavigator = true }) {
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
@@ -12,21 +12,36 @@ function ImageRotator({ images = [], interval = 1000, alt = "" }) {
     return () => clearInterval(timer);
   }, [images, interval]);
 
-  if (!images.length) {
-    return (
-      <div className="image-rotator-container">
-        <span className="image-rotator-placeholder">No Image</span>
-      </div>
-    );
-  }
+  const handleDotClick = (idx) => {
+    setCurrent(idx);
+  };
 
   return (
     <div className="image-rotator-container">
-      <img
-        src={images[current]}
-        alt={alt}
-        className="image-rotator-img"
-      />
+      {images.length === 0 ? (
+        <span className="image-rotator-placeholder">No Image</span>
+      ) : (
+        <>
+          {showNavigator && (
+            <div className="image-rotator-dots">
+              {images.map((_, idx) => (
+                <span
+                  key={idx}
+                  className={`image-rotator-dot${
+                    current === idx ? " active" : ""
+                  }`}
+                  onClick={() => handleDotClick(idx)}
+                />
+              ))}
+            </div>
+          )}
+          <img
+            src={images[current]}
+            alt={alt}
+            className="image-rotator-img"
+          />
+        </>
+      )}
     </div>
   );
 }

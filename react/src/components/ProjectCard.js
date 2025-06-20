@@ -18,7 +18,7 @@ function ProjectCard({ project, navigateTo, showLink = false }) {
     <div className="project-card" onClick={() => navigate(navigateTo)}>
       {project.images && (
         <div className="project-card-img-holder">
-          <ImageRotator images={project.images} interval={2000}/>
+          <ImageRotator images={project.images} interval={4000} showNavigator={false} />
         </div>
       )}
       <div className="project-info">
