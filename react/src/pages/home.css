@@ -1,11 +1,10 @@
 .container {
-  max-width: calc(1920px - 600px); /* Standard Full HD */
-  min-width: 320px;  /* Standard phone size */
+  max-width: 1200px;
+  min-width: 320px;
   width: 100%;
-  padding: 16px;
-  /* padding: 0px 16px; */
+  padding: 0;
   box-sizing: border-box;
-  background-color: inherit;
+  margin: 0 auto;
 }
 
 /* Ensure full viewport height and center content for main sections */
