@@ -12,7 +12,7 @@ import "../index.css";
 
 function Home() {
   return (
-    <div className="container">
+    <div className="home-container">
       <Navbar />
       <AboutSection />
       <SkillsSection />

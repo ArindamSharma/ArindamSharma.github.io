@@ -1,6 +1,6 @@
 /* Modern Dark Theme styles for project cards */
 
-.project-card {
+.portfolio-project-card {
   display: flex;
   flex-direction: column;
   background: rgba(25, 25, 25, 0.8);
@@ -18,7 +18,7 @@
   overflow: hidden;
 }
 
-.project-card::before {
+.portfolio-project-card::before {
   content: '';
   position: absolute;
   top: 0;
@@ -30,7 +30,7 @@
   transition: opacity 0.4s ease;
 }
 
-.project-card:hover {
+.portfolio-project-card:hover {
   transform: translateY(-10px) scale(1.02);
   box-shadow: 
     0 20px 60px rgba(0, 0, 0, 0.5),
@@ -39,10 +39,10 @@
   border-color: rgba(120, 119, 198, 0.4);
 }
 
-.project-card:hover::before {
+.portfolio-project-card:hover::before {
   opacity: 1;
 }
-.project-card-img-holder {
+.portfolio-project-card-img-holder {
   width: calc(100% - 12px);
   margin: 6px 6px 0 6px;
   height: 200px;
@@ -59,7 +59,7 @@
   z-index: 2;
 }
 
-.project-card-img {
+.portfolio-project-card-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -67,11 +67,11 @@
   filter: brightness(0.9);
 }
 
-.project-card:hover .project-card-img {
+.portfolio-project-card:hover .portfolio-project-card-img {
   transform: scale(1.1);
   filter: brightness(1.1);
 }
-.project-info {
+.portfolio-project-info {
   padding: 24px 28px 20px 28px;
   display: flex;
   flex-direction: column;
@@ -81,7 +81,7 @@
   z-index: 2;
 }
 
-.project-title {
+.portfolio-project-title {
   font-size: 1.4rem;
   font-weight: 700;
   color: #e0e0e0;
@@ -90,7 +90,7 @@
   line-height: 1.3;
 }
 
-.project-short-desc {
+.portfolio-project-short-desc {
   color: #b0b0b0;
   font-size: 1.05rem;
   margin: 0 0 12px 0;
@@ -99,7 +99,7 @@
   flex: 1; /* Take up available space */
 }
 
-.project-duration {
+.portfolio-project-duration {
   color: #7877c6;
   font-size: 0.85rem;
   font-weight: 500;
@@ -109,7 +109,7 @@
   margin-bottom: 16px;
 }
 
-.project-separator {
+.portfolio-project-separator {
   width: 100%;
   height: 1px;
   background: linear-gradient(90deg, transparent 0%, rgba(120, 119, 198, 0.3) 50%, transparent 100%);
@@ -118,7 +118,7 @@
   z-index: 3;
 }
 
-.project-footer {
+.portfolio-project-footer {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -128,7 +128,7 @@
   padding-top: 8px; /* Add some spacing from separator */
 }
 
-.project-link {
+.portfolio-project-link {
   background: linear-gradient(135deg, #7877c6 0%, #ff77c6 100%);
   color: #fff;
   font-weight: 600;
@@ -145,60 +145,60 @@
   box-shadow: 0 2px 8px rgba(120, 119, 198, 0.2); /* Add subtle shadow */
 }
 
-.project-link:hover {
+.portfolio-project-link:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(120, 119, 198, 0.4);
 }
 @media (max-width: 1024px) {
-  .project-card {
+  .portfolio-project-card {
     min-height: 450px; /* Minimum height instead of fixed */
   }
-  .project-info {
+  .portfolio-project-info {
     padding: 22px 26px 18px 26px;
   }
-  .project-card-img-holder {
+  .portfolio-project-card-img-holder {
     height: 200px;
   }
-  .project-duration {
+  .portfolio-project-duration {
     font-size: 0.8rem;
   }
-  .project-link {
+  .portfolio-project-link {
     font-size: 0.85rem;
     padding: 9px 18px; /* Slightly smaller but still good padding */
   }
-  .project-separator {
+  .portfolio-project-separator {
     margin: 12px 0;
   }
 }
 
 @media (max-width: 700px) {
-  .project-card {
+  .portfolio-project-card {
     min-height: 400px; /* Minimum height instead of fixed */
   }
-  .project-info {
+  .portfolio-project-info {
     padding: 20px 24px 16px 24px;
   }
-  .project-title {
+  .portfolio-project-title {
     font-size: 1.2rem;
   }
-  .project-duration {
+  .portfolio-project-duration {
     font-size: 0.75rem;
     letter-spacing: 0.3px;
   }
-  .project-short-desc {
+  .portfolio-project-short-desc {
     font-size: 1rem;
     /* Removed max-height to show full description */
   }
-  .project-card-img-holder {
+  .portfolio-project-card-img-holder {
     height: 180px;
   }
-  .project-separator {
+  .portfolio-project-separator {
     margin: 10px 0;
   }
-  .project-footer {
+  .portfolio-project-footer {
     justify-content: flex-end; /* Keep button on the right even on mobile */
   }
-  .project-link {
+  .portfolio-project-link {
     font-size: 0.8rem;
     padding: 8px 16px; /* Good mobile padding */
   }

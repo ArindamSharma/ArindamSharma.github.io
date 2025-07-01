@@ -111,7 +111,7 @@
   margin-top: 3rem;
 }
 
-.hire-btn {
+.hire-section-btn {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -125,7 +125,7 @@
   transition: all 0.3s ease;
 }
 
-.hire-btn:hover {
+.hire-section-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
   color: white;
@@ -214,7 +214,7 @@
     padding: 1.25rem;
   }
   
-  .hire-btn {
+  .hire-section-btn {
     padding: 0.875rem 1.5rem;
     font-size: 1rem;
   }

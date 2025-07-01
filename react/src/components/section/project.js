@@ -40,7 +40,7 @@ function ProjectSection() {
 								</p>
 								<button className="see-more-btn">
 									<span>See More</span>
-									<span className="btn-icon">→</span>
+									<span className="project-btn-icon">→</span>
 								</button>
 							</div>
 						</div>

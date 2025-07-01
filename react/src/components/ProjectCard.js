@@ -15,24 +15,24 @@ function ProjectCard({ project, navigateTo, showLink = false }) {
   };
 
   return (
-    <div className="project-card" onClick={() => navigate(navigateTo)}>
+    <div className="portfolio-project-card" onClick={() => navigate(navigateTo)}>
       {project.images && (
-        <div className="project-card-img-holder">
+        <div className="portfolio-project-card-img-holder">
           <ImageRotator images={project.images} interval={4000} showNavigator={false} />
         </div>
       )}
-      <div className="project-info">
-        <h3 className="project-title">{project.title}</h3>
+      <div className="portfolio-project-info">
+        <h3 className="portfolio-project-title">{project.title}</h3>
         {project.duration && (
-          <div className="project-duration">{project.duration}</div>
+          <div className="portfolio-project-duration">{project.duration}</div>
         )}
-        <p className="project-short-desc">{getShortDescription()}</p>
-        <div className="project-separator"></div>
-        <div className="project-footer">
+        <p className="portfolio-project-short-desc">{getShortDescription()}</p>
+        <div className="portfolio-project-separator"></div>
+        <div className="portfolio-project-footer">
           {showLink && (
             <a
               href={navigateTo}
-              className="project-link"
+              className="portfolio-project-link"
               onClick={e => { e.stopPropagation(); navigate(navigateTo); }}
             >
               View Details
