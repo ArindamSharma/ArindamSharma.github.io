@@ -1,4 +1,4 @@
-/* ProjectCard.css - Modern Dark Theme styles for project cards */
+/* Modern Dark Theme styles for project cards */
 
 .project-card {
   display: flex;
@@ -6,7 +6,7 @@
   background: rgba(25, 25, 25, 0.8);
   backdrop-filter: blur(20px);
   border-radius: 24px;
-  height: 480px; /* Fixed height for all cards */
+  min-height: 480px; /* Minimum height, can grow */
   overflow: hidden;
   cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -45,7 +45,8 @@
 .project-card-img-holder {
   width: calc(100% - 12px);
   margin: 6px 6px 0 6px;
-  height: 180px;
+  height: 200px;
+  flex-shrink: 0;
   background: rgba(40, 40, 40, 0.8);
   display: flex;
   align-items: center;
@@ -71,10 +72,11 @@
   filter: brightness(1.1);
 }
 .project-info {
-  padding: 28px 28px 24px 28px;
+  padding: 24px 28px 20px 28px;
   display: flex;
   flex-direction: column;
   flex: 1;
+  min-height: 0;
   position: relative;
   z-index: 2;
 }
@@ -91,32 +93,10 @@
 .project-short-desc {
   color: #b0b0b0;
   font-size: 1.05rem;
-  margin: 0 0 16px 0;
+  margin: 0 0 12px 0;
   text-align: center;
   line-height: 1.6;
-  flex: 1; /* Take remaining space */
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-.project-separator {
-  width: 100%;
-  height: 1px;
-  background: linear-gradient(90deg, transparent 0%, rgba(120, 119, 198, 0.3) 50%, transparent 100%);
-  margin: 16px 0;
-  position: relative;
-  z-index: 3;
-}
-
-.project-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
-  flex-wrap: wrap;
-  position: relative;
-  z-index: 3;
+  flex: 1; /* Take up available space */
 }
 
 .project-duration {
@@ -124,7 +104,28 @@
   font-size: 0.85rem;
   font-weight: 500;
   letter-spacing: 0.5px;
-  flex-shrink: 0;
+  text-align: center;
+  white-space: nowrap;
+  margin-bottom: 16px;
+}
+
+.project-separator {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(120, 119, 198, 0.3) 50%, transparent 100%);
+  margin: 16px 0 12px 0; /* Reduced bottom margin */
+  position: relative;
+  z-index: 3;
+}
+
+.project-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+  margin-top: auto; /* Push to bottom */
+  padding-top: 8px; /* Add some spacing from separator */
 }
 
 .project-link {
@@ -132,14 +133,16 @@
   color: #fff;
   font-weight: 600;
   text-decoration: none;
-  padding: 8px 16px;
+  padding: 10px 20px; /* Increased padding for better look */
   border-radius: 12px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   white-space: nowrap;
-  flex-shrink: 0;
+  text-align: center;
+  display: inline-block; /* Ensure proper button display */
+  box-shadow: 0 2px 8px rgba(120, 119, 198, 0.2); /* Add subtle shadow */
 }
 
 .project-link:hover {
@@ -148,59 +151,55 @@
 }
 @media (max-width: 1024px) {
   .project-card {
-    height: 450px;
+    min-height: 450px; /* Minimum height instead of fixed */
   }
   .project-info {
-    padding: 26px 26px 22px 26px;
+    padding: 22px 26px 18px 26px;
   }
   .project-card-img-holder {
-    height: 180px;
+    height: 200px;
   }
   .project-duration {
     font-size: 0.8rem;
   }
   .project-link {
     font-size: 0.85rem;
+    padding: 9px 18px; /* Slightly smaller but still good padding */
   }
   .project-separator {
-    margin: 14px 0;
+    margin: 12px 0;
   }
 }
 
 @media (max-width: 700px) {
   .project-card {
-    height: 400px; /* Slightly smaller fixed height for mobile */
+    min-height: 400px; /* Minimum height instead of fixed */
   }
   .project-info {
-    padding: 24px 24px 20px 24px;
+    padding: 20px 24px 16px 24px;
   }
   .project-title {
     font-size: 1.2rem;
   }
   .project-duration {
     font-size: 0.75rem;
-    text-align: center;
+    letter-spacing: 0.3px;
   }
   .project-short-desc {
     font-size: 1rem;
+    /* Removed max-height to show full description */
   }
   .project-card-img-holder {
     height: 180px;
   }
   .project-separator {
-    margin: 12px 0;
+    margin: 10px 0;
   }
   .project-footer {
-    flex-direction: column;
-    gap: 8px;
-    align-items: stretch;
-  }
-  .project-duration {
-    align-self: center;
+    justify-content: flex-end; /* Keep button on the right even on mobile */
   }
   .project-link {
-    align-self: center;
     font-size: 0.8rem;
-    padding: 6px 12px;
+    padding: 8px 16px; /* Good mobile padding */
   }
 }

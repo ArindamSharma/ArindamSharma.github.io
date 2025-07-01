@@ -23,12 +23,12 @@ function ProjectCard({ project, navigateTo, showLink = false }) {
       )}
       <div className="project-info">
         <h3 className="project-title">{project.title}</h3>
+        {project.duration && (
+          <div className="project-duration">{project.duration}</div>
+        )}
         <p className="project-short-desc">{getShortDescription()}</p>
         <div className="project-separator"></div>
         <div className="project-footer">
-          {project.duration && (
-            <div className="project-duration">{project.duration}</div>
-          )}
           {showLink && (
             <a
               href={navigateTo}
