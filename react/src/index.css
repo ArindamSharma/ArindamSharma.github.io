@@ -64,7 +64,7 @@ html {
 /* Global utility classes */
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -98,7 +98,11 @@ html {
   cursor: pointer;
   transition: all 0.3s ease;
   text-decoration: none;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  line-height: 1;
 }
 
 .btn-primary:hover {
@@ -117,7 +121,11 @@ html {
   cursor: pointer;
   transition: all 0.3s ease;
   text-decoration: none;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  line-height: 1;
 }
 
 .btn-secondary:hover {
@@ -134,7 +142,7 @@ section {
 
 /* Global container for consistent max-width */
 .container {
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 2rem;
   width: 100%;
