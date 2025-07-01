@@ -21,7 +21,7 @@ function ProjectSection() {
 				
 				<div className="projects-container">
 					<div className="projects-grid">
-						{PERSONAL_INFO.PROJECTS.slice(0, 6).map((project, idx) => (
+						{PERSONAL_INFO.PROJECTS.slice(0, 5).map((project, idx) => (
 							<ProjectCard
 								key={idx}
 								project={project}

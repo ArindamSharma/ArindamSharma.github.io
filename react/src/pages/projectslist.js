@@ -18,7 +18,12 @@ function ProjectsList() {
         <h2>All Projects</h2>
         <div className="projects-list-grid">
           {PERSONAL_INFO.PROJECTS.map((project, idx) => (
-            <ProjectCard key={idx} project={project} idx={idx} showLink={true} />
+            <ProjectCard 
+              key={idx} 
+              project={project} 
+              navigateTo={`/project/${project.id !== undefined ? project.id : idx}`}
+              showLink={true} 
+            />
           ))}
         </div>
       </section>
