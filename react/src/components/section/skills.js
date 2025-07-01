@@ -1,85 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './skills.css';
+import { PERSONAL_INFO } from '../../constants';
 
 const Skills = () => {
   const [currentCategory, setCurrentCategory] = useState(3); // Start with AI/ML & Data Science as active
   const [visibleItems, setVisibleItems] = useState({});
   const skillsRef = useRef(null);
   const scrollContainerRef = useRef(null);
-
-  const skillCategories = [
-    {
-      title: "Programming Languages",
-      skills: [
-        { name: "Python", percentage: 95, icon: "🐍" },
-        { name: "C++", percentage: 88, icon: "⚡" },
-        { name: "C", percentage: 85, icon: "🔧" },
-        { name: "C#", percentage: 80, icon: "💎" },
-        { name: "Java", percentage: 80, icon: "☕" },
-        { name: "Shell Scripting", percentage: 82, icon: "🖥️" },
-        { name: "Verilog", percentage: 75, icon: "🔌" }
-      ]
-    },
-    {
-      title: "Web Technologies",
-      skills: [
-        { name: "HTML/CSS", percentage: 95, icon: "🌐" },
-        { name: "JavaScript", percentage: 90, icon: "⚡" },
-        { name: "Angular", percentage: 85, icon: "🅰️" },
-        { name: "React", percentage: 92, icon: "⚛️" },
-        { name: "Node.js", percentage: 88, icon: "🟢" },
-        { name: "Express.js", percentage: 90, icon: "🚀" },
-        { name: "Flask", percentage: 92, icon: "🌶️" }
-      ]
-    },
-    {
-      title: "DataBases",
-      skills: [
-        { name: "MySQL", percentage: 88, icon: "🗄️" },
-        { name: "MariaDB", percentage: 85, icon: "🐬" },
-        { name: "Cassandra", percentage: 85, icon: "📊" },
-        { name: "MongoDB", percentage: 85, icon: "🍃" },
-        { name: "PostgreSQL", percentage: 82, icon: "🐘" },
-        { name: "Redis", percentage: 75, icon: "🔴" },
-        { name: "GraphQL", percentage: 78, icon: "📈" }
-      ]
-    },
-    {
-      title: "AI/ML & Data Science",
-      skills: [
-        { name: "Neural Networks", percentage: 90, icon: "🧠" },
-        { name: "OpenCV", percentage: 88, icon: "👁️" },
-        { name: "YOLO", percentage: 85, icon: "🎯" },
-        { name: "Machine Learning", percentage: 87, icon: "🤖" },
-        { name: "Genetic Algorithms", percentage: 92, icon: "🧬" }
-      ]
-    },
-    {
-      title: "Tools & Technologies",
-      skills: [
-        { name: "Git/GitHub", percentage: 95, icon: "🐙" },
-        { name: "Docker", percentage: 80, icon: "🐳" },
-        { name: "Linux", percentage: 90, icon: "🐧" },
-        { name: "Arduino", percentage: 85, icon: "🔧" },
-        { name: "Figma", percentage: 82, icon: "🎨" },
-        { name: "Adobe XD", percentage: 80, icon: "🎨" }
-      ]
-    },
-    {
-      title: "Software Engineering",
-      skills: [
-        { name: "Data Structures", percentage: 95, icon: "🏗️" },
-        { name: "Algorithms", percentage: 93, icon: "⚙️" },
-        { name: "SocketProgramming", percentage: 88, icon: "🔌" },
-        { name: "Multi-threading", percentage: 87, icon: "🔄" },
-        { name: "Object-Oriented Programming", percentage: 95, icon: "📦" },
-        { name: "Software Design Patterns", percentage: 88, icon: "🏛️" },
-        { name: "System Architecture", percentage: 85, icon: "🏗️" },
-        { name: "API Design", percentage: 90, icon: "🔗" },
-        { name: "Database Design", percentage: 88, icon: "🗄️" }
-      ]
-    }
-  ];
 
   // Animate skill items on scroll
   useEffect(() => {
@@ -141,7 +68,7 @@ const Skills = () => {
             ref={scrollContainerRef}
             style={{ opacity: 1 }}
           >
-            {skillCategories.map((category, categoryIndex) => (
+            {PERSONAL_INFO.SKILLS.map((category, categoryIndex) => (
               <div 
                 key={categoryIndex}
                 className={`skill-category ${categoryIndex === currentCategory ? 'active' : ''}`}
@@ -169,7 +96,15 @@ const Skills = () => {
                       >
                         <div className="skill-header">
                           <span className="skill-icon">
-                            <span style={{ fontSize: '16px' }}>{skill.icon}</span>
+                            <img 
+                              src={skill.icon} 
+                              alt={skill.name} 
+                              style={{ 
+                                width: '16px', 
+                                height: '16px',
+                                filter: 'brightness(0) saturate(100%) invert(1)'
+                              }} 
+                            />
                           </span>
                           <span className="skill-name">{skill.name}</span>
                           <span className="skill-percentage">{skill.percentage}%</span>
@@ -189,7 +124,7 @@ const Skills = () => {
           </div>
 
           <div className="skills-pagination">
-            {skillCategories.map((_, index) => (
+            {PERSONAL_INFO.SKILLS.map((_, index) => (
               <div
                 key={index}
                 className={`pagination-dot ${index === currentCategory ? 'active' : ''}`}

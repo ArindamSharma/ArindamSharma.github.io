@@ -1,11 +1,23 @@
 import React, { useState, useEffect } from "react";
 import "./experience.css";
+import { PERSONAL_INFO } from "../../constants";
 
 const ExperienceSection = () => {
-  const [currentExperience, setCurrentExperience] = useState(3); // Start with Vassar Labs as active
+  const [currentExperience, setCurrentExperience] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
 
+  // Enhanced experiences - combining data from constants with display information
   const experiences = [
+    ...PERSONAL_INFO.EXPERIENCES.map((exp, index) => ({
+      company: exp.company,
+      title: exp.role,
+      duration: exp.period,
+      location: "Remote", // Default, could be added to constants
+      type: "Full-time", // Default, could be added to constants
+      logo: "💼", // Default logo
+      details: exp.highlights,
+      technologies: ["JavaScript", "React", "TypeScript"] // Default, could be enhanced in constants
+    })),
     {
       company: "Light & Wonder",
       title: "Sr. Associate Software Engineer | Associate Software Engineer",

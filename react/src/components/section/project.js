@@ -1,6 +1,6 @@
 import React from "react";
 import "./project.css";
-import { PROJECTS } from "../../constants";
+import { PERSONAL_INFO } from "../../constants";
 import ProjectCard from "../ProjectCard";
 
 
@@ -10,7 +10,7 @@ function ProjectSection() {
 			<div className="projects-section-col1">
 				<h2 className="projects-section-header">Work So Far</h2>
 				<div className="projects-section-grid">
-					{PROJECTS.slice(0, 2).map((project, idx) => (
+					{PERSONAL_INFO.PROJECTS.slice(0, 2).map((project, idx) => (
 						<ProjectCard
 							key={idx}
 							project={project}
@@ -22,7 +22,7 @@ function ProjectSection() {
 			</div>
 			<div className="projects-section-col2">
 				<div className="projects-section-grid">
-					{PROJECTS.slice(2,4).map((project, idx) => (
+					{PERSONAL_INFO.PROJECTS.slice(2,4).map((project, idx) => (
 						<ProjectCard
 							key={idx + 4}
 							project={project}
@@ -33,7 +33,7 @@ function ProjectSection() {
 
 					{/* See More Project Card */}
 					<ProjectCard
-						key={PROJECTS.length}
+						key={PERSONAL_INFO.PROJECTS.length}
 						project={{ title: "See More Projects →" }}
 						navigateTo="/projectslist"
 						showLink={false}

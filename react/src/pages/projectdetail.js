@@ -1,16 +1,15 @@
-// Project Detail Page
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/footer";
-import { PROJECTS } from "../constants";
+import { PERSONAL_INFO } from "../constants";
 import "./home.css";
 import ImageRotator from "../components/ImageRotator";
 
 function ProjectDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
-  const project = PROJECTS[parseInt(id, 10)];
+  const project = PERSONAL_INFO.PROJECTS[parseInt(id, 10)];
 
   if (!project) {
     return (

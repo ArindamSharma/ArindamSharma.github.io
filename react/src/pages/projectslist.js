@@ -1,8 +1,7 @@
-// Projects List Page
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/footer";
-import { PROJECTS } from "../constants";
+import { PERSONAL_INFO } from "../constants";
 import "./home.css";
 import "./projectslist.css";
 import ProjectCard from "../components/ProjectCard";
@@ -18,7 +17,7 @@ function ProjectsList() {
         </button>
         <h2>All Projects</h2>
         <div className="projects-list-grid">
-          {PROJECTS.map((project, idx) => (
+          {PERSONAL_INFO.PROJECTS.map((project, idx) => (
             <ProjectCard key={idx} project={project} idx={idx} showLink={true} />
           ))}
         </div>
