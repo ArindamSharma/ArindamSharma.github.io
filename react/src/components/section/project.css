@@ -1,4 +1,4 @@
-/* Projects Section - Exact match to react2 template */
+/* Projects Section */
 .projects-section {
   background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
   position: relative;
@@ -15,6 +15,12 @@
   background: radial-gradient(circle at 60% 40%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
               radial-gradient(circle at 40% 80%, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
   pointer-events: none;
+  z-index: 0;
+}
+
+.projects-container {
+  position: relative;
+  z-index: 1;
 }
 
 .projects-subtitle {
@@ -27,10 +33,17 @@
 }
 
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
-  margin-top: 3rem;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.projects-grid > * {
+  flex: 0 1 calc(33.333% - 1.333rem);
+  min-width: 320px;
+  max-width: 400px;
 }
 
 .project-card {
@@ -164,15 +177,23 @@
 .see-more-card {
   background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
   border: 2px dashed rgba(59, 130, 246, 0.3);
+  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 350px;
+  min-height: 400px;
+  flex: 0 1 calc(33.333% - 1.333rem);
+  min-width: 320px;
+  max-width: 400px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .see-more-card:hover {
   background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(139, 92, 246, 0.2));
   border-color: rgba(59, 130, 246, 0.5);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 .see-more-content {
@@ -225,26 +246,29 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1200px) {
+  .projects-grid > * {
+    flex: 0 1 calc(50% - 1rem);
+    min-width: 300px;
+  }
+}
+
 @media (max-width: 768px) {
   .projects-grid {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: center;
     gap: 1.5rem;
   }
   
-  .project-image {
-    height: 180px;
+  .projects-grid > * {
+    flex: 0 1 100%;
+    max-width: 400px;
+    min-width: 280px;
   }
   
-  .project-content {
-    padding: 1.25rem;
-  }
-  
-  .project-title {
-    font-size: 1.125rem;
-  }
-  
-  .project-description {
-    font-size: 0.9rem;
+  .projects-subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
   }
   
   .see-more-card {
@@ -257,5 +281,34 @@
   
   .see-more-icon {
     font-size: 2.5rem;
+  }
+  
+  .see-more-title {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-grid {
+    gap: 1rem;
+    padding: 0 0.5rem;
+  }
+  
+  .projects-grid > * {
+    min-width: 100%;
+    max-width: 100%;
+  }
+  
+  .projects-subtitle {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+  
+  .see-more-card {
+    min-height: 250px;
+  }
+  
+  .see-more-content {
+    padding: 1rem;
   }
 }

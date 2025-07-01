@@ -152,6 +152,7 @@ export const PERSONAL_INFO = {
 		},
 		{
 			title: "Password Manager Tool (Personal Project)",
+			duration: "Jan 2021 – Ongoing",
 			description: [
 				"A Python application for managing passwords and sensitive information securely using vaults. Users can create and manage multiple secure containers/items for credentials and sensitive data, and edit individual items. Includes a built-in Password Generator for strong, random passwords.",
 				"Ongoing development: While the graphical user interface (GUI) is currently under development, the Command-line Interface (CLI) is fully functional and continuously enhanced.",
@@ -165,6 +166,7 @@ export const PERSONAL_INFO = {
 		},
 		{
 			title: "Placement Website (IIITDM Kancheepuram)",
+			duration: "Aug 2021 – Dec 2021",
 			description: [
 				"A new version of our college Placement website with a new platform, website design, and interface.",
 				"Skills: JavaScript, HTML, CSS. Packages Used: Express.js, Node.js, Bootstrap.",
@@ -180,6 +182,7 @@ export const PERSONAL_INFO = {
 		},
 		{
 			title: "File Explorer Interface Design | UX/UI Designing",
+			duration: "Oct 2021 – Nov 2021",
 			description: [
 				"File Explorer Interface design, built as a part of Human-Computer Interaction Course.",
 				"Platform: Figma, Adobe XD.",
@@ -195,6 +198,7 @@ export const PERSONAL_INFO = {
 		},
 		{
 			title: "OpenGL Based Test Frame",
+			duration: "Sep 2020 – Oct 2020",
 			description: [
 				"Used to test OpenGL functionalities.",
 				"Skills: C/C++. Packages Used: OpenGL.",
@@ -210,6 +214,7 @@ export const PERSONAL_INFO = {
 		},
 		{
 			title: "Image Processing using YOLO3 and darknet",
+			duration: "Feb 2021 – Mar 2021",
 			description: [
 				"Detection of waste such as plastic bottles, plastic bags from real-time images captured by a beach cleaner Bot.",
 				"Skills: Shell Scripting, Python, OpenCV.",
@@ -225,6 +230,7 @@ export const PERSONAL_INFO = {
 		},
 		{
 			title: "Simple Neural Network for MNIST data",
+			duration: "Dec 2020 – Jan 2021",
 			description: [
 				"Machine learning program used to learn MNIST data, built from scratch.",
 				"Skills: C/C++, Python.",
@@ -240,6 +246,7 @@ export const PERSONAL_INFO = {
 		},
 		{
 			title: "Web Server Hosting",
+			duration: "Nov 2020 – Dec 2020",
 			description: [
 				"It can host a website in a particular Domain if the end user uploads the file required (in some specific format) to host the page with the help of Socket Programming.",
 				"Using multithreading, it can run multiple requests simultaneously.",
@@ -256,6 +263,7 @@ export const PERSONAL_INFO = {
 		},
 		{
 			title: "Linear Discriminant Analysis with Verilog implementation",
+			duration: "Jul 2021 – Aug 2021",
 			description: [
 				"This Algorithm is used with Verilog (HDL). It is used to simulate the behavior of actual Hardware like logic gates, adders, multipliers, and Multiplier-Accumulator (MAC). It uses file handling python support for handling/executing Verilog file.",
 				"Skills Used: Python, Verilog.",
@@ -271,6 +279,7 @@ export const PERSONAL_INFO = {
 		},
 		{
 			title: "Chakravyuha (Samgatha 2k18)",
+			duration: "Mar 2018 – Apr 2018",
 			description: [
 				"Design a robot for the Indian Navy which can perform operations both manually and switch to autonomous when needed.",
 				"Design another manual robot for the Indian Army which can traverse different land conditions.",
@@ -287,6 +296,7 @@ export const PERSONAL_INFO = {
 		},
 		{
 			title: "Hospital Administrative Section Website",
+			duration: "May 2020 – Jun 2020",
 			description: [
 				"The Management Section such as Medicine, Patient Receipt Generator, Patient Room Allotment, Appointment Management, Doctor Entry Record, etc.",
 				"Skills Used: Python, SQL, HTML, CSS. Packages Used: Flask Framework, jQuery, Ajax.",

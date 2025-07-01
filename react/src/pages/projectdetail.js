@@ -38,6 +38,9 @@ function ProjectDetail() {
           ← Back
         </button>
         <h2 className="projectdetail-title">{project.title}</h2>
+        {project.duration && (
+          <div className="projectdetail-duration">{project.duration}</div>
+        )}
         {/* Rotating image component */}
         <div className="projectdetail-slider">
           <ImageRotator images={images} interval={1000} alt={project.title} />

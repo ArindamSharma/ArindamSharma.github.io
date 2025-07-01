@@ -8,9 +8,23 @@
   font-size: 2.2rem;
   font-weight: 700;
   color: #1976d2;
-  margin-bottom: 36px;
+  margin-bottom: 16px;
   letter-spacing: 0.01em;
   margin-top: 0;
+}
+
+.projectdetail-duration {
+  text-align: center;
+  color: #7877c6;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background: rgba(120, 119, 198, 0.1);
+  border: 1px solid rgba(120, 119, 198, 0.3);
+  border-radius: 24px;
+  padding: 8px 16px;
+  margin: 0 auto 36px auto;
+  display: inline-block;
+  letter-spacing: 0.5px;
 }
 .projectdetail-main {
   display: flex;
@@ -148,6 +162,10 @@
   .projectdetail-title {
     font-size: 1.5rem;
   }
+  .projectdetail-duration {
+    font-size: 1rem;
+    padding: 6px 14px;
+  }
 }
 @media (max-width: 700px) {
   .projectdetail-main {
@@ -156,6 +174,10 @@
   }
   .projectdetail-title {
     font-size: 1.1rem;
+  }
+  .projectdetail-duration {
+    font-size: 0.9rem;
+    padding: 6px 12px;
   }
   .projectdetail-description {
     font-size: 0.98rem;
@@ -182,6 +204,10 @@
   }
   .projectdetail-title {
     font-size: 1.1rem;
+  }
+  .projectdetail-duration {
+    font-size: 0.85rem;
+    padding: 5px 10px;
   }
   .projectdetail-description {
     font-size: 0.97rem;
