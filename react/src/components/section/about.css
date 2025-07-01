@@ -160,8 +160,8 @@
   height: 100%;
   background: conic-gradient(from 0deg, #3b82f6, #8b5cf6, #3b82f6);
   border-radius: 50%;
-  filter: blur(20px);
-  opacity: 0.3;
+  filter: blur(40px);
+  opacity: 0.4;
   animation: rotate 20s linear infinite;
 }
 
