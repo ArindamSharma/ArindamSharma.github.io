@@ -4,12 +4,11 @@ export const PERSONAL_INFO = {
 	about: "Passionate about crafting seamless digital experiences with clean, efficient code. I thrive on solving complex problems, embracing new technologies, and turning ideas into impactful solutions that make a difference.",
 	title: [
 		"Software Engineer",
-		"Full Stack Developer",
 		"Tech Innovator",
 		"Problem Solver",
 		"Code Architect",
 		"Digital Creator",
-		"UI/UX Designer",
+		"AI/ML Enthusiast",
 		"Data Scientist",
 		"Machine Learning Engineer",
 		"Web Developer"
