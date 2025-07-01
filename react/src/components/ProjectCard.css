@@ -44,15 +44,16 @@
 }
 .project-card-img-holder {
   width: calc(100% - 12px);
-  margin: 6px;
-  height: 200px;
+  margin: 6px 6px 0 6px;
+  height: 180px;
   background: rgba(40, 40, 40, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  border-radius: 18px;
+  border-radius: 18px 18px 0 0;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: none;
   position: relative;
   z-index: 2;
 }
@@ -70,7 +71,7 @@
   filter: brightness(1.1);
 }
 .project-info {
-  padding: 20px 20px 20px 20px;
+  padding: 28px 28px 24px 28px;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -104,6 +105,8 @@
   height: 1px;
   background: linear-gradient(90deg, transparent 0%, rgba(120, 119, 198, 0.3) 50%, transparent 100%);
   margin: 16px 0;
+  position: relative;
+  z-index: 3;
 }
 
 .project-footer {
@@ -112,6 +115,8 @@
   align-items: center;
   gap: 12px;
   flex-wrap: wrap;
+  position: relative;
+  z-index: 3;
 }
 
 .project-duration {
@@ -145,6 +150,12 @@
   .project-card {
     height: 450px;
   }
+  .project-info {
+    padding: 26px 26px 22px 26px;
+  }
+  .project-card-img-holder {
+    height: 180px;
+  }
   .project-duration {
     font-size: 0.8rem;
   }
@@ -160,6 +171,9 @@
   .project-card {
     height: 400px; /* Slightly smaller fixed height for mobile */
   }
+  .project-info {
+    padding: 24px 24px 20px 24px;
+  }
   .project-title {
     font-size: 1.2rem;
   }
@@ -171,7 +185,7 @@
     font-size: 1rem;
   }
   .project-card-img-holder {
-    height: 160px;
+    height: 180px;
   }
   .project-separator {
     margin: 12px 0;
