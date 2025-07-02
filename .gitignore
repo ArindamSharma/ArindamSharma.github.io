@@ -75,7 +75,6 @@ storybook-static/
 
 # Ignore Gatsby files
 .cache/
-public/
 
 # Ignore parcel-bundler cache
 .cache/

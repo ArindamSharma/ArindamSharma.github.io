@@ -1,0 +1,19 @@
+<!-- Custom AS Logo SVG -->
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle with Gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="32" cy="32" r="32" fill="url(#bgGradient)"/>
+  
+  <!-- AS Text -->
+  <text x="32" y="42" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="white">AS</text>
+  
+  <!-- Subtle border -->
+  <circle cx="32" cy="32" r="31" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+</svg>
