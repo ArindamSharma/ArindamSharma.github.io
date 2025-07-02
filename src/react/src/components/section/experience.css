@@ -32,6 +32,7 @@
   scrollbar-width: none;
   -ms-overflow-style: none;
   scroll-behavior: smooth;
+  align-items: flex-start; /* Prevent cards from stretching */
 }
 
 .experience-grid::-webkit-scrollbar {
@@ -44,9 +45,8 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   padding: 2rem;
-  min-width: 480px;
-  max-width: 480px;
-  min-height: 580px;
+  width: 480px; /* Fixed width instead of min/max */
+  height: 580px; /* Fixed height for consistency */
   flex-shrink: 0;
   scroll-snap-align: start;
   position: relative;
@@ -58,7 +58,9 @@
     0 10px 30px rgba(0, 0, 0, 0.3),
     0 5px 15px rgba(0, 0, 0, 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: height 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+              transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              box-shadow 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .experience-card:hover {
@@ -161,15 +163,47 @@
 
 .experience-details {
   flex: 1;
-  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  min-height: 120px;
-  max-height: 150px;
+  position: relative;
   overflow: hidden;
+  height: 140px; /* Fixed height for collapsed state */
+  transition: height 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .experience-card.expanded .experience-details {
-  max-height: none;
+  height: auto; /* Allow content to determine height when expanded */
   overflow: visible;
+}
+
+/* Measuring class for temporary height calculation */
+.experience-card.measuring {
+  position: absolute;
+  visibility: hidden;
+  z-index: -1;
+  height: auto !important;
+  overflow: visible !important;
+}
+
+.experience-card.measuring .experience-details {
+  height: auto !important;
+  overflow: visible !important;
+}
+
+/* Add fade effect for collapsed content */
+.experience-details::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.05));
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.experience-card.expanded .experience-details::after {
+  opacity: 0;
 }
 
 .details-list {
@@ -179,7 +213,6 @@
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
-  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .detail-item {
@@ -188,7 +221,6 @@
   line-height: 1.4;
   padding-left: 1.5rem;
   position: relative;
-  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   word-wrap: break-word;
   overflow-wrap: break-word;
   hyphens: auto;
@@ -352,13 +384,15 @@
 
 .btn-icon {
   font-size: 0.9rem;
-  transition: transform 0.3s ease;
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.experience-card.expanded .btn-icon {
+  transform: rotate(180deg);
 }
 
 /* Expanded card state */
 .experience-card.expanded {
-  min-height: auto;
-  max-height: none;
   z-index: 15;
   transform: translateY(-8px) scale(1.02);
   box-shadow: 
@@ -366,10 +400,6 @@
     0 15px 35px rgba(59, 130, 246, 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
   border-color: rgba(59, 130, 246, 0.5);
-}
-
-.experience-card.expanded .experience-details {
-  max-height: none;
   overflow: visible;
 }
 
@@ -381,9 +411,8 @@
   }
 
   .experience-card {
-    min-width: 420px;
-    max-width: 420px;
-    min-height: 550px;
+    width: 420px; /* Fixed width */
+    height: 550px; /* Fixed height */
     padding: 1.8rem;
   }
 }
@@ -395,9 +424,8 @@
   }
 
   .experience-card {
-    min-width: 360px;
-    max-width: 360px;
-    min-height: 520px;
+    width: 360px; /* Fixed width */
+    height: 520px; /* Fixed height */
     padding: 1.5rem;
   }
 

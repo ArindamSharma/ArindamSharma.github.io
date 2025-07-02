@@ -5,7 +5,9 @@ import { PERSONAL_INFO } from "../../constants";
 const ExperienceSection = () => {
   const [currentExperience, setCurrentExperience] = useState(0);
   const [expandedCard, setExpandedCard] = useState(null);
+  const [cardHeights, setCardHeights] = useState({});
   const scrollContainerRef = useRef(null);
+  const cardRefs = useRef([]);
 
   // Function to generate company initials
   const getCompanyInitials = (companyName) => {
@@ -16,18 +18,50 @@ const ExperienceSection = () => {
       .substring(0, 2); // Limit to 2 characters
   };
 
-  // Function to limit number of details shown
-  const getVisibleDetails = (details, isExpanded, maxItems = 2) => {
-    if (isExpanded || details.length <= maxItems) {
-      return details;
-    }
-    return details.slice(0, maxItems);
-  };
-
-  // Function to toggle card expansion
+  // Function to toggle card expansion with dynamic height
   const toggleCardExpansion = (index, event) => {
     event.stopPropagation(); // Prevent card click handler from firing
-    setExpandedCard(expandedCard === index ? null : index);
+    
+    if (expandedCard === index) {
+      // Collapsing
+      setExpandedCard(null);
+    } else {
+      // Expanding - calculate dynamic height
+      const cardElement = cardRefs.current[index];
+      if (cardElement) {
+        // Create a clone to measure the full height
+        const clone = cardElement.cloneNode(true);
+        clone.className = `${cardElement.className} measuring`;
+        clone.style.position = 'absolute';
+        clone.style.visibility = 'hidden';
+        clone.style.height = 'auto';
+        clone.style.zIndex = '-1';
+        
+        // Add clone to parent to measure
+        cardElement.parentNode.appendChild(clone);
+        
+        // Set the details section to auto height in the clone
+        const cloneDetails = clone.querySelector('.experience-details');
+        if (cloneDetails) {
+          cloneDetails.style.height = 'auto';
+          cloneDetails.style.overflow = 'visible';
+        }
+        
+        // Measure the full content height
+        const fullHeight = clone.scrollHeight;
+        
+        // Remove the clone
+        cardElement.parentNode.removeChild(clone);
+        
+        // Store the calculated height with some padding
+        setCardHeights(prev => ({
+          ...prev,
+          [index]: fullHeight + 20 // Add some padding
+        }));
+      }
+      
+      setExpandedCard(index);
+    }
   };
 
   // Function to collapse card when focus changes
@@ -135,7 +169,13 @@ const ExperienceSection = () => {
             {experiences.map((exp, index) => (
               <div 
                 key={index}
+                ref={el => cardRefs.current[index] = el}
                 className={`experience-card ${expandedCard === index ? 'expanded' : ''}`}
+                style={{
+                  height: expandedCard === index && cardHeights[index] 
+                    ? `${cardHeights[index]}px` 
+                    : undefined
+                }}
                 onClick={(e) => {
                   // Close expanded card if clicking outside the button
                   if (expandedCard !== null && !e.target.closest('.more-details-btn')) {
@@ -198,7 +238,7 @@ const ExperienceSection = () => {
                   
                   <div className="experience-details">
                     <ul className="details-list">
-                      {getVisibleDetails(exp.details, expandedCard === index).map((detail, idx) => (
+                      {exp.details.map((detail, idx) => (
                         <li 
                           key={idx} 
                           className="detail-item"
