@@ -100,6 +100,10 @@
   justify-content: center;
   margin-bottom: 2rem;
   gap: 0.5rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  min-width: fit-content;
 }
 
 .about-buttons svg {
@@ -206,6 +210,23 @@
     text-align: center;
   }
   
+  .about-left {
+    align-items: center;
+  }
+  
+  .about-description {
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .about-buttons {
+    justify-content: center;
+  }
+  
+  .social-links {
+    justify-content: center;
+  }
+  
   .about-right {
     order: -1;
   }
@@ -265,6 +286,8 @@
     font-size: 1rem;
     line-height: 1.6;
     max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
   }
   
   .about-buttons {
@@ -284,6 +307,7 @@
     justify-content: center;
     gap: 0.5rem;
     font-size: 0.95rem;
+    white-space: nowrap;
   }
   
   .social-links {
@@ -334,6 +358,8 @@
     font-size: 0.95rem;
     line-height: 1.6;
     padding: 0 0.5rem;
+    text-align: center;
+    margin: 0 auto;
   }
   
   .about-buttons {
@@ -349,6 +375,7 @@
     height: 46px;
     font-size: 0.9rem;
     padding: 12px 20px;
+    white-space: nowrap;
   }
   
   .social-links {
@@ -394,6 +421,8 @@
   
   .about-description {
     font-size: 0.9rem;
+    text-align: center;
+    margin: 0 auto;
   }
   
   .about-buttons .btn-primary,
@@ -401,5 +430,6 @@
     height: 44px;
     font-size: 0.85rem;
     padding: 10px 16px;
+    white-space: nowrap;
   }
 }
