@@ -339,7 +339,7 @@ export const PERSONAL_INFO = {
 			period: "Nov 2022 – Present",
 			location: "Remote",
 			type: "Full-time",
-			logo: "🎮",
+			companyLogo: "https://igamingbusiness.com/img-srv/DM6ntqvxt_CEddKULPOPeCZLAb17c2rFx4x4ScW1gt8/resizing_type:auto/width:1690/height:0/gravity:sm/enlarge:1/ext:webp/strip_metadata:1/quality:90/bG9jYWw6Ly8vaWdhbWluZ2J1c2luZXNzLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMi8wMy9saWdodC1hbmQtd29uZGVyLXNjYWxlZC5qcGc.webp",
 			highlights: [
 				"Developed interactive game pages using Vanilla JavaScript, HTML, and CSS for lightweight Bonus Screen transitions",
 				"Upgraded OS bash scripts improving system performance and compatibility with latest operating systems",
@@ -363,7 +363,7 @@ export const PERSONAL_INFO = {
 			period: "May 2023 – Aug 2023",
 			location: "Chennai, India",
 			type: "Internship",
-			logo: "🔬",
+			companyLogo: "https://logo.clearbit.com/kla.com",
 			highlights: [
 				"Developed Python-based Difference Report Generator using system configuration files and RTC client",
 				"Created Calibration checker using C# and Windows Registry for system safety and reliability",
@@ -384,7 +384,7 @@ export const PERSONAL_INFO = {
 			period: "Oct 2021 – Mar 2022",
 			location: "Chennai, India",
 			type: "Part-time",
-			logo: "🎓",
+			companyLogo: "https://www.iiitdm.ac.in/images/logo.png",
 			highlights: [
 				"Provided concept insights and constant feedback, improving learning experiences",
 				"Supported professors during lectures, labs, and tutorials",
@@ -405,7 +405,7 @@ export const PERSONAL_INFO = {
 			period: "May 2021 – Nov 2021",
 			location: "Remote",
 			type: "Internship",
-			logo: "💻",
+			companyLogo: "https://via.placeholder.com/50x50/0066cc/ffffff?text=VL",
 			highlights: [
 				"Developed and modified API modules using Java Spring Boot Framework",
 				"Improved data extraction algorithms for enhanced performance with large datasets",
@@ -426,7 +426,7 @@ export const PERSONAL_INFO = {
 			period: "Nov 2018 – Dec 2018",
 			location: "Durg, India",
 			type: "Internship",
-			logo: "🌐",
+			companyLogo: "https://via.placeholder.com/50x50/3b82f6/ffffff?text=BITS",
 			highlights: [
 				"Developed full-stack web applications using modern technologies",
 				"Implemented responsive user interfaces and backend API integrations",

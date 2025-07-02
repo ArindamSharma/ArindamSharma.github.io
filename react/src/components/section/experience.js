@@ -6,6 +6,15 @@ const ExperienceSection = () => {
   const [currentExperience, setCurrentExperience] = useState(0);
   const scrollContainerRef = useRef(null);
 
+  // Function to generate company initials
+  const getCompanyInitials = (companyName) => {
+    return companyName
+      .split(' ')
+      .map(word => word.charAt(0).toUpperCase())
+      .join('')
+      .substring(0, 2); // Limit to 2 characters
+  };
+
   // Use experiences data directly from constants
   const experiences = PERSONAL_INFO.EXPERIENCES.map((exp, index) => ({
     company: exp.company,
@@ -13,7 +22,8 @@ const ExperienceSection = () => {
     duration: exp.period,
     location: exp.location || "Remote", // Use location from constants or default
     type: exp.type || "Full-time", // Use type from constants or default
-    logo: exp.logo || "💼", // Use logo from constants or default
+    companyLogo: exp.companyLogo, // Add company logo URL
+    companyInitials: getCompanyInitials(exp.company), // Generate initials
     details: exp.highlights,
     technologies: exp.skills || ["JavaScript", "React", "TypeScript"] // Use skills from constants
   }));
@@ -68,6 +78,10 @@ const ExperienceSection = () => {
     <section className="experience-section section" id="experience">
       <div className="container">
         <h2 className="section-title">Professional Experience</h2>
+        <p className="section-description">
+          A journey through innovative companies and challenging projects, where I've contributed to cutting-edge software solutions, 
+          collaborated with talented teams, and continuously grown as a developer.
+        </p>
         
         <div className="experience-carousel-container">
           <div 
@@ -78,16 +92,28 @@ const ExperienceSection = () => {
               <div 
                 key={index}
                 className="experience-card"
-              >
-                <div className="experience-icon">
-                  <span className="company-logo">{exp.logo}</span>
-                </div>
-                
+              >                
                 <div className="experience-content">
                   <div className="experience-header">
                     <div className="experience-main">
                       <h3 className="experience-title">{exp.title}</h3>
-                      <h4 className="experience-company">{exp.company}</h4>
+                      <div className="experience-company">
+                        {exp.companyLogo && (
+                          <img 
+                            src={exp.companyLogo} 
+                            alt={`${exp.company} logo`}
+                            className="company-logo-img"
+                            onError={(e) => {
+                              // Show fallback initials logo if image fails
+                              e.target.outerHTML = `<div class="company-logo-fallback">${exp.companyInitials}</div>`;
+                            }}
+                          />
+                        )}
+                        {!exp.companyLogo && (
+                          <div className="company-logo-fallback">{exp.companyInitials}</div>
+                        )}
+                        <h4 className="company-name">{exp.company}</h4>
+                      </div>
                     </div>
                     
                     <div className="experience-meta">
