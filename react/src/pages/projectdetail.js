@@ -55,31 +55,57 @@ function ProjectDetail() {
             )}
           </div>
           
-          {/* Rotating image component */}
+          {/* Fixed 16:9 aspect ratio image slider */}
           <div className="projectdetail-slider">
-            <ImageRotator images={images} interval={1000} alt={project.title} />
+            <div className="projectdetail-image-container">
+              <ImageRotator images={images} interval={3000} alt={project.title} />
+            </div>
           </div>
           
-          {/* Description as paragraphs */}
-          <div className="projectdetail-description">
-            {project.description.map((d, i) => (
-              <p key={i} className="projectdetail-desc-para">{d}</p>
-            ))}
-          </div>
-          
-          {/* Links as buttons */}
-          <div className="projectdetail-links">
-            {project.link && (
-              <a href={project.link} target="_blank" rel="noopener noreferrer" className="projectdetail-link">
-                <span className="link-icon">🔗</span>
-                <span className="link-text">GitHub</span>
-              </a>
+          {/* Project Information Grid */}
+          <div className="projectdetail-info">
+            {/* Skills Section */}
+            {project.skills && project.skills.length > 0 && (
+              <div className="projectdetail-section-card glass-card">
+                <h3 className="projectdetail-section-title">Technologies & Skills</h3>
+                <div className="projectdetail-skills">
+                  {project.skills.map((skill, index) => (
+                    <span key={index} className="projectdetail-skill-tag">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
             )}
-            {project.demo && (
-              <a href={project.demo} target="_blank" rel="noopener noreferrer" className="projectdetail-link">
-                <span className="link-icon">🚀</span>
-                <span className="link-text">Live Demo</span>
-              </a>
+            
+            {/* Description Section */}
+            <div className="projectdetail-section-card glass-card">
+              <h3 className="projectdetail-section-title">Project Overview</h3>
+              <div className="projectdetail-description">
+                {project.description.map((d, i) => (
+                  <p key={i} className="projectdetail-desc-para">{d}</p>
+                ))}
+              </div>
+            </div>
+            
+            {/* Links Section */}
+            {project.links && project.links.length > 0 && (
+              <div className="projectdetail-section-card glass-card">
+                <h3 className="projectdetail-section-title">Project Links</h3>
+                <div className="projectdetail-links">
+                  {project.links.map((linkObj, index) => (
+                    <a key={index} href={linkObj.link} target="_blank" rel="noopener noreferrer" className="projectdetail-link">
+                      <span className="link-icon">
+                        {linkObj.name.toLowerCase().includes('github') ? '🔗' :
+                         linkObj.name.toLowerCase().includes('figma') ? '🎨' :
+                         linkObj.name.toLowerCase().includes('demo') ? '🚀' :
+                         linkObj.name.toLowerCase().includes('website') ? '🌐' : '🔗'}
+                      </span>
+                      <span className="link-text">{linkObj.name}</span>
+                    </a>
+                  ))}
+                </div>
+              </div>
             )}
           </div>
         </div>

@@ -14,7 +14,7 @@ export const PERSONAL_INFO = {
 		"Web Developer"
 	],
 	location: "India",
-	experience: "4+ Years",
+	experience: "3+ Years",
 	profileImage: "./img/1732601951208.jpg",
 	resumeLink: "#",
 	CONTACT_INFO: {
@@ -53,6 +53,11 @@ export const PERSONAL_INFO = {
 			name: "Discord",
 			link: "https://discord.com",
 			icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/discord.svg"
+		},
+		{
+			name: "TopMate",
+			link: "https://topmate.io/arindam_sharma11",
+			icon: "https://topmate.io/cdn-cgi/image/width=640,quality=90/images/common/topmate-light.svg",
 		},
 	],
 	SKILLS:[
@@ -153,7 +158,12 @@ export const PERSONAL_INFO = {
 				"Simulator includes Self‑Replication, Inheritance, Mutation, Natural Selection, Survival of the Fittest concepts of Evolution.",
 			],
 			skills: ["C++", "Neural Networks", "Genetic Algorithms", "Object-Oriented Programming", "Data Structures", "Algorithms"],
-			link: "https://github.com/ArindamSharma/evolution-using-selection",
+			links: [
+				{
+					name: "GitHub Repository",
+					link: "https://github.com/ArindamSharma/evolution-using-selection"
+				}
+			],
 			images: [
 				"https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400",
 				"https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400",
@@ -170,7 +180,16 @@ export const PERSONAL_INFO = {
 				"Ongoing development: While the graphical user interface (GUI) is currently under development, the Command-line Interface (CLI) is fully functional and continuously enhanced.",
 			],
 			skills: ["Python", "GUI Development", "CLI Development", "File Handling", "Cryptography", "Object-Oriented Programming"],
-			link: "https://github.com/ArindamSharma/password_manager/tree/master/v3",
+			links: [
+				{
+					name: "GitHub Repository",
+					link: "https://github.com/ArindamSharma/password_manager/tree/master/v3"
+				},
+				{
+					name: "Live Demo",
+					link: "https://password-manager-demo.example.com"
+				}
+			],
 			images: [
 				"https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=400",
 				"https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400",
@@ -182,10 +201,21 @@ export const PERSONAL_INFO = {
 			duration: "Aug 2021 – Dec 2021",
 			description: [
 				"A new version of our college Placement website with a new platform, website design, and interface.",
-				"Skills: JavaScript, HTML, CSS. Packages Used: Express.js, Node.js, Bootstrap.",
+				"Developed a comprehensive web application for managing college placements with modern UI/UX design principles.",
+				"Implemented features for student registration, company profiles, job postings, and application tracking.",
+				"Created responsive design ensuring compatibility across all devices and browsers.",
 			],
 			skills: ["JavaScript", "HTML", "CSS", "Express.js", "Node.js", "Bootstrap", "Web Development", "Frontend Design"],
-			link: "https://placements.iiitdm.ac.in",
+			links: [
+				{
+					name: "Live Website",
+					link: "https://placements.iiitdm.ac.in"
+				},
+				{
+					name: "GitHub Repository",
+					link: "https://github.com/ArindamSharma/placement-website"
+				}
+			],
 			images: [
 				"https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=400",
 				"https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400",
@@ -199,10 +229,17 @@ export const PERSONAL_INFO = {
 			duration: "Oct 2021 – Nov 2021",
 			description: [
 				"File Explorer Interface design, built as a part of Human-Computer Interaction Course.",
-				"Platform: Figma, Adobe XD.",
+				"Created a comprehensive redesign of the traditional file explorer with modern UI principles.",
+				"Focused on improving user experience through intuitive navigation and visual hierarchy.",
+				"Implemented responsive design patterns and accessibility considerations.",
 			],
 			skills: ["Figma", "Adobe XD", "UI/UX Design", "Interface Design", "Human-Computer Interaction", "Prototyping"],
-			link: "https://figma.com/file/yIWU5lGhFELTISPypelHMF/Hakuna-Matata?node-id=658%3A2379",
+			links: [
+				{
+					name: "Figma Design",
+					link: "https://figma.com/file/yIWU5lGhFELTISPypelHMF/Hakuna-Matata?node-id=658%3A2379"
+				}
+			],
 			images: [
 				"https://i.pravatar.cc/300?img=12",
 				"https://i.pravatar.cc/300?img=13",
@@ -215,11 +252,18 @@ export const PERSONAL_INFO = {
 			title: "OpenGL Based Test Frame",
 			duration: "Sep 2020 – Oct 2020",
 			description: [
-				"Used to test OpenGL functionalities.",
-				"Skills: C/C++. Packages Used: OpenGL.",
+				"Used to test OpenGL functionalities and explore 3D graphics programming.",
+				"Developed a comprehensive testing framework for OpenGL features including rendering, shaders, and 3D transformations.",
+				"Implemented various graphics techniques including texture mapping, lighting models, and geometric transformations.",
+				"Created a foundation for understanding computer graphics principles and GPU programming.",
 			],
 			skills: ["C", "C++", "OpenGL", "Graphics Programming", "3D Rendering", "Computer Graphics"],
-			link: "https://github.com/ArindamSharma/openGl-project-0",
+			links: [
+				{
+					name: "GitHub Repository",
+					link: "https://github.com/ArindamSharma/openGl-project-0"
+				}
+			],
 			images: [
 				"https://i.pravatar.cc/300?img=17",
 				"https://i.pravatar.cc/300?img=18",
@@ -236,7 +280,12 @@ export const PERSONAL_INFO = {
 				"Skills: Shell Scripting, Python, OpenCV.",
 			],
 			skills: ["Python", "OpenCV", "YOLO3", "Darknet", "Computer Vision", "Object Detection", "Image Processing", "Shell Scripting"],
-			link: "https://github.com/ArindamSharma/Image-Processing",
+			links: [
+				{
+					name: "GitHub Repository",
+					link: "https://github.com/ArindamSharma/Image-Processing"
+				}
+			],
 			images: [
 				"https://i.pravatar.cc/300?img=22",
 				"https://i.pravatar.cc/300?img=23",
@@ -253,7 +302,12 @@ export const PERSONAL_INFO = {
 				"Skills: C/C++, Python.",
 			],
 			skills: ["Python", "C", "C++", "Machine Learning", "Neural Networks", "MNIST", "Deep Learning", "Algorithm Implementation"],
-			link: "https://github.com/ArindamSharma/neural-network-1",
+			links: [
+				{
+					name: "GitHub Repository",
+					link: "https://github.com/ArindamSharma/neural-network-1"
+				}
+			],
 			images: [
 				"https://i.pravatar.cc/300?img=27",
 				"https://i.pravatar.cc/300?img=28",
@@ -271,7 +325,12 @@ export const PERSONAL_INFO = {
 				"Skills: C, Java, Multi-threading, Socket Programming.",
 			],
 			skills: ["C", "Java", "Socket Programming", "Multithreading", "Web Server", "Network Programming", "Concurrent Programming"],
-			link: "https://github.com/ArindamSharma/Webserver",
+			links: [
+				{
+					name: "GitHub Repository",
+					link: "https://github.com/ArindamSharma/Webserver"
+				}
+			],
 			images: [
 				"https://i.pravatar.cc/300?img=32",
 				"https://i.pravatar.cc/300?img=33",
@@ -288,7 +347,12 @@ export const PERSONAL_INFO = {
 				"Skills Used: Python, Verilog.",
 			],
 			skills: ["Python", "Verilog", "VLSI Design", "Hardware Description Language", "Digital Signal Processing", "Linear Discriminant Analysis", "Hardware Simulation"],
-			link: "https://github.com/ArindamSharma/VLSI-Project-Linear-Discriminant-Analysis-LDA",
+			links: [
+				{
+					name: "GitHub Repository",
+					link: "https://github.com/ArindamSharma/VLSI-Project-Linear-Discriminant-Analysis-LDA"
+				}
+			],
 			images: [
 				"https://i.pravatar.cc/300?img=37",
 				"https://i.pravatar.cc/300?img=38",
@@ -307,6 +371,7 @@ export const PERSONAL_INFO = {
 				"Achieved first position in the competition.",
 			],
 			skills: ["Arduino", "C", "Robotics", "Autonomous Systems", "Hardware Programming", "Embedded Systems", "Competition Design"],
+			links: [],
 			images: [
 				"https://i.pravatar.cc/300?img=42",
 				"https://i.pravatar.cc/300?img=43",
@@ -323,6 +388,7 @@ export const PERSONAL_INFO = {
 				"Skills Used: Python, SQL, HTML, CSS. Packages Used: Flask Framework, jQuery, Ajax.",
 			],
 			skills: ["Python", "Flask", "SQL", "HTML", "CSS", "jQuery", "Ajax", "Database Management", "Web Development", "Healthcare Software"],
+			links: [],
 			images: [
 				"https://i.pravatar.cc/300?img=47",
 				"https://i.pravatar.cc/300?img=48",

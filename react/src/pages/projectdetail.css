@@ -99,7 +99,7 @@
   backdrop-filter: blur(10px);
 }
 
-/* Image Slider */
+/* Image Slider - Fixed 16:9 Aspect Ratio */
 .projectdetail-slider {
   margin: 3rem 0;
   border-radius: 20px;
@@ -110,16 +110,88 @@
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
+.projectdetail-image-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (9/16 = 0.5625) */
+  overflow: hidden;
+}
+
+.projectdetail-image-container .image-rotator-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Project Information Grid */
+.projectdetail-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.projectdetail-section-card {
+  padding: 2rem;
+}
+
+.projectdetail-section-title {
+  color: #3b82f6;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.projectdetail-section-title::before {
+  content: '';
+  width: 4px;
+  height: 1.5rem;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  border-radius: 2px;
+}
+
+/* Skills Section */
+.projectdetail-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.projectdetail-skill-tag {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(139, 92, 246, 0.15));
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  border-radius: 12px;
+  padding: 0.5rem 1rem;
+  color: #e5e7eb;
+  font-size: 0.85rem;
+  font-weight: 500;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.projectdetail-skill-tag:hover {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.25), rgba(139, 92, 246, 0.25));
+  border-color: rgba(59, 130, 246, 0.5);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
 /* Description */
 .projectdetail-description {
-  margin: 3rem 0;
+  margin: 0;
 }
 
 .projectdetail-desc-para {
   color: #f3f4f6;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   line-height: 1.7;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
   text-align: justify;
 }
 
@@ -130,10 +202,8 @@
 /* Links Section */
 .projectdetail-links {
   display: flex;
-  gap: 1.5rem;
-  justify-content: center;
+  gap: 1rem;
   flex-wrap: wrap;
-  margin-top: 3rem;
 }
 
 .projectdetail-link {
@@ -143,13 +213,14 @@
   background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
   backdrop-filter: blur(20px);
   border: 1px solid rgba(59, 130, 246, 0.3);
-  border-radius: 16px;
-  padding: 1rem 2rem;
+  border-radius: 12px;
+  padding: 0.75rem 1.5rem;
   color: #ffffff;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 0.95rem;
+  font-weight: 500;
   text-decoration: none;
   transition: all 0.3s ease;
+  flex: 1;
   min-width: 150px;
   justify-content: center;
 }
@@ -157,13 +228,13 @@
 .projectdetail-link:hover {
   background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(139, 92, 246, 0.2));
   border-color: rgba(59, 130, 246, 0.5);
-  transform: translateY(-4px);
-  box-shadow: 0 15px 35px rgba(59, 130, 246, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.25);
   color: #ffffff;
 }
 
 .link-icon {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 /* Not Found Section */
@@ -183,6 +254,22 @@
   font-size: 1.1rem;
 }
 
+/* Utility classes for common glassmorphism effects */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
   .projectdetail-section {
@@ -191,6 +278,10 @@
   
   .projectdetail-header .section-title {
     font-size: 2.5rem;
+  }
+  
+  .projectdetail-section-card {
+    padding: 1.5rem;
   }
 }
 
@@ -214,12 +305,24 @@
   
   .projectdetail-links {
     flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    gap: 0.75rem;
   }
   
   .projectdetail-link {
-    min-width: 200px;
+    min-width: unset;
+  }
+  
+  .projectdetail-skills {
+    gap: 0.5rem;
+  }
+  
+  .projectdetail-skill-tag {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+  
+  .projectdetail-section-title {
+    font-size: 1.3rem;
   }
 }
 
@@ -241,5 +344,12 @@
     padding: 0.5rem 1rem;
     font-size: 0.85rem;
   }
-
+  
+  .projectdetail-section-card {
+    padding: 1.25rem;
+  }
+  
+  .projectdetail-info {
+    gap: 2rem;
+  }
 }

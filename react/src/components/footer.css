@@ -177,8 +177,7 @@
   width: 100%;
 }
 
-/* Social links - no underline effect, only color change on hover */
-
+/* Footer Copyright and Status */
 .footer-copyright {
   width: 100%;
   text-align: center;
@@ -227,39 +226,11 @@
   }
 }
 
-/* Footer Navigation Links */
-.footer-nav-link {
-  background: none;
-  border: none;
-  padding: 0.5rem 0;
-  color: #d1d5db;
-  font-size: 0.95rem;
-  font-weight: 400;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-decoration: none;
-  text-align: left;
-  width: fit-content;
-  position: relative;
-}
-
-.footer-nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0.25rem;
-  left: 0;
-  width: 0;
-  height: 1px;
-  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
-  transition: width 0.3s ease;
-}
-
-.footer-nav-link:hover {
-  color: #ffffff;
-}
-
-.footer-nav-link:hover::after {
-  width: 100%;
+/* Footer Icon */
+.footer-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
 }
 
 /* Responsive Design */
