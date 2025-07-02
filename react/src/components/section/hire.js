@@ -56,25 +56,18 @@ function HireSection() {
           </div>
         </div>
         
-        <div className="availability-status">
-          <div className="status-indicator">
-            <span className="status-dot"></span>
-            <span className="status-text">{PERSONAL_INFO.CONTACT_INFO.availability}</span>
-          </div>
-        </div>
-        
         <div className="hire-cta">
-          <a href={`mailto:${PERSONAL_INFO.CONTACT_INFO.email}`} className="hire-section-btn">
+          {/* <a href={`mailto:${PERSONAL_INFO.CONTACT_INFO.email}`} className="hire-section-btn">
             <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
             </svg>
             Let's Talk
-          </a>
+          </a> */}
           
           <div className="social-connect">
             <span className="connect-text">Or connect with me on</span>
             <div className="social-buttons">
-              {PERSONAL_INFO.SOCIAL_LINKS.slice(0, 2).map((social, index) => (
+              {PERSONAL_INFO.SOCIAL_LINKS.map((social, index) => (
                 <a key={index} href={social.link} className="social-btn" target="_blank" rel="noopener noreferrer">
                   <img 
                     src={social.icon} 
@@ -85,7 +78,7 @@ function HireSection() {
               ))}
             </div>
           </div>
-        </div>
+        </div>        
       </div>
     </section>
   );
