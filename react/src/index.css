@@ -87,6 +87,16 @@ html {
   background-clip: text;
 }
 
+.section-subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
 .btn-primary {
   background: linear-gradient(135deg, #3b82f6, #8b5cf6);
   color: white;

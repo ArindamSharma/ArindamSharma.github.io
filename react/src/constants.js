@@ -59,74 +59,86 @@ export const PERSONAL_INFO = {
 		{
 			title: "Programming Languages",
 			skills: [
-				{ name: "C++", percentage: 88, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/cplusplus.svg" },
-				{ name: "C", percentage: 85, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/c.svg" },
-				{ name: "Python", percentage: 95, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg" },
-				{ name: "C#", percentage: 80, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/csharp.svg" },
-				{ name: "Java", percentage: 80, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/java.svg" },
-				{ name: "Shell Scripting", percentage: 82, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gnubash.svg" },
-				{ name: "Verilog", percentage: 75, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/xilinx.svg" }
+				{ name: "C++", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/cplusplus.svg" },
+				{ name: "C", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/c.svg" },
+				{ name: "Python", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg" },
+				{ name: "C#", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/csharp.svg" },
+				{ name: "Java", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/java.svg" },
+				{ name: "Shell Scripting", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gnubash.svg" },
+				{ name: "Verilog", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/xilinx.svg" }
 			]
 		},
 		{
 			title: "Web Technologies",
 			skills: [
-				{ name: "HTML/CSS", percentage: 95, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/html5.svg" },
-				{ name: "JavaScript", percentage: 90, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/javascript.svg" },
-				{ name: "Angular", percentage: 85, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/angular.svg" },
-				{ name: "React", percentage: 92, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/react.svg" },
-				{ name: "Node.js", percentage: 88, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/nodedotjs.svg" },
-				{ name: "Express.js", percentage: 90, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/express.svg" },
-				{ name: "Flask", percentage: 92, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/flask.svg" }
+				{ name: "HTML", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/html5.svg" },
+				{ name: "CSS", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/css3.svg" },
+				{ name: "JavaScript", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/javascript.svg" },
+				{ name: "Angular", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/angular.svg" },
+				{ name: "React", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/react.svg" },
+				{ name: "Node.js", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/nodedotjs.svg" },
+				{ name: "Express.js", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/express.svg" },
+				{ name: "Flask", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/flask.svg" },
+				{ name: "Bootstrap", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/bootstrap.svg" },
+				{ name: "jQuery", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/jquery.svg" },
+				{ name: "Ajax", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/javascript.svg" }
 			]
 		},
 		{
 			title: "DataBases",
 			skills: [
-				{ name: "MySQL", percentage: 88, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mysql.svg" },
-				{ name: "MariaDB", percentage: 85, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mariadb.svg" },
-				{ name: "Cassandra", percentage: 85, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/apachecassandra.svg" },
-				{ name: "MongoDB", percentage: 85, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mongodb.svg" },
-				{ name: "PostgreSQL", percentage: 82, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/postgresql.svg" },
-				{ name: "Redis", percentage: 75, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/redis.svg" },
-				{ name: "GraphQL", percentage: 78, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/graphql.svg" }
+				{ name: "SQL", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mysql.svg" },
+				{ name: "MySQL", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mysql.svg" },
+				{ name: "MariaDB", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mariadb.svg" },
+				{ name: "Cassandra", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/apachecassandra.svg" },
+				{ name: "MongoDB", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mongodb.svg" },
+				{ name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/postgresql.svg" },
+				{ name: "Redis", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/redis.svg" },
+				{ name: "GraphQL", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/graphql.svg" }
 			]
 		},
-		// {
-		// 	title: "AI/ML & Data Science",
-		// 	skills: [
-		// 		{ name: "Neural Networks", percentage: 90, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tensorflow.svg" },
-		// 		{ name: "OpenCV", percentage: 88, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/opencv.svg" },
-		// 		{ name: "YOLO", percentage: 85, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/pytorch.svg" },
-		// 		{ name: "Machine Learning", percentage: 87, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/scikitlearn.svg" },
-		// 		{ name: "Genetic Algorithms", percentage: 92, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/dna.svg" }
-		// 	]
-		// },
+		{
+			title: "AI/ML & Data Science",
+			skills: [
+				{ name: "Neural Networks", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tensorflow.svg" },
+				{ name: "Machine Learning", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/scikitlearn.svg" },
+				{ name: "Deep Learning", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/pytorch.svg" },
+				{ name: "OpenCV", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/opencv.svg" },
+				{ name: "YOLO3", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/pytorch.svg" },
+				{ name: "Computer Vision", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/opencv.svg" },
+				{ name: "Object Detection", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tensorflow.svg" },
+				{ name: "Image Processing", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/opencv.svg" },
+				{ name: "Genetic Algorithms", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/dna.svg" }
+			]
+		},
 		{
 			title: "Tools & Technologies",
 			skills: [
-				{ name: "Git/GitHub", percentage: 95, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/git.svg" },
-				{ name: "Docker", percentage: 80, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg" },
-				{ name: "Linux", percentage: 90, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linux.svg" },
-				{ name: "Arduino", percentage: 85, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/arduino.svg" },
-				{ name: "Figma", percentage: 82, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/figma.svg" },
-				{ name: "Adobe XD", percentage: 80, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/adobexd.svg" }
+				{ name: "Git", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/git.svg" },
+				{ name: "GitHub", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" },
+				{ name: "Docker", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg" },
+				{ name: "Linux", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linux.svg" },
+				{ name: "Arduino", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/arduino.svg" },
+				{ name: "Figma", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/figma.svg" },
+				{ name: "Adobe XD", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/adobexd.svg" }
 			]
 		},
 		{
 			title: "Software Engineering",
 			skills: [
-				{ name: "Data Structures", percentage: 95, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/datadog.svg" },
-				{ name: "Algorithms", percentage: 93, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/algorithm.svg" },
-				{ name: "SocketProgramming", percentage: 88, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/socketdotio.svg" },
-				{ name: "Multi-threading", percentage: 87, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/cplusplus.svg" },
-				{ name: "Object-Oriented Programming", percentage: 95, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/codeigniter.svg" },
-				{ name: "Software Design Patterns", percentage: 88, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/blueprint.svg" },
-				{ name: "System Architecture", percentage: 85, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/diagramsdotnet.svg" },
-				{ name: "API Design", percentage: 90, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/swagger.svg" },
-				{ name: "Database Design", percentage: 88, icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/databricks.svg" }
+				{ name: "Data Structures", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/datadog.svg" },
+				{ name: "Algorithms", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/algorithm.svg" },
+				{ name: "Socket Programming", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/socketdotio.svg" },
+				{ name: "Multithreading", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/cplusplus.svg" },
+				{ name: "Object-Oriented Programming", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/codeigniter.svg" },
+				{ name: "Software Design Patterns", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/blueprint.svg" },
+				{ name: "System Architecture", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/diagramsdotnet.svg" },
+				{ name: "API Design", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/swagger.svg" },
+				{ name: "Network Programming", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/socketdotio.svg" },
+				{ name: "Concurrent Programming", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/cplusplus.svg" },
+				{ name: "Web Server", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/nginx.svg" }
 			]
-		}
+		},
 	],
 	PROJECTS: [
 		{
@@ -140,6 +152,7 @@ export const PERSONAL_INFO = {
 				"Usage of Genetic Algorithms, Genomes, brings it closer to the reality lead to realistic simulation.",
 				"Simulator includes Self‑Replication, Inheritance, Mutation, Natural Selection, Survival of the Fittest concepts of Evolution.",
 			],
+			skills: ["C++", "Neural Networks", "Genetic Algorithms", "Object-Oriented Programming", "Data Structures", "Algorithms"],
 			link: "https://github.com/ArindamSharma/evolution-using-selection",
 			images: [
 				"https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400",
@@ -156,6 +169,7 @@ export const PERSONAL_INFO = {
 				"A Python application for managing passwords and sensitive information securely using vaults. Users can create and manage multiple secure containers/items for credentials and sensitive data, and edit individual items. Includes a built-in Password Generator for strong, random passwords.",
 				"Ongoing development: While the graphical user interface (GUI) is currently under development, the Command-line Interface (CLI) is fully functional and continuously enhanced.",
 			],
+			skills: ["Python", "GUI Development", "CLI Development", "File Handling", "Cryptography", "Object-Oriented Programming"],
 			link: "https://github.com/ArindamSharma/password_manager/tree/master/v3",
 			images: [
 				"https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=400",
@@ -170,6 +184,7 @@ export const PERSONAL_INFO = {
 				"A new version of our college Placement website with a new platform, website design, and interface.",
 				"Skills: JavaScript, HTML, CSS. Packages Used: Express.js, Node.js, Bootstrap.",
 			],
+			skills: ["JavaScript", "HTML", "CSS", "Express.js", "Node.js", "Bootstrap", "Web Development", "Frontend Design"],
 			link: "https://placements.iiitdm.ac.in",
 			images: [
 				"https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=400",
@@ -186,6 +201,7 @@ export const PERSONAL_INFO = {
 				"File Explorer Interface design, built as a part of Human-Computer Interaction Course.",
 				"Platform: Figma, Adobe XD.",
 			],
+			skills: ["Figma", "Adobe XD", "UI/UX Design", "Interface Design", "Human-Computer Interaction", "Prototyping"],
 			link: "https://figma.com/file/yIWU5lGhFELTISPypelHMF/Hakuna-Matata?node-id=658%3A2379",
 			images: [
 				"https://i.pravatar.cc/300?img=12",
@@ -202,6 +218,7 @@ export const PERSONAL_INFO = {
 				"Used to test OpenGL functionalities.",
 				"Skills: C/C++. Packages Used: OpenGL.",
 			],
+			skills: ["C", "C++", "OpenGL", "Graphics Programming", "3D Rendering", "Computer Graphics"],
 			link: "https://github.com/ArindamSharma/openGl-project-0",
 			images: [
 				"https://i.pravatar.cc/300?img=17",
@@ -218,6 +235,7 @@ export const PERSONAL_INFO = {
 				"Detection of waste such as plastic bottles, plastic bags from real-time images captured by a beach cleaner Bot.",
 				"Skills: Shell Scripting, Python, OpenCV.",
 			],
+			skills: ["Python", "OpenCV", "YOLO3", "Darknet", "Computer Vision", "Object Detection", "Image Processing", "Shell Scripting"],
 			link: "https://github.com/ArindamSharma/Image-Processing",
 			images: [
 				"https://i.pravatar.cc/300?img=22",
@@ -234,6 +252,7 @@ export const PERSONAL_INFO = {
 				"Machine learning program used to learn MNIST data, built from scratch.",
 				"Skills: C/C++, Python.",
 			],
+			skills: ["Python", "C", "C++", "Machine Learning", "Neural Networks", "MNIST", "Deep Learning", "Algorithm Implementation"],
 			link: "https://github.com/ArindamSharma/neural-network-1",
 			images: [
 				"https://i.pravatar.cc/300?img=27",
@@ -251,6 +270,7 @@ export const PERSONAL_INFO = {
 				"Using multithreading, it can run multiple requests simultaneously.",
 				"Skills: C, Java, Multi-threading, Socket Programming.",
 			],
+			skills: ["C", "Java", "Socket Programming", "Multithreading", "Web Server", "Network Programming", "Concurrent Programming"],
 			link: "https://github.com/ArindamSharma/Webserver",
 			images: [
 				"https://i.pravatar.cc/300?img=32",
@@ -267,6 +287,7 @@ export const PERSONAL_INFO = {
 				"This Algorithm is used with Verilog (HDL). It is used to simulate the behavior of actual Hardware like logic gates, adders, multipliers, and Multiplier-Accumulator (MAC). It uses file handling python support for handling/executing Verilog file.",
 				"Skills Used: Python, Verilog.",
 			],
+			skills: ["Python", "Verilog", "VLSI Design", "Hardware Description Language", "Digital Signal Processing", "Linear Discriminant Analysis", "Hardware Simulation"],
 			link: "https://github.com/ArindamSharma/VLSI-Project-Linear-Discriminant-Analysis-LDA",
 			images: [
 				"https://i.pravatar.cc/300?img=37",
@@ -285,6 +306,7 @@ export const PERSONAL_INFO = {
 				"Skills Used: Arduino, C Basic.",
 				"Achieved first position in the competition.",
 			],
+			skills: ["Arduino", "C", "Robotics", "Autonomous Systems", "Hardware Programming", "Embedded Systems", "Competition Design"],
 			images: [
 				"https://i.pravatar.cc/300?img=42",
 				"https://i.pravatar.cc/300?img=43",
@@ -300,6 +322,7 @@ export const PERSONAL_INFO = {
 				"The Management Section such as Medicine, Patient Receipt Generator, Patient Room Allotment, Appointment Management, Doctor Entry Record, etc.",
 				"Skills Used: Python, SQL, HTML, CSS. Packages Used: Flask Framework, jQuery, Ajax.",
 			],
+			skills: ["Python", "Flask", "SQL", "HTML", "CSS", "jQuery", "Ajax", "Database Management", "Web Development", "Healthcare Software"],
 			images: [
 				"https://i.pravatar.cc/300?img=47",
 				"https://i.pravatar.cc/300?img=48",
@@ -319,6 +342,7 @@ export const PERSONAL_INFO = {
 				"Architected scalable web applications and mentored junior engineers.",
 				"Collaborated with cross-functional teams to deliver high-quality products.",
 			],
+			skills: ["React", "TypeScript", "JavaScript", "Node.js", "Team Leadership", "Mentoring", "System Architecture", "Agile Development", "Code Review"],
 			images: [
 				"https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400",
 				"https://images.unsplash.com/photo-1497366216548-37526070297c?w=400",
@@ -335,6 +359,7 @@ export const PERSONAL_INFO = {
 				"Developed RESTful APIs and integrated third-party services.",
 				"Worked on cloud deployments and CI/CD pipelines.",
 			],
+			skills: ["REST APIs", "API Integration", "Cloud Computing", "CI/CD", "DevOps", "Backend Development", "Third-party Services", "Deployment Automation"],
 			images: [
 				"https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400",
 				"https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400",
