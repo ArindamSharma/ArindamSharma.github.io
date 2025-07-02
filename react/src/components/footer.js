@@ -1,30 +1,14 @@
 import React from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import "./footer.css";
 import { PERSONAL_INFO } from "../constants";
 
 // Footer Component
 function Footer() {
     const location = useLocation();
-    const navigate = useNavigate();
     
     // Check if we're on the main page or sub-pages
     const isMainPage = location.pathname === '/';
-    
-    // Navigation functions
-    const scrollToSection = (sectionId) => {
-        if (isMainPage) {
-            // If on main page, scroll to section
-            document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
-        } else {
-            // If on sub-page, navigate to main page with hash
-            navigate(`/#${sectionId}`);
-        }
-    };
-
-    const goHome = () => {
-        navigate('/');
-    };
 
     return (
         <footer className="footer">
@@ -50,28 +34,28 @@ function Footer() {
                     <h4 className="footer-column-title">Navigate</h4>
                     <div className="footer-nav-links">
                         {!isMainPage && (
-                            <button onClick={goHome} className="footer-nav-link">
+                            <a href="/" className="footer-nav-link">
                                 Home
-                            </button>
+                            </a>
                         )}
-                        <button onClick={() => scrollToSection('about')} className="footer-nav-link">
+                        <a href="/#about" className="footer-nav-link">
                             About
-                        </button>
-                        <button onClick={() => scrollToSection('skills')} className="footer-nav-link">
+                        </a>
+                        <a href="/#skills" className="footer-nav-link">
                             Skills
-                        </button>
-                        <button onClick={() => scrollToSection('projects')} className="footer-nav-link">
+                        </a>
+                        <a href="/projects" className="footer-nav-link">
                             Projects
-                        </button>
-                        <button onClick={() => scrollToSection('experience')} className="footer-nav-link">
+                        </a>
+                        <a href="/#experience" className="footer-nav-link">
                             Experience
-                        </button>
-                        <button onClick={() => scrollToSection('achievements')} className="footer-nav-link">
+                        </a>
+                        <a href="/#achievements" className="footer-nav-link">
                             Achievements
-                        </button>
-                        <button onClick={() => scrollToSection('hire')} className="footer-nav-link">
+                        </a>
+                        <a href="/#hire" className="footer-nav-link">
                             Contact
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

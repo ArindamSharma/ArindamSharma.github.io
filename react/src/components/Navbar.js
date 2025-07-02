@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import "./Navbar.css";
 import { PERSONAL_INFO } from "../constants";
 
@@ -6,6 +7,7 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('about');
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -51,42 +53,32 @@ function Navbar() {
     };
   }, []);
 
-  const scrollToSection = (sectionId) => {
-    setActiveSection(sectionId);
-    // Update URL hash
-    window.history.pushState(null, null, `#${sectionId}`);
-    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
-  };
-
-  const handleHireMe = () => {
-    if (PERSONAL_INFO.resumeLink && PERSONAL_INFO.resumeLink !== "#") {
-      window.open(PERSONAL_INFO.resumeLink, '_blank');
-    }
-  };
-
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
-        <div className="navbar-brand" onClick={() => scrollToSection('about')}>
+        <a href="/#about" className="navbar-brand">
           <span className="brand-name">Arindam</span>
           <span className="brand-accent">Sharma</span>
-        </div>
+        </a>
         <div className="navbar-menu">
-          <button className={`nav-link ${activeSection === 'about' ? 'active' : ''}`} onClick={() => scrollToSection('about')}>
+          <a href="/#about" className={`nav-link ${activeSection === 'about' ? 'active' : ''}`}>
             <span className="nav-text">About</span>
-          </button>
-          <button className={`nav-link ${activeSection === 'skills' ? 'active' : ''}`} onClick={() => scrollToSection('skills')}>
+          </a>
+          <a href="/#skills" className={`nav-link ${activeSection === 'skills' ? 'active' : ''}`}>
             <span className="nav-text">Skills</span>
-          </button>
-          <button className={`nav-link ${activeSection === 'projects' ? 'active' : ''}`} onClick={() => scrollToSection('projects')}>
+          </a>
+          <a href="/#projects" className={`nav-link ${location.pathname === 'projects' ? 'active' : ''}`}>
             <span className="nav-text">Projects</span>
-          </button>
-          <button className={`nav-link ${activeSection === 'experience' ? 'active' : ''}`} onClick={() => scrollToSection('experience')}>
+          </a>
+          <a href="/#experience" className={`nav-link ${activeSection === 'experience' ? 'active' : ''}`}>
             <span className="nav-text">Experience</span>
-          </button>
-          <button className="nav-link hire-btn" onClick={handleHireMe}>
+          </a>
+          <a href={PERSONAL_INFO.resumeLink && PERSONAL_INFO.resumeLink !== "#" ? PERSONAL_INFO.resumeLink : "#"} 
+             target={PERSONAL_INFO.resumeLink && PERSONAL_INFO.resumeLink !== "#" ? "_blank" : "_self"}
+             rel={PERSONAL_INFO.resumeLink && PERSONAL_INFO.resumeLink !== "#" ? "noreferrer" : undefined}
+             className="nav-link hire-btn">
             <span className="nav-text">💼 Hire Me</span>
-          </button>
+          </a>
         </div>
         <button className={`hamburger ${menuOpen ? 'active' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
           <span></span>
@@ -102,26 +94,29 @@ function Navbar() {
             </button>
           </div>
           <div className="mobile-menu-items">
-            <button className={`mobile-nav-link ${activeSection === 'about' ? 'active' : ''}`} onClick={() => { setMenuOpen(false); scrollToSection('about'); }}>
+            <a href="/#about" className={`mobile-nav-link ${activeSection === 'about' ? 'active' : ''}`} onClick={() => setMenuOpen(false)}>
               <span className="mobile-nav-icon">👤</span>
               <span className="mobile-nav-text">About</span>
-            </button>
-            <button className={`mobile-nav-link ${activeSection === 'skills' ? 'active' : ''}`} onClick={() => { setMenuOpen(false); scrollToSection('skills'); }}>
+            </a>
+            <a href="/#skills" className={`mobile-nav-link ${activeSection === 'skills' ? 'active' : ''}`} onClick={() => setMenuOpen(false)}>
               <span className="mobile-nav-icon">⚡</span>
               <span className="mobile-nav-text">Skills</span>
-            </button>
-            <button className={`mobile-nav-link ${activeSection === 'projects' ? 'active' : ''}`} onClick={() => { setMenuOpen(false); scrollToSection('projects'); }}>
+            </a>
+            <a href="/projects" className={`mobile-nav-link ${location.pathname === '/projects' ? 'active' : ''}`} onClick={() => setMenuOpen(false)}>
               <span className="mobile-nav-icon">🚀</span>
               <span className="mobile-nav-text">Projects</span>
-            </button>
-            <button className={`mobile-nav-link ${activeSection === 'experience' ? 'active' : ''}`} onClick={() => { setMenuOpen(false); scrollToSection('experience'); }}>
+            </a>
+            <a href="/#experience" className={`mobile-nav-link ${activeSection === 'experience' ? 'active' : ''}`} onClick={() => setMenuOpen(false)}>
               <span className="mobile-nav-icon">🎯</span>
               <span className="mobile-nav-text">Experience</span>
-            </button>
-            <button className="mobile-nav-link hire-btn-mobile" onClick={() => { setMenuOpen(false); handleHireMe(); }}>
+            </a>
+            <a href={PERSONAL_INFO.resumeLink && PERSONAL_INFO.resumeLink !== "#" ? PERSONAL_INFO.resumeLink : "#"}
+               target={PERSONAL_INFO.resumeLink && PERSONAL_INFO.resumeLink !== "#" ? "_blank" : "_self"}
+               rel={PERSONAL_INFO.resumeLink && PERSONAL_INFO.resumeLink !== "#" ? "noreferrer" : undefined}
+               className="mobile-nav-link hire-btn-mobile" onClick={() => setMenuOpen(false)}>
               <span className="mobile-nav-icon">💼</span>
               <span className="mobile-nav-text">Hire Me</span>
-            </button>
+            </a>
           </div>
         </div>
       )}

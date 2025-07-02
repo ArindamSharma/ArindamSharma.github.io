@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/footer";
 import { PERSONAL_INFO } from "../constants";
@@ -9,7 +9,6 @@ import ImageRotator from "../components/ImageRotator";
 
 function ProjectDetail() {
   const { id } = useParams();
-  const navigate = useNavigate();
   const project = PERSONAL_INFO.PROJECTS[parseInt(id, 10)];
 
   if (!project) {
@@ -21,10 +20,10 @@ function ProjectDetail() {
             <div className="projectdetail-not-found">
               <h2 className="section-title">Project Not Found</h2>
               <p className="section-description">The project you're looking for doesn't exist.</p>
-              <button onClick={() => navigate(-1)} className="back-btn">
+              <a href="/projects" className="back-btn">
                 <span className="back-icon">←</span>
                 <span className="back-text">Go Back</span>
-              </button>
+              </a>
             </div>
           </div>
         </section>
@@ -44,10 +43,10 @@ function ProjectDetail() {
       <section className="projectdetail-section" id="project-detail">
         <div className="container">
           {/* Back Button */}
-          <button onClick={() => navigate(-1)} className="back-btn">
+          <a href="/projects" className="back-btn">
             <span className="back-icon">←</span>
             <span className="back-text">Back</span>
-          </button>
+          </a>
           
           <div className="projectdetail-header">
             <h1 className="section-title">{project.title}</h1>

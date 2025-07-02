@@ -21,10 +21,10 @@ function ProjectsList() {
       <section className="projects-list-section" id="projects-list">
         <div className="container">
           {/* Back Button */}
-          <button onClick={() => window.history.back()} className="back-btn">
+          <a href="/" className="back-btn">
             <span className="back-icon">←</span>
             <span className="back-text">Back</span>
-          </button>
+          </a>
           
           <div className="projects-list-header">
             <h2 className="section-title">All Projects</h2>
