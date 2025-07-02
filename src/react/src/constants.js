@@ -3,20 +3,18 @@ export const PERSONAL_INFO = {
 	name: "Arindam Sharma",
 	about: "Passionate about crafting seamless digital experiences with clean, efficient code. I thrive on solving complex problems, embracing new technologies, and turning ideas into impactful solutions that make a difference.",
 	title: [
-		"Software Engineer",
+		"Software Developer",
 		"Tech Innovator",
 		"Problem Solver",
 		"Code Architect",
-		"Digital Creator",
+		"Creator",
+		"Absloute Learner",
 		"AI/ML Enthusiast",
-		"Data Scientist",
-		"Machine Learning Engineer",
-		"Web Developer"
 	],
 	location: "India",
 	experience: "3+ Years",
 	profileImage: "./img/1732601951208.jpg",
-	resumeLink: "#",
+	resumeLink: "/Arindam_Sharma_Resume_6.4.2.pdf",
 	CONTACT_INFO: {
 		email: "arindamsharma1998@gmail.com",
 		phone: "+91 12345 67890",
@@ -515,17 +513,17 @@ export const PERSONAL_INFO = {
 			description: "Successfully delivered projects ranging from web applications to AI simulations"
 		},
 		{
-			number: "4+",
-			label: "Years Experience",
+			number: "3+",
+			label: "Years Total Experience",
 			description: "Professional experience in software development and engineering"
 		},
+		// {
+		// 	number: "8+",
+		// 	label: "Achievement Categories",
+		// 	description: "Recognized excellence across academics, competitions, and professional work"
+		// },
 		{
-			number: "8+",
-			label: "Achievement Categories",
-			description: "Recognized excellence across academics, competitions, and professional work"
-		},
-		{
-			number: "40+",
+			number: "20+",
 			label: "Technologies Mastered",
 			description: "Proficient in diverse programming languages, frameworks, and tools"
 		},
@@ -557,32 +555,32 @@ export const PERSONAL_INFO = {
 				"https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400"
 			]
 		},
-		{
-			id: 3,
-			title: "Dean's List for Academic Excellence",
-			year: "2018-2022",
-			description: "Maintained CGPA of 8.5/10 throughout Computer Science degree program",
-			category: "Academic",
-			iconColor: "#c0c0c0",
-			icon: "award",
-			images: [
-				"https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400",
-				"https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=400"
-			]
-		},
-		{
-			id: 4,
-			title: "Winner of College Programming Contest 2021",
-			year: "2021",
-			description: "Secured first place in annual coding competition with innovative algorithmic solutions",
-			category: "Competition",
-			iconColor: "#3b82f6",
-			icon: "code",
-			images: [
-				"https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400",
-				"https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=400"
-			]
-		},
+		// {
+		// 	id: 3,
+		// 	title: "Dean's List for Academic Excellence",
+		// 	year: "2018-2022",
+		// 	description: "Maintained CGPA of 8.5/10 throughout Computer Science degree program",
+		// 	category: "Academic",
+		// 	iconColor: "#c0c0c0",
+		// 	icon: "award",
+		// 	images: [
+		// 		"https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400",
+		// 		"https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=400"
+		// 	]
+		// },
+		// {
+		// 	id: 4,
+		// 	title: "Winner of College Programming Contest 2021",
+		// 	year: "2021",
+		// 	description: "Secured first place in annual coding competition with innovative algorithmic solutions",
+		// 	category: "Competition",
+		// 	iconColor: "#3b82f6",
+		// 	icon: "code",
+		// 	images: [
+		// 		"https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400",
+		// 		"https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=400"
+		// 	]
+		// },
 		{
 			id: 5,
 			title: "Open Source Contributor",
@@ -596,44 +594,44 @@ export const PERSONAL_INFO = {
 				"https://images.unsplash.com/photo-1618477247222-acbdb0e159b3?w=400"
 			]
 		},
-		{
-			id: 6,
-			title: "Best Innovative Project Award",
-			year: "2021",
-			description: "Recognition for YOLO3-based waste detection system for beach cleaner bot implementation",
-			category: "Innovation",
-			iconColor: "#f59e0b",
-			icon: "lightbulb",
-			images: [
-				"https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400",
-				"https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400"
-			]
-		},
-		{
-			id: 7,
-			title: "Full Stack Development Proficiency",
-			year: "2019-Present",
-			description: "Mastered end-to-end development from frontend frameworks to backend APIs and database design",
-			category: "Technical",
-			iconColor: "#ef4444",
-			icon: "stack",
-			images: [
-				"https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400",
-				"https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=400"
-			]
-		},
-		{
-			id: 8,
-			title: "Machine Learning Certification",
-			year: "2020",
-			description: "Completed advanced machine learning course with specialization in neural networks and computer vision",
-			category: "Certification",
-			iconColor: "#8b5cf6",
-			icon: "brain",
-			images: [
-				"https://images.unsplash.com/photo-1527474305487-b87b222841cc?w=400",
-				"https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400"
-			]
-		},
+		// {
+		// 	id: 6,
+		// 	title: "Best Innovative Project Award",
+		// 	year: "2021",
+		// 	description: "Recognition for YOLO3-based waste detection system for beach cleaner bot implementation",
+		// 	category: "Innovation",
+		// 	iconColor: "#f59e0b",
+		// 	icon: "lightbulb",
+		// 	images: [
+		// 		"https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400",
+		// 		"https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400"
+		// 	]
+		// },
+		// {
+		// 	id: 7,
+		// 	title: "Full Stack Development Proficiency",
+		// 	year: "2019-Present",
+		// 	description: "Mastered end-to-end development from frontend frameworks to backend APIs and database design",
+		// 	category: "Technical",
+		// 	iconColor: "#ef4444",
+		// 	icon: "stack",
+		// 	images: [
+		// 		"https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400",
+		// 		"https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=400"
+		// 	]
+		// },
+		// {
+		// 	id: 8,
+		// 	title: "Machine Learning Certification",
+		// 	year: "2020",
+		// 	description: "Completed advanced machine learning course with specialization in neural networks and computer vision",
+		// 	category: "Certification",
+		// 	iconColor: "#8b5cf6",
+		// 	icon: "brain",
+		// 	images: [
+		// 		"https://images.unsplash.com/photo-1527474305487-b87b222841cc?w=400",
+		// 		"https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400"
+		// 	]
+		// },
 	],
 };

@@ -55,8 +55,8 @@ Desktop.ini
 # Optional REACT_APP_ env files
 .env.*.local
 
-# Misc
-*.pdf
+# # Misc
+# *.pdf
 
 # Mac system files
 *.DS_Store

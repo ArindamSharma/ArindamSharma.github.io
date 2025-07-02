@@ -4,7 +4,7 @@ import { PERSONAL_INFO } from "../../constants";
 
 function HireSection() {
   return (
-    <section className="hire-section section" id="contact">
+    <section className="hire-section section" id="hire">
       <div className="container">
         <h2 className="section-title">Let's Work Together</h2>
         <p className="hire-subtitle">

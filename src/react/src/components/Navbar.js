@@ -77,7 +77,7 @@ function Navbar() {
              target={PERSONAL_INFO.resumeLink && PERSONAL_INFO.resumeLink !== "#" ? "_blank" : "_self"}
              rel={PERSONAL_INFO.resumeLink && PERSONAL_INFO.resumeLink !== "#" ? "noreferrer" : undefined}
              className="nav-link hire-btn">
-            <span className="nav-text">💼 Hire Me</span>
+            <span className="nav-text">View Resume</span>
           </a>
         </div>
         <button className={`hamburger ${menuOpen ? 'active' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
@@ -102,7 +102,7 @@ function Navbar() {
               <span className="mobile-nav-icon">⚡</span>
               <span className="mobile-nav-text">Skills</span>
             </a>
-            <a href="/projects" className={`mobile-nav-link ${location.pathname === '/projects' ? 'active' : ''}`} onClick={() => setMenuOpen(false)}>
+            <a href="/#projects" className={`mobile-nav-link ${location.pathname === 'projects' ? 'active' : ''}`} onClick={() => setMenuOpen(false)}>
               <span className="mobile-nav-icon">🚀</span>
               <span className="mobile-nav-text">Projects</span>
             </a>
