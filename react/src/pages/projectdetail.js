@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/footer";
 import { PERSONAL_INFO } from "../constants";
 import "./home.css";
+import "./projectdetail.css";
 import ImageRotator from "../components/ImageRotator";
 
 function ProjectDetail() {
@@ -13,11 +14,19 @@ function ProjectDetail() {
 
   if (!project) {
     return (
-      <div className="container">
+      <div className="projectdetail-container">
         <Navbar />
-        <section className="projects-section">
-          <h2>Project Not Found</h2>
-          <button onClick={() => navigate(-1)} className="about-hire-btn">Go Back</button>
+        <section className="projectdetail-section">
+          <div className="container">
+            <div className="projectdetail-not-found">
+              <h2 className="section-title">Project Not Found</h2>
+              <p className="section-description">The project you're looking for doesn't exist.</p>
+              <button onClick={() => navigate(-1)} className="back-btn">
+                <span className="back-icon">←</span>
+                <span className="back-text">Go Back</span>
+              </button>
+            </div>
+          </div>
         </section>
         <Footer />
       </div>
@@ -30,29 +39,50 @@ function ProjectDetail() {
   ];
 
   return (
-    <div className="container">
+    <div className="projectdetail-container">
       <Navbar />
       <section className="projectdetail-section" id="project-detail">
-        {/* Back Button */}
-        <button onClick={() => navigate(-1)} className="projectdetail-back-btn about-hire-btn">
-          ← Back
-        </button>
-        <h2 className="projectdetail-title">{project.title}</h2>
-        {project.duration && (
-          <div className="projectdetail-duration">{project.duration}</div>
-        )}
-        {/* Rotating image component */}
-        <div className="projectdetail-slider">
-          <ImageRotator images={images} interval={1000} alt={project.title} />
-        </div>
-        {/* Description as paragraphs */}
-        <div className="projectdetail-description">
-          {project.description.map((d, i) => <p key={i} className="projectdetail-desc-para">{d}</p>)}
-        </div>
-        {/* Links as buttons */}
-        <div className="projectdetail-links">
-          {project.link && <a href={project.link} target="_blank" rel="noopener noreferrer" className="projectdetail-link projectdetail-btn">GitHub</a>}
-          {project.demo && <a href={project.demo} target="_blank" rel="noopener noreferrer" className="projectdetail-link projectdetail-btn">Live Demo</a>}
+        <div className="container">
+          {/* Back Button */}
+          <button onClick={() => navigate(-1)} className="back-btn">
+            <span className="back-icon">←</span>
+            <span className="back-text">Back</span>
+          </button>
+          
+          <div className="projectdetail-header">
+            <h1 className="section-title">{project.title}</h1>
+            {project.duration && (
+              <div className="projectdetail-duration">{project.duration}</div>
+            )}
+          </div>
+          
+          {/* Rotating image component */}
+          <div className="projectdetail-slider">
+            <ImageRotator images={images} interval={1000} alt={project.title} />
+          </div>
+          
+          {/* Description as paragraphs */}
+          <div className="projectdetail-description">
+            {project.description.map((d, i) => (
+              <p key={i} className="projectdetail-desc-para">{d}</p>
+            ))}
+          </div>
+          
+          {/* Links as buttons */}
+          <div className="projectdetail-links">
+            {project.link && (
+              <a href={project.link} target="_blank" rel="noopener noreferrer" className="projectdetail-link">
+                <span className="link-icon">🔗</span>
+                <span className="link-text">GitHub</span>
+              </a>
+            )}
+            {project.demo && (
+              <a href={project.demo} target="_blank" rel="noopener noreferrer" className="projectdetail-link">
+                <span className="link-icon">🚀</span>
+                <span className="link-text">Live Demo</span>
+              </a>
+            )}
+          </div>
         </div>
       </section>
       <Footer />
