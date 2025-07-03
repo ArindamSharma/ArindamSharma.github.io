@@ -88,9 +88,9 @@ function Navbar() {
           <span className="brand-accent">Sharma</span>
         </button>
         <div className="navbar-menu">
-          <button onClick={() => scrollToSection('about')} className={`nav-link ${activeSection === 'about' ? 'active' : ''}`}>
+          {/* <button onClick={() => scrollToSection('about')} className={`nav-link ${activeSection === 'about' ? 'active' : ''}`}>
             <span className="nav-text">About</span>
-          </button>
+          </button> */}
           <button onClick={() => scrollToSection('projects')} className={`nav-link ${activeSection === 'projects' ? 'active' : ''}`}>
             <span className="nav-text">Projects</span>
           </button>

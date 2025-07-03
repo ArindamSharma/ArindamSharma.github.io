@@ -28,7 +28,7 @@ const Skills = () => {
     [...PERSONAL_INFO.PROJECTS, ...PERSONAL_INFO.EXPERIENCES].forEach(item => {
       if (item.skills) {
         item.skills.forEach(skill => {
-          const normalizedSkill = normalizeSkillName(skill);
+          const normalizedSkill = normalizeSkillName(skill.name);
           skillCounts.set(normalizedSkill, (skillCounts.get(normalizedSkill) || 0) + 1);
         });
       }

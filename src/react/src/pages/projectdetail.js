@@ -61,7 +61,7 @@ function ProjectDetail({ projectId,navigateToHome, navigateToProjects ,navigateT
             <div className="projectdetail-hero-overlay">
               <div className="projectdetail-quick-stats">
                 <div className="projectdetail-stat">
-                  <span className="projectdetail-stat-label">Technologies</span>
+                  <span className="projectdetail-stat-label">Skills & Tech</span>
                   <span className="projectdetail-stat-value">{project.skills ? project.skills.length : 0}</span>
                 </div>
                 {project.duration && (
@@ -70,7 +70,7 @@ function ProjectDetail({ projectId,navigateToHome, navigateToProjects ,navigateT
                     <span className="projectdetail-stat-value">{project.duration}</span>
                   </div>
                 )}
-                {project.links && (
+                {project.links && project.links.length > 0 && (
                   <div className="projectdetail-stat">
                     <span className="projectdetail-stat-label">Links</span>
                     <span className="projectdetail-stat-value">{project.links.length}</span>
@@ -107,7 +107,7 @@ function ProjectDetail({ projectId,navigateToHome, navigateToProjects ,navigateT
                   <div className="projectdetail-skills">
                     {project.skills.map((skill, index) => (
                       <span key={index} className="projectdetail-skill-tag">
-                        {skill}
+                        {skill.name}
                       </span>
                     ))}
                   </div>

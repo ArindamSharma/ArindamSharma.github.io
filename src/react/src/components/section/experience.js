@@ -252,7 +252,7 @@ const ExperienceSection = () => {
                     <h5 className="tech-title">Technologies:</h5>
                     <div className="tech-tags">
                       {exp.technologies.map((tech, idx) => (
-                        <span key={idx} className="tech-tag">{tech}</span>
+                        <span key={idx} className="tech-tag">{tech.name}</span>
                       ))}
                     </div>
                   </div>

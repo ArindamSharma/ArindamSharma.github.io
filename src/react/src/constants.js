@@ -1,6 +1,279 @@
+export const SKILLS = {
+	python: {
+		name: "Python",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg"
+	},
+	cpp: {
+		name: "C++",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/cplusplus.svg"
+	},
+	c: {
+		name: "C",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/c.svg"
+	},
+	csharp: {
+		name: "C#",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/csharp.svg"
+	},
+	java: {
+		name: "Java",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/java.svg"
+	},
+	shellScripting: {
+		name: "Shell Scripting",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gnubash.svg"
+	},
+	verilog: {
+		name: "Verilog",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/xilinx.svg"
+	},
+	htmlcss: {
+		name: "HTML/CSS",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/html5.svg"
+	},
+	javascript: {
+		name: "JavaScript",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/javascript.svg"
+	},
+	angular: {
+		name: "Angular",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/angular.svg"
+	},
+	react: {
+		name: "React",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/react.svg"
+	},
+	nodejs: {
+		name: "Node.js",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/nodedotjs.svg"
+	},
+	expressjs: {
+		name: "Express.js",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/express.svg"
+	},
+	flask: {
+		name: "Flask",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/flask.svg"
+	},
+	bootstrap: {
+		name: "Bootstrap",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/bootstrap.svg"
+	},
+	jquery: {
+		name: "jQuery",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/jquery.svg"
+	},
+	ajax: {
+		name: "Ajax",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/javascript.svg"
+	},
+	mysql: {
+		name: "MySQL",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mysql.svg"
+	},
+	mariadb: {
+		name: "MariaDB",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mariadb.svg"
+	},
+	cassandra: {
+		name: "Cassandra",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/apachecassandra.svg"
+	},
+	mongodb: {
+		name: "MongoDB",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mongodb.svg"
+	},
+	postgresql: {
+		name: "PostgreSQL",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/postgresql.svg"
+	},
+	redis: {
+		name: "Redis",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/redis.svg"
+	},
+	graphql: {
+		name: "GraphQL",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/graphql.svg"
+	},
+	opencv: {
+		name: "OpenCV",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/opencv.svg"
+	},
+	opengl: {
+		name: "OpenGL",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/opengl.svg"
+	},
+	yolo3od: {
+		name: "YOLO3 Object Detection",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/pytorch.svg"
+	},
+	darknetFramework: {
+		name: "Darknet Framework",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/pytorch.svg"
+	},
+	robotics: {
+		name: "Robotics",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/arduino.svg"
+	},
+	dotnet: {
+		name: ".NET",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/dotnet.svg"
+	},
+	windowsRegistry: {
+		name: "Windows Registry",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/windows.svg"
+	},
+	rtc: {
+		name: "RTC Client",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/git.svg"
+	},
+	springBoot: {
+		name: "Spring Boot",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/springboot.svg"
+	},
+	maven: {
+		name: "Maven",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/apachemaven.svg"
+	},
+	restApi: {
+		name: "REST API",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/swagger.svg"
+	},
+	//Softwares
+	docker: {
+		name: "Docker",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg"
+	},
+	linux: {
+		name: "Linux",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linux.svg"
+	},
+	arduino: {
+		name: "Arduino",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/arduino.svg"
+	},
+	figma: {
+		name: "Figma",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/figma.svg"
+	},
+	git: {
+		name: "Git",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/git.svg"
+	},
+	adobeXd: {
+		name: "Adobe XD",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/adobexd.svg"
+	},
+	// Technologies/Categories/Concepts
+	imageProcessing: {
+		name: "Image Processing",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/opencv.svg"
+	},
+	geneticAlgorithms: {
+		name: "Genetic Algorithms",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/dna.svg"
+	},
+	neuralNetworks: {
+		name: "Neural Networks",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tensorflow.svg"
+	},
+	machineLearning: {
+		name: "Machine Learning",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/scikitlearn.svg"
+	},
+	deepLearning: {
+		name: "Deep Learning",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/pytorch.svg"
+	},
+	computerVision: {
+		name: "Computer Vision",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/opencv.svg"
+	},
+	databaseManagement: {
+		name: "Database Management",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mysql.svg"
+	},
+	computerGraphics: {
+		name: "Computer Graphics",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/opengl.svg"
+	},
+	humanComputerInteraction: {
+		name: "Human-Computer Interaction",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/interaction.svg"
+	},
+	frontendDesign: {
+		name: "Frontend Design",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/react.svg"
+	},
+	backendDevelopment: {
+		name: "Backend Development",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/nodedotjs.svg"
+	},
+	webDevelopment: {
+		name: "Web Development",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/html5.svg"
+	},
+	fileHandling: {
+		name: "File Handling",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/files.svg"
+	},
+	cryptography: {
+		name: "Cryptography",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/letsencrypt.svg"
+	},
+	hardwareDescriptionLanguage: {
+		name: "Hardware Description Language",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/xilinx.svg"
+	},
+	hardwareSimulation: {
+		name: "Hardware Simulation",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/xilinx.svg"
+	},
+	socketProgramming: {
+		name: "Socket Programming",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/socketdotio.svg"
+	},
+	multithreading: {
+		name: "Multithreading",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/cplusplus.svg"
+	},
+	objectOrientedProgramming: {
+		name: "Object-Oriented Programming",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/codeigniter.svg"
+	},
+	softwareDesignPatterns: {
+		name: "Software Design Patterns",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/blueprint.svg"
+	},
+	systemArchitecture: {
+		name: "System Architecture",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/diagramsdotnet.svg"
+	},
+	concurrentProgramming: {
+		name: "Concurrent Programming",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/cplusplus.svg"
+	},
+	guiDevelopment: {
+		name: "GUI Development",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg"
+	},
+	cliDevelopment: {
+		name: "CLI Development",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gnubash.svg"
+	},
+	dataStructures: {
+		name: "Data Structures",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/datadog.svg"
+	},
+	algorithms: {
+		name: "Algorithms",
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/algorithm.svg"
+	},
+}
+
 // Personal Information
 export const PERSONAL_INFO = {
-	
+
 	name: "Arindam Sharma",
 	title: [
 		"Software Developer",
@@ -17,7 +290,6 @@ export const PERSONAL_INFO = {
 	resumeLink: "/resource/Arindam_Sharma_Resume_6.4.2.pdf",
 	CONTACT_INFO: {
 		email: "arindamsharma1998@gmail.com",
-		phone: "+91 12345 67890",
 		location: "India",
 		availability: "Available for freelance projects",
 	},
@@ -68,7 +340,7 @@ export const PERSONAL_INFO = {
 			icon: "https://topmate.io/cdn-cgi/image/width=640,quality=90/images/common/topmate-light.svg",
 		},
 	],
-	EDUCATION:[
+	EDUCATION: [
 		{
 			institution: "Indian Institute of Information Technology, Design and Manufacturing Kancheepuram",
 			degree: "Bachelor & Master of Technology (Dual Degree) in Computer Science and Engineering",
@@ -84,88 +356,80 @@ export const PERSONAL_INFO = {
 			],
 		}
 	],
-	SKILLS:[
+	SKILLS: [
 		{
 			title: "Programming Languages",
 			skills: [
-				{ name: "C++", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/cplusplus.svg" },
-				{ name: "C", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/c.svg" },
-				{ name: "Python", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg" },
-				{ name: "C#", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/csharp.svg" },
-				{ name: "Java", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/java.svg" },
-				{ name: "Shell Scripting", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gnubash.svg" },
-				{ name: "Verilog", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/xilinx.svg" }
+				SKILLS.cpp,
+				SKILLS.c,
+				SKILLS.python,
+				SKILLS.csharp,
+				SKILLS.java,
+				SKILLS.shellScripting,
+				SKILLS.verilog
 			]
 		},
 		{
 			title: "Web Technologies",
 			skills: [
-				{ name: "HTML", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/html5.svg" },
-				{ name: "CSS", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/css3.svg" },
-				{ name: "JavaScript", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/javascript.svg" },
-				{ name: "Angular", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/angular.svg" },
-				{ name: "React", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/react.svg" },
-				{ name: "Node.js", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/nodedotjs.svg" },
-				{ name: "Express.js", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/express.svg" },
-				{ name: "Flask", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/flask.svg" },
-				{ name: "Bootstrap", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/bootstrap.svg" },
-				{ name: "jQuery", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/jquery.svg" },
-				{ name: "Ajax", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/javascript.svg" }
+				SKILLS.htmlcss,
+				SKILLS.javascript,
+				SKILLS.angular,
+				SKILLS.react,
+				SKILLS.nodejs,
+				SKILLS.expressjs,
+				SKILLS.flask,
+				SKILLS.bootstrap,
+				SKILLS.jquery,
+				SKILLS.ajax
 			]
 		},
 		{
 			title: "DataBases",
 			skills: [
-				{ name: "SQL", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mysql.svg" },
-				{ name: "MySQL", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mysql.svg" },
-				{ name: "MariaDB", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mariadb.svg" },
-				{ name: "Cassandra", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/apachecassandra.svg" },
-				{ name: "MongoDB", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mongodb.svg" },
-				{ name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/postgresql.svg" },
-				{ name: "Redis", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/redis.svg" },
-				{ name: "GraphQL", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/graphql.svg" }
+				SKILLS.mysql,
+				SKILLS.mariadb,
+				SKILLS.cassandra,
+				SKILLS.mongodb,
+				SKILLS.postgresql,
+				SKILLS.redis,
+				SKILLS.graphql
 			]
 		},
 		{
 			title: "AI/ML & Data Science",
 			skills: [
-				{ name: "Neural Networks", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tensorflow.svg" },
-				{ name: "Machine Learning", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/scikitlearn.svg" },
-				{ name: "Deep Learning", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/pytorch.svg" },
-				{ name: "OpenCV", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/opencv.svg" },
-				{ name: "YOLO3", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/pytorch.svg" },
-				{ name: "Computer Vision", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/opencv.svg" },
-				{ name: "Object Detection", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tensorflow.svg" },
-				{ name: "Image Processing", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/opencv.svg" },
-				{ name: "Genetic Algorithms", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/dna.svg" }
+				SKILLS.neuralNetworks,
+				SKILLS.machineLearning,
+				SKILLS.deepLearning,
+				SKILLS.opencv,
+				SKILLS.yolo3od,
+				SKILLS.computerVision,
+				SKILLS.imageProcessing,
 			]
 		},
 		{
 			title: "Tools & Technologies",
 			skills: [
-				{ name: "Git", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/git.svg" },
-				{ name: "GitHub", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" },
-				{ name: "Docker", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg" },
-				{ name: "Linux", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linux.svg" },
-				{ name: "Arduino", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/arduino.svg" },
-				{ name: "Figma", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/figma.svg" },
-				{ name: "Adobe XD", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/adobexd.svg" }
+				SKILLS.git,
+				SKILLS.docker,
+				SKILLS.linux,
+				SKILLS.arduino,
+				SKILLS.figma,
+				SKILLS.adobeXd
 			]
 		},
 		{
 			title: "Software Engineering",
 			skills: [
-				{ name: "Data Structures", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/datadog.svg" },
-				{ name: "Algorithms", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/algorithm.svg" },
-				{ name: "Socket Programming", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/socketdotio.svg" },
-				{ name: "Multithreading", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/cplusplus.svg" },
-				{ name: "Object-Oriented Programming", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/codeigniter.svg" },
-				{ name: "Software Design Patterns", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/blueprint.svg" },
-				{ name: "System Architecture", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/diagramsdotnet.svg" },
-				{ name: "API Design", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/swagger.svg" },
-				{ name: "Network Programming", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/socketdotio.svg" },
-				{ name: "Concurrent Programming", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/cplusplus.svg" },
-				{ name: "Web Server", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/nginx.svg" }
+				SKILLS.dataStructures,
+				SKILLS.algorithms,
+				SKILLS.socketProgramming,
+				SKILLS.multithreading,
+				SKILLS.objectOrientedProgramming,
+				SKILLS.softwareDesignPatterns,
+				SKILLS.systemArchitecture,
+				SKILLS.concurrentProgramming,
 			]
 		},
 	],
@@ -181,7 +445,14 @@ export const PERSONAL_INFO = {
 				"Usage of Genetic Algorithms, Genomes, brings it closer to the reality lead to realistic simulation.",
 				"Simulator includes Self‑Replication, Inheritance, Mutation, Natural Selection, Survival of the Fittest concepts of Evolution.",
 			],
-			skills: ["C++", "Neural Networks", "Genetic Algorithms", "Object-Oriented Programming", "Data Structures", "Algorithms"],
+			skills: [
+				SKILLS.cpp,
+				SKILLS.neuralNetworks,
+				SKILLS.geneticAlgorithms,
+				SKILLS.objectOrientedProgramming,
+				SKILLS.dataStructures,
+				SKILLS.algorithms
+			],
 			links: [
 				{
 					name: "GitHub Repository",
@@ -199,7 +470,14 @@ export const PERSONAL_INFO = {
 				"A Python application for managing passwords and sensitive information securely using vaults. Users can create and manage multiple secure containers/items for credentials and sensitive data, and edit individual items. Includes a built-in Password Generator for strong, random passwords.",
 				"Ongoing development: While the graphical user interface (GUI) is currently under development, the Command-line Interface (CLI) is fully functional and continuously enhanced.",
 			],
-			skills: ["Python", "GUI Development", "CLI Development", "File Handling", "Cryptography", "Object-Oriented Programming"],
+			skills: [
+				SKILLS.python,
+				SKILLS.guiDevelopment,
+				SKILLS.cliDevelopment,
+				SKILLS.fileHandling,
+				SKILLS.cryptography,
+				SKILLS.objectOrientedProgramming
+			],
 			links: [
 				{
 					name: "GitHub Repository",
@@ -223,7 +501,16 @@ export const PERSONAL_INFO = {
 				"Implemented features for student registration, company profiles, job postings, and application tracking.",
 				"Created responsive design ensuring compatibility across all devices and browsers.",
 			],
-			skills: ["JavaScript", "HTML", "CSS", "Express.js", "Node.js", "Bootstrap", "Web Development", "Frontend Design"],
+			skills: [
+				SKILLS.javascript,
+				SKILLS.htmlcss,
+				SKILLS.expressjs,
+				SKILLS.nodejs,
+				SKILLS.bootstrap,
+				SKILLS.webDevelopment,
+				SKILLS.frontendDesign,
+				SKILLS.backendDevelopment
+			],
 			links: [
 				{
 					name: "Live Website",
@@ -247,7 +534,11 @@ export const PERSONAL_INFO = {
 				"Focused on improving user experience through intuitive navigation and visual hierarchy.",
 				"Implemented responsive design patterns and accessibility considerations.",
 			],
-			skills: ["Figma", "Adobe XD", "UI/UX Design", "Interface Design", "Human-Computer Interaction", "Prototyping"],
+			skills: [
+				SKILLS.figma,
+				SKILLS.adobeXd,
+				SKILLS.humanComputerInteraction,
+			],
 			links: [
 				{
 					name: "Figma Design",
@@ -267,7 +558,12 @@ export const PERSONAL_INFO = {
 				"Implemented various graphics techniques including texture mapping, lighting models, and geometric transformations.",
 				"Created a foundation for understanding computer graphics principles and GPU programming.",
 			],
-			skills: ["C", "C++", "OpenGL", "Graphics Programming", "3D Rendering", "Computer Graphics"],
+			skills: [
+				SKILLS.c,
+				SKILLS.cpp,
+				SKILLS.opengl,
+				SKILLS.computerGraphics
+			],
 			links: [
 				{
 					name: "GitHub Repository",
@@ -279,13 +575,21 @@ export const PERSONAL_INFO = {
 			],
 		},
 		{
-			title: "Image Processing using YOLO3 and darknet",
+			title: "Image Processing using YOLO3 and darknetFramework",
 			duration: "Feb 2021 – Mar 2021",
 			description: [
 				"Detection of waste such as plastic bottles, plastic bags from real-time images captured by a beach cleaner Bot.",
 				"Skills: Shell Scripting, Python, OpenCV.",
 			],
-			skills: ["Python", "OpenCV", "YOLO3", "Darknet", "Computer Vision", "Object Detection", "Image Processing", "Shell Scripting"],
+			skills: [
+				SKILLS.python,
+				SKILLS.opencv,
+				SKILLS.yolo3od,
+				SKILLS.darknetFramework,
+				SKILLS.computerVision,
+				SKILLS.imageProcessing,
+				SKILLS.shellScripting
+			],
 			links: [
 				{
 					name: "GitHub Repository",
@@ -303,7 +607,14 @@ export const PERSONAL_INFO = {
 				"Machine learning program used to learn MNIST data, built from scratch.",
 				"Skills: C/C++, Python.",
 			],
-			skills: ["Python", "C", "C++", "Machine Learning", "Neural Networks", "MNIST", "Deep Learning", "Algorithm Implementation"],
+			skills: [
+				SKILLS.python,
+				SKILLS.c,
+				SKILLS.cpp,
+				SKILLS.machineLearning,
+				SKILLS.neuralNetworks,
+				SKILLS.deepLearning,
+			],
 			links: [
 				{
 					name: "GitHub Repository",
@@ -322,7 +633,13 @@ export const PERSONAL_INFO = {
 				"Using multithreading, it can run multiple requests simultaneously.",
 				"Skills: C, Java, Multi-threading, Socket Programming.",
 			],
-			skills: ["C", "Java", "Socket Programming", "Multithreading", "Web Server", "Network Programming", "Concurrent Programming"],
+			skills: [
+				SKILLS.c,
+				SKILLS.java,
+				SKILLS.socketProgramming,
+				SKILLS.multithreading,
+				SKILLS.concurrentProgramming
+			],
 			links: [
 				{
 					name: "GitHub Repository",
@@ -340,7 +657,12 @@ export const PERSONAL_INFO = {
 				"This Algorithm is used with Verilog (HDL). It is used to simulate the behavior of actual Hardware like logic gates, adders, multipliers, and Multiplier-Accumulator (MAC). It uses file handling python support for handling/executing Verilog file.",
 				"Skills Used: Python, Verilog.",
 			],
-			skills: ["Python", "Verilog", "VLSI Design", "Hardware Description Language", "Digital Signal Processing", "Linear Discriminant Analysis", "Hardware Simulation"],
+			skills: [
+				SKILLS.python,
+				SKILLS.verilog,
+				SKILLS.hardwareDescriptionLanguage,
+				SKILLS.hardwareSimulation
+			],
 			links: [
 				{
 					name: "GitHub Repository",
@@ -360,7 +682,11 @@ export const PERSONAL_INFO = {
 				"Skills Used: Arduino, C Basic.",
 				"Achieved first position in the competition.",
 			],
-			skills: ["Arduino", "C", "Robotics", "Autonomous Systems", "Hardware Programming", "Embedded Systems", "Competition Design"],
+			skills: [
+				SKILLS.arduino,
+				SKILLS.c,
+				SKILLS.robotics,
+			],
 			links: [],
 			images: [
 				"/resource/img/projects/project10.jpg",
@@ -373,7 +699,16 @@ export const PERSONAL_INFO = {
 				"The Management Section such as Medicine, Patient Receipt Generator, Patient Room Allotment, Appointment Management, Doctor Entry Record, etc.",
 				"Skills Used: Python, SQL, HTML, CSS. Packages Used: Flask Framework, jQuery, Ajax.",
 			],
-			skills: ["Python", "Flask", "SQL", "HTML", "CSS", "jQuery", "Ajax", "Database Management", "Web Development", "Healthcare Software"],
+			skills: [
+				SKILLS.python,
+				SKILLS.flask,
+				SKILLS.mysql,
+				SKILLS.htmlcss,
+				SKILLS.jquery,
+				SKILLS.ajax,
+				SKILLS.databaseManagement,
+				SKILLS.webDevelopment,
+			],
 			links: [],
 			images: [
 				"/resource/img/projects/project11.jpg",
@@ -396,7 +731,14 @@ export const PERSONAL_INFO = {
 				"Configured DHCP services for enhanced network efficiency and reliability",
 				"Optimized workflows for jackpot redemption and development processes"
 			],
-			skills: ["JavaScript", "C#", ".NET", "Python", "HTML/CSS", "Bash"],
+			skills: [
+				SKILLS.javascript,
+				SKILLS.csharp,
+				SKILLS.dotnet,
+				SKILLS.python,
+				SKILLS.htmlcss,
+				SKILLS.shellScripting
+			],
 			images: [
 				"https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400",
 				"https://images.unsplash.com/photo-1497366216548-37526070297c?w=400",
@@ -417,7 +759,12 @@ export const PERSONAL_INFO = {
 				"Created Calibration checker using C# and Windows Registry for system safety and reliability",
 				"Implemented tracking systems for configuration changes with user association"
 			],
-			skills: ["Python", "C#", "Windows Registry", "RTC"],
+			skills: [
+				SKILLS.python,
+				SKILLS.csharp,
+				SKILLS.windowsRegistry,
+				SKILLS.rtc
+			],
 			images: [
 				"https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400",
 				"https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400",
@@ -438,7 +785,8 @@ export const PERSONAL_INFO = {
 				"Supported professors during lectures, labs, and tutorials",
 				"Mentored students in programming concepts and project development"
 			],
-			skills: ["Teaching", "Mentoring", "Academic Support"],
+			skills: [
+			],
 			images: [
 				"https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400",
 				"https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=400",
@@ -459,7 +807,14 @@ export const PERSONAL_INFO = {
 				"Improved data extraction algorithms for enhanced performance with large datasets",
 				"Worked with distributed database systems and REST API development"
 			],
-			skills: ["Java", "Spring Boot", "Maven", "REST API", "Cassandra", "MySQL"],
+			skills: [
+				SKILLS.java,
+				SKILLS.springBoot,
+				SKILLS.maven,
+				SKILLS.restApi,
+				SKILLS.cassandra,
+				SKILLS.mysql
+			],
 			images: [
 				"https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400",
 				"https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=400",
@@ -480,7 +835,16 @@ export const PERSONAL_INFO = {
 				"Implemented responsive user interfaces and backend API integrations",
 				"Collaborated with team on agile development practices"
 			],
-			skills: ["HTML", "CSS", "JavaScript", "Python","Flask","BootStrap","jQuery","Ajax", "MySQL"],
+			skills: [
+				SKILLS.htmlcss,
+				SKILLS.javascript,
+				SKILLS.python,
+				SKILLS.flask,
+				SKILLS.bootstrap,
+				SKILLS.jquery,
+				SKILLS.ajax,
+				SKILLS.mysql
+			],
 			images: [
 				"https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400",
 				"https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400",
