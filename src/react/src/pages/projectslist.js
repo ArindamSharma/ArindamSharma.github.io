@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/footer";
 import { PERSONAL_INFO } from "../constants";
@@ -7,6 +7,14 @@ import "./projectslist.css";
 import ProjectCard from "../components/ProjectCard";
 
 function ProjectsList({ navigateToHome, navigateToProject,navigateToProjects }) {
+  // Scroll to top when component mounts (coming from different page)
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }, []);
+
   // Scroll to top function
   const scrollToTop = () => {
     window.scrollTo({

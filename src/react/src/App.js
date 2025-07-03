@@ -30,7 +30,19 @@ function App() {
 
 	const nav = {
 		navigateToHome: () => (window.location.hash = ''),
-		navigateToProjects: () => (window.location.hash = 'projects'),
+		navigateToProjects: () => {
+			// Check if we're already on the projects page
+			if (window.location.hash === '#projects') {
+				// Already on projects page, just scroll to top
+				window.scrollTo({
+					top: 0,
+					behavior: 'smooth'
+				});
+			} else {
+				// Navigate to projects page
+				window.location.hash = 'projects';
+			}
+		},
 		navigateToProject: (id) => (window.location.hash = `project/${id}`)
 	};
 

@@ -57,7 +57,7 @@ function Footer({ navigateToProjects, navigateToHome }) {
                         <button onClick={navigateToProjects} className="footer-nav-link">
                             All Projects
                         </button>
-                        <button onClick={() => scrollToSection('projects')} className="footer-nav-link">
+                        <button onClick={() => scrollToSection('fproject')} className="footer-nav-link">
                             Feature Projects
                         </button>
                         <button onClick={() => scrollToSection('experience')} className="footer-nav-link">

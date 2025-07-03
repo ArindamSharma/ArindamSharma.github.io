@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/footer";
 import { PERSONAL_INFO } from "../constants";
@@ -8,6 +8,14 @@ import ImageRotator from "../components/ImageRotator";
 
 function ProjectDetail({ projectId,navigateToHome, navigateToProjects ,navigateToProject}) {
   const project = PERSONAL_INFO.PROJECTS[parseInt(projectId, 10)];
+
+  // Scroll to top when component mounts or projectId changes
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }, [projectId]);
 
   if (!project) {
     return (

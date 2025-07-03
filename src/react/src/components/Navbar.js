@@ -8,10 +8,23 @@ function Navbar() {
   const [activeSection, setActiveSection] = useState('about');
 
   const scrollToSection = (sectionId) => {
-    // Update URL hash
+    // Handle special navigation cases
+    if (sectionId === 'projects') {
+      // Navigate to All Projects page
+      window.location.hash = 'projects';
+      return;
+    }
+    
+    // Update URL hash for other sections
     window.location.hash = sectionId;
     
-    const element = document.getElementById(sectionId);
+    // Map navigation sections to actual element IDs
+    let targetElementId = sectionId;
+    if (sectionId === 'fproject') {
+      targetElementId = 'fproject'; // Featured projects now has its own ID
+    }
+    
+    const element = document.getElementById(targetElementId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
       setActiveSection(sectionId);
@@ -25,7 +38,7 @@ function Navbar() {
       setScrolled(offset > 50);
 
       // Update active section based on scroll position
-      const sections = ['about', 'skills', 'projects', 'experience', 'education', 'achievements', 'hire'];
+      const sections = ['about', 'skills', 'fproject', 'experience', 'education', 'achievements', 'hire'];
       const sectionElements = sections.map(id => document.getElementById(id)).filter(Boolean);
       
       let current = 'about';
@@ -56,7 +69,13 @@ function Navbar() {
         setActiveSection(hash);
         // Scroll to section after a brief delay to ensure page is loaded
         setTimeout(() => {
-          const element = document.getElementById(hash);
+          // Map navigation sections to actual element IDs
+          let targetElementId = hash;
+          if (hash === 'fproject') {
+            targetElementId = 'fproject'; // Featured projects now has its own ID
+          }
+          
+          const element = document.getElementById(targetElementId);
           if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
           }
@@ -91,7 +110,7 @@ function Navbar() {
           {/* <button onClick={() => scrollToSection('about')} className={`nav-link ${activeSection === 'about' ? 'active' : ''}`}>
             <span className="nav-text">About</span>
           </button> */}
-          <button onClick={() => scrollToSection('projects')} className={`nav-link ${activeSection === 'projects' ? 'active' : ''}`}>
+          <button onClick={() => scrollToSection('fproject')} className={`nav-link ${activeSection === 'fproject' ? 'active' : ''}`}>
             <span className="nav-text">Projects</span>
           </button>
           <button onClick={() => scrollToSection('experience')} className={`nav-link ${activeSection === 'experience' ? 'active' : ''}`}>
@@ -130,7 +149,7 @@ function Navbar() {
             <button onClick={() => scrollToSection('experience')} className={`mobile-nav-link ${activeSection === 'experience' ? 'active' : ''}`}>
               <span className="mobile-nav-text">Experience</span>
             </button>
-            <button onClick={() => scrollToSection('projects')} className={`mobile-nav-link ${activeSection === 'projects' ? 'active' : ''}`}>
+            <button onClick={() => scrollToSection('fproject')} className={`mobile-nav-link ${activeSection === 'fproject' ? 'active' : ''}`}>
               <span className="mobile-nav-text">Projects</span>
             </button>
             <button onClick={() => scrollToSection('education')} className={`mobile-nav-link ${activeSection === 'education' ? 'active' : ''}`}>
@@ -146,7 +165,7 @@ function Navbar() {
               <span className="mobile-nav-text">View Resume</span>
             </a>
             <div className="mobile-nav-separator"></div>
-            <button onClick={() => scrollToSection('projects')} className={`mobile-nav-link ${activeSection === 'projects' ? 'active' : ''}`}>
+            <button onClick={() => { window.location.hash = 'projects'; setMenuOpen(false); }} className="mobile-nav-link">
               <span className="mobile-nav-text">All Projects</span>
             </button>
             <button onClick={() => scrollToSection('achievements')} className={`mobile-nav-link ${activeSection === 'achievements' ? 'active' : ''}`}>
