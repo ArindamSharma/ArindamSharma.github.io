@@ -17,7 +17,7 @@ export const SKILLS = {
 	},
 	java: {
 		name: "Java",
-		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/java.svg"
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/openjdk.svg"
 	},
 	shellScripting: {
 		name: "Shell Scripting",
@@ -25,7 +25,7 @@ export const SKILLS = {
 	},
 	verilog: {
 		name: "Verilog",
-		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/xilinx.svg"
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/vivado.svg"
 	},
 	htmlcss: {
 		name: "HTML/CSS",
@@ -267,7 +267,7 @@ export const SKILLS = {
 	},
 	algorithms: {
 		name: "Algorithms",
-		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/algorithm.svg"
+		icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/codingninjas.svg"
 	},
 }
 
