@@ -32,8 +32,8 @@
   padding: 0 2rem;
 }
 
-/* Back Button */
-.back-btn {
+/* Back Button - Projects List */
+.projectslist-back-btn {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -51,23 +51,23 @@
   text-decoration: none;
 }
 
-.back-btn:hover {
+.projectslist-back-btn:hover {
   background: rgba(255, 255, 255, 0.1);
   border-color: rgba(59, 130, 246, 0.3);
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(59, 130, 246, 0.2);
 }
 
-.back-btn:active {
+.projectslist-back-btn:active {
   transform: translateY(0);
 }
 
-.back-icon {
+.projectslist-back-icon {
   font-size: 1.1rem;
   transition: transform 0.3s ease;
 }
 
-.back-btn:hover .back-icon {
+.projectslist-back-btn:hover .projectslist-back-icon {
   transform: translateX(-3px);
 }
 
