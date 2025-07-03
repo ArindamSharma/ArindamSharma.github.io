@@ -103,10 +103,6 @@
   align-self: flex-start;
 }
 
-.company-logo {
-  font-size: 1.8rem;
-  display: block;
-}
 
 .experience-content {
   flex: 1;
@@ -143,17 +139,17 @@
 .experience-meta > div {
   display: flex;
   align-items: center;
-  color: #9ca3af;
-  font-size: 0.85rem;
-  background: rgba(255, 255, 255, 0.05);
-  padding: 0.4rem 0.8rem;
+  color: #e5e7eb;
+  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 0.5rem 1rem;
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   transition: all 0.3s ease;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 180px;
+  max-width: 250px;
 }
 
 .experience-meta img {
@@ -434,9 +430,6 @@
     height: 50px;
   }
 
-  .company-logo {
-    font-size: 1.5rem;
-  }
 
   .experience-header {
     gap: 0.8rem;
@@ -459,6 +452,7 @@
   .experience-meta > div {
     font-size: 0.85rem;
     padding: 0.4rem 0.8rem;
+    color: #e5e7eb;
   }
 
   .detail-item {
@@ -512,10 +506,6 @@
     height: 45px;
   }
 
-  .company-logo {
-    font-size: 1.4rem;
-  }
-
   .experience-main h3 {
     font-size: 1.1rem;
   }
@@ -532,6 +522,7 @@
   .experience-meta > div {
     font-size: 0.8rem;
     padding: 0.35rem 0.7rem;
+    color: #e5e7eb;
   }
 
   .detail-item {
@@ -583,14 +574,13 @@
   height: 32px;
   border-radius: 8px;
   object-fit: contain;
-  background: rgba(255, 255, 255, 0.05);
+  background: white;
   padding: 4px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
 }
 
 .company-logo-img:hover {
-  background: rgba(255, 255, 255, 0.1);
   border-color: rgba(59, 130, 246, 0.3);
   transform: scale(1.05);
 }

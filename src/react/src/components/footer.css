@@ -138,7 +138,8 @@
   width: fit-content;
 }
 
-.footer-nav-links a {
+.footer-nav-links a,
+.footer-nav-links button {
   color: #d1d5db;
   font-size: 0.95rem;
   text-decoration: none;
@@ -151,18 +152,21 @@
   display: block;
   width: fit-content;
   position: relative;
+  cursor: pointer;
 }
 
 .footer-social-links a:hover {
   color: #8b5cf6;
 }
 
-.footer-nav-links a:hover {
+.footer-nav-links a:hover,
+.footer-nav-links button:hover {
   color: #ffffff;
 }
 
 /* Add subtle underline effect for footer nav links */
-.footer-nav-links a::after {
+.footer-nav-links a::after,
+.footer-nav-links button::after {
   content: '';
   position: absolute;
   bottom: 0.25rem;
@@ -173,7 +177,8 @@
   transition: width 0.3s ease;
 }
 
-.footer-nav-links a:hover::after {
+.footer-nav-links a:hover::after,
+.footer-nav-links button:hover::after {
   width: 100%;
 }
 

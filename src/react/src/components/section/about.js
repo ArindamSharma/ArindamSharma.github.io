@@ -64,7 +64,7 @@ function AboutSection() {
                         <div className="profile-container">
                             <div className="profile-background"></div>
                             <img
-                                src={require("../../img/1732601951208.jpg")}
+                                src={PERSONAL_INFO.profileImage}
                                 alt="Arindam Sharma Profile"
                                 className="profile-photo"
                             />

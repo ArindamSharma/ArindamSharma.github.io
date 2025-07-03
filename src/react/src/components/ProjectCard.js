@@ -2,7 +2,7 @@ import React from "react";
 import "./ProjectCard.css";
 import ImageRotator from "./ImageRotator";
 
-function ProjectCard({ project, navigateTo, showLink = false }) {
+function ProjectCard({ project, navigateToProject, projectId, showLink = false }) {
   // Limit description to 200 characters after joining all items if it's an array
   const getShortDescription = () => {
     let desc = Array.isArray(project.description)
@@ -12,8 +12,14 @@ function ProjectCard({ project, navigateTo, showLink = false }) {
     return desc.length > 150 ? desc.slice(0, 150) + "..." : desc;
   };
 
+  const handleClick = () => {
+    if (navigateToProject) {
+      navigateToProject(projectId);
+    }
+  };
+
   return (
-    <a href={navigateTo} className="portfolio-project-card">
+    <div onClick={handleClick} className="portfolio-project-card" style={{ cursor: 'pointer' }}>
       {project.images && (
         <div className="portfolio-project-card-img-holder">
           <ImageRotator images={project.images} interval={4000} showNavigator={false} />
@@ -34,7 +40,7 @@ function ProjectCard({ project, navigateTo, showLink = false }) {
           )}
         </div>
       </div>
-    </a>
+    </div>
   );
 }
 

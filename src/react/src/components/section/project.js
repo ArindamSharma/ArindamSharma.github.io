@@ -3,7 +3,7 @@ import "./project.css";
 import { PERSONAL_INFO } from "../../constants";
 import ProjectCard from "../ProjectCard";
 
-function ProjectSection() {
+function ProjectSection({ navigateToProjects, navigateToProject }) {
 	return (
 		<section className="projects-section section" id="projects">
 			<div className="container">
@@ -18,13 +18,14 @@ function ProjectSection() {
 							<ProjectCard
 								key={idx}
 								project={project}
-								navigateTo={`/project/${project.id !== undefined ? project.id : idx}`}
+								navigateToProject={navigateToProject}
+								projectId={project.id !== undefined ? project.id : idx}
 								showLink={true}
 							/>
 						))}
 						
 						{/* See More Projects Card */}
-						<a href="/projects" className="see-more-card">
+						<div onClick={navigateToProjects} className="see-more-card" style={{ cursor: 'pointer' }}>
 							<div className="see-more-content">
 								<div className="see-more-icon">→</div>
 								<h3 className="see-more-title">View All Projects</h3>
@@ -36,7 +37,7 @@ function ProjectSection() {
 									<span className="project-btn-icon">→</span>
 								</div>
 							</div>
-						</a>
+						</div>
 					</div>
 				</div>
 			</div>

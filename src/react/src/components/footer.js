@@ -1,15 +1,16 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
 import "./footer.css";
 import { PERSONAL_INFO } from "../constants";
 
 // Footer Component
-function Footer() {
-    const location = useLocation();
+function Footer({ navigateToProjects }) {
+    const scrollToSection = (sectionId) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
     
-    // Check if we're on the main page or sub-pages
-    const isMainPage = location.pathname === '/';
-
     return (
         <footer className="footer">
             <div className="footer-content-columns">
@@ -33,32 +34,27 @@ function Footer() {
                 <div className="footer-column">
                     <h4 className="footer-column-title">Navigate</h4>
                     <div className="footer-nav-links">
-                        {!isMainPage && (
-                            <a href="/" className="footer-nav-link">
-                                Home
-                            </a>
-                        )}
-                        <a href="/#about" className="footer-nav-link">
+                        <button onClick={() => scrollToSection('about')} className="footer-nav-link">
                             About
-                        </a>
-                        <a href="/#skills" className="footer-nav-link">
+                        </button>
+                        <button onClick={() => scrollToSection('skills')} className="footer-nav-link">
                             Skills
-                        </a>
-                        <a href="/projects" className="footer-nav-link">
+                        </button>
+                        <button onClick={navigateToProjects} className="footer-nav-link">
                             All Projects
-                        </a>
-                        <a href="/#projects" className="footer-nav-link">
+                        </button>
+                        <button onClick={() => scrollToSection('projects')} className="footer-nav-link">
                             Feature Projects
-                        </a>
-                        <a href="/#experience" className="footer-nav-link">
+                        </button>
+                        <button onClick={() => scrollToSection('experience')} className="footer-nav-link">
                             Experience
-                        </a>
-                        <a href="/#achievements" className="footer-nav-link">
+                        </button>
+                        <button onClick={() => scrollToSection('achievements')} className="footer-nav-link">
                             Achievements
-                        </a>
-                        <a href="/#hire" className="footer-nav-link">
+                        </button>
+                        <button onClick={() => scrollToSection('hire')} className="footer-nav-link">
                             Contact
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>

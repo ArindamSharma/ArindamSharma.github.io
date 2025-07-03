@@ -13,8 +13,8 @@ export const PERSONAL_INFO = {
 	],
 	location: "India",
 	experience: "3+ Years",
-	profileImage: "./img/1732601951208.jpg",
-	resumeLink: "/Arindam_Sharma_Resume_6.4.2.pdf",
+	profileImage: "/resource/img/1732601951208.jpg",
+	resumeLink: "/resource/Arindam_Sharma_Resume_6.4.2.pdf",
 	CONTACT_INFO: {
 		email: "arindamsharma1998@gmail.com",
 		phone: "+91 12345 67890",
@@ -57,6 +57,22 @@ export const PERSONAL_INFO = {
 			link: "https://topmate.io/arindam_sharma11",
 			icon: "https://topmate.io/cdn-cgi/image/width=640,quality=90/images/common/topmate-light.svg",
 		},
+	],
+	EDUCATION:[
+		{
+			institution: "Indian Institute of Information Technology, Design and Manufacturing Kancheepuram",
+			degree: "Bachelor & Master of Technology (Dual Degree) in Computer Science and Engineering",
+			period: "July 2017 – July 2022",
+			location: "Kancheepuram, Tamil Nadu, India",
+			logo: "/resource/img/education/iiitdmk.png",
+			grade: "CGPA: 8.5/10",
+			highlights: [
+				"Specialized in Software Engineering, AI/ML, and Data Science.",
+				"Completed coursework in Data Structures, Algorithms, Computer Networks, and Database Management Systems.",
+				"Participated in hackathons and coding competitions Aimed for Best Results.",
+				"Engaged in various projects involving web development, machine learning, and software design."
+			],
+		}
 	],
 	SKILLS:[
 		{
@@ -403,7 +419,7 @@ export const PERSONAL_INFO = {
 			period: "Nov 2022 – Present",
 			location: "Remote",
 			type: "Full-time",
-			companyLogo: "https://igamingbusiness.com/img-srv/DM6ntqvxt_CEddKULPOPeCZLAb17c2rFx4x4ScW1gt8/resizing_type:auto/width:1690/height:0/gravity:sm/enlarge:1/ext:webp/strip_metadata:1/quality:90/bG9jYWw6Ly8vaWdhbWluZ2J1c2luZXNzLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMi8wMy9saWdodC1hbmQtd29uZGVyLXNjYWxlZC5qcGc.webp",
+			companyLogo: "/resource/img/experience/lnw.jpg",
 			highlights: [
 				"Developed interactive game pages using Vanilla JavaScript, HTML, and CSS for lightweight Bonus Screen transitions",
 				"Upgraded OS bash scripts improving system performance and compatibility with latest operating systems",
@@ -427,7 +443,7 @@ export const PERSONAL_INFO = {
 			period: "May 2023 – Aug 2023",
 			location: "Chennai, India",
 			type: "Internship",
-			companyLogo: "https://logo.clearbit.com/kla.com",
+			companyLogo: "/resource/img/experience/kla.jpg",
 			highlights: [
 				"Developed Python-based Difference Report Generator using system configuration files and RTC client",
 				"Created Calibration checker using C# and Windows Registry for system safety and reliability",
@@ -448,7 +464,7 @@ export const PERSONAL_INFO = {
 			period: "Oct 2021 – Mar 2022",
 			location: "Chennai, India",
 			type: "Part-time",
-			companyLogo: "https://www.iiitdm.ac.in/images/logo.png",
+			companyLogo: "/resource/img/education/iiitdmk.png",
 			highlights: [
 				"Provided concept insights and constant feedback, improving learning experiences",
 				"Supported professors during lectures, labs, and tutorials",
@@ -467,9 +483,9 @@ export const PERSONAL_INFO = {
 			company: "Vassar Labs",
 			role: "Software Engineer Intern",
 			period: "May 2021 – Nov 2021",
-			location: "Remote",
+			location: "Hyderabad, India",
 			type: "Internship",
-			companyLogo: "https://via.placeholder.com/50x50/0066cc/ffffff?text=VL",
+			companyLogo: "/resource/img/experience/vassarlabs.png",
 			highlights: [
 				"Developed and modified API modules using Java Spring Boot Framework",
 				"Improved data extraction algorithms for enhanced performance with large datasets",
@@ -490,7 +506,7 @@ export const PERSONAL_INFO = {
 			period: "Nov 2018 – Dec 2018",
 			location: "Durg, India",
 			type: "Internship",
-			companyLogo: "https://via.placeholder.com/50x50/3b82f6/ffffff?text=BITS",
+			companyLogo: "/resource/img/experience/bitdurg.png",
 			highlights: [
 				"Developed full-stack web applications using modern technologies",
 				"Implemented responsive user interfaces and backend API integrations",
