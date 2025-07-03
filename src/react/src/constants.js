@@ -189,11 +189,7 @@ export const PERSONAL_INFO = {
 				}
 			],
 			images: [
-				"https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400",
-				"https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400",
-				"https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400",
-				"https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400",
-				"https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400",
+				"/resource/img/projects/project1.jpg",
 			],
 		},
 		{
@@ -215,9 +211,7 @@ export const PERSONAL_INFO = {
 				}
 			],
 			images: [
-				"https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=400",
-				"https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400",
-				"https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=400",
+				"/resource/img/projects/project2.jpg",
 			],
 		},
 		{
@@ -241,11 +235,7 @@ export const PERSONAL_INFO = {
 				}
 			],
 			images: [
-				"https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=400",
-				"https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400",
-				"https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400",
-				"https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=400",
-				"https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=400",
+				"/resource/img/projects/project3.jpg",
 			],
 		},
 		{
@@ -265,11 +255,7 @@ export const PERSONAL_INFO = {
 				}
 			],
 			images: [
-				"https://i.pravatar.cc/300?img=12",
-				"https://i.pravatar.cc/300?img=13",
-				"https://i.pravatar.cc/300?img=14",
-				"https://i.pravatar.cc/300?img=15",
-				"https://i.pravatar.cc/300?img=16",
+				"/resource/img/projects/project4.jpg",
 			],
 		},
 		{
@@ -289,11 +275,7 @@ export const PERSONAL_INFO = {
 				}
 			],
 			images: [
-				"https://i.pravatar.cc/300?img=17",
-				"https://i.pravatar.cc/300?img=18",
-				"https://i.pravatar.cc/300?img=19",
-				"https://i.pravatar.cc/300?img=20",
-				"https://i.pravatar.cc/300?img=21",
+				"/resource/img/projects/project5.jpg",
 			],
 		},
 		{
@@ -311,11 +293,7 @@ export const PERSONAL_INFO = {
 				}
 			],
 			images: [
-				"https://i.pravatar.cc/300?img=22",
-				"https://i.pravatar.cc/300?img=23",
-				"https://i.pravatar.cc/300?img=24",
-				"https://i.pravatar.cc/300?img=25",
-				"https://i.pravatar.cc/300?img=26",
+				"/resource/img/projects/project6.jpg",
 			],
 		},
 		{
@@ -333,11 +311,7 @@ export const PERSONAL_INFO = {
 				}
 			],
 			images: [
-				"https://i.pravatar.cc/300?img=27",
-				"https://i.pravatar.cc/300?img=28",
-				"https://i.pravatar.cc/300?img=29",
-				"https://i.pravatar.cc/300?img=30",
-				"https://i.pravatar.cc/300?img=31",
+				"/resource/img/projects/project7.jpg",
 			],
 		},
 		{
@@ -356,11 +330,7 @@ export const PERSONAL_INFO = {
 				}
 			],
 			images: [
-				"https://i.pravatar.cc/300?img=32",
-				"https://i.pravatar.cc/300?img=33",
-				"https://i.pravatar.cc/300?img=34",
-				"https://i.pravatar.cc/300?img=35",
-				"https://i.pravatar.cc/300?img=36",
+				"/resource/img/projects/project8.jpg",
 			],
 		},
 		{
@@ -378,11 +348,7 @@ export const PERSONAL_INFO = {
 				}
 			],
 			images: [
-				"https://i.pravatar.cc/300?img=37",
-				"https://i.pravatar.cc/300?img=38",
-				"https://i.pravatar.cc/300?img=39",
-				"https://i.pravatar.cc/300?img=40",
-				"https://i.pravatar.cc/300?img=41",
+				"/resource/img/projects/project9.jpg",
 			],
 		},
 		{
@@ -397,11 +363,7 @@ export const PERSONAL_INFO = {
 			skills: ["Arduino", "C", "Robotics", "Autonomous Systems", "Hardware Programming", "Embedded Systems", "Competition Design"],
 			links: [],
 			images: [
-				"https://i.pravatar.cc/300?img=42",
-				"https://i.pravatar.cc/300?img=43",
-				"https://i.pravatar.cc/300?img=44",
-				"https://i.pravatar.cc/300?img=45",
-				"https://i.pravatar.cc/300?img=46",
+				"/resource/img/projects/project10.jpg",
 			],
 		},
 		{
@@ -414,11 +376,7 @@ export const PERSONAL_INFO = {
 			skills: ["Python", "Flask", "SQL", "HTML", "CSS", "jQuery", "Ajax", "Database Management", "Web Development", "Healthcare Software"],
 			links: [],
 			images: [
-				"https://i.pravatar.cc/300?img=47",
-				"https://i.pravatar.cc/300?img=48",
-				"https://i.pravatar.cc/300?img=49",
-				"https://i.pravatar.cc/300?img=50",
-				"https://i.pravatar.cc/300?img=51",
+				"/resource/img/projects/project11.jpg",
 			],
 		},
 	],
