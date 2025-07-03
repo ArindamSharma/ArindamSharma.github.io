@@ -45,7 +45,10 @@ function Footer() {
                             Skills
                         </a>
                         <a href="/projects" className="footer-nav-link">
-                            Projects
+                            All Projects
+                        </a>
+                        <a href="/#projects" className="footer-nav-link">
+                            Feature Projects
                         </a>
                         <a href="/#experience" className="footer-nav-link">
                             Experience
