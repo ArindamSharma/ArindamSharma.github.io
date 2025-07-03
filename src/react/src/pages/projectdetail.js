@@ -48,63 +48,92 @@ function ProjectDetail({ projectId,navigateToHome, navigateToProjects ,navigateT
           
           <div className="projectdetail-header">
             <h1 className="section-title">{project.title}</h1>
-            {project.duration && (
+            {/* {project.duration && (
               <div className="projectdetail-duration">{project.duration}</div>
-            )}
+            )} */}
           </div>
           
-          {/* Fixed 16:9 aspect ratio image slider */}
-          <div className="projectdetail-slider">
+          {/* Hero Image with Overlay Stats */}
+          <div className="projectdetail-hero">
             <div className="projectdetail-image-container">
-              <ImageRotator images={images} interval={3000} alt={project.title} />
+              <ImageRotator images={images} interval={5000} alt={project.title} />
+            </div>
+            <div className="projectdetail-hero-overlay">
+              <div className="projectdetail-quick-stats">
+                <div className="projectdetail-stat">
+                  <span className="projectdetail-stat-label">Technologies</span>
+                  <span className="projectdetail-stat-value">{project.skills ? project.skills.length : 0}</span>
+                </div>
+                {project.duration && (
+                  <div className="projectdetail-stat">
+                    <span className="projectdetail-stat-label">Duration</span>
+                    <span className="projectdetail-stat-value">{project.duration}</span>
+                  </div>
+                )}
+                {project.links && (
+                  <div className="projectdetail-stat">
+                    <span className="projectdetail-stat-label">Links</span>
+                    <span className="projectdetail-stat-value">{project.links.length}</span>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
           
-          {/* Project Information Grid */}
-          <div className="projectdetail-info">
-            {/* Skills Section */}
-            {project.skills && project.skills.length > 0 && (
-              <div className="projectdetail-section-card glass-card">
-                <h3 className="projectdetail-section-title">Technologies & Skills</h3>
-                <div className="projectdetail-skills">
-                  {project.skills.map((skill, index) => (
-                    <span key={index} className="projectdetail-skill-tag">
-                      {skill}
-                    </span>
+          {/* Two Column Layout */}
+          <div className="projectdetail-content">
+            {/* Main Content */}
+            <div className="projectdetail-main">
+              {/* Project Overview */}
+              <div className="projectdetail-overview">
+                <h3 className="projectdetail-overview-title">
+                  <span className="projectdetail-overview-icon"></span>
+                  Project Overview
+                </h3>
+                <div className="projectdetail-description">
+                  {project.description.map((d, i) => (
+                    <p key={i} className="projectdetail-desc-para">{d}</p>
                   ))}
                 </div>
-              </div>
-            )}
-            
-            {/* Description Section */}
-            <div className="projectdetail-section-card glass-card">
-              <h3 className="projectdetail-section-title">Project Overview</h3>
-              <div className="projectdetail-description">
-                {project.description.map((d, i) => (
-                  <p key={i} className="projectdetail-desc-para">{d}</p>
-                ))}
               </div>
             </div>
             
-            {/* Links Section */}
-            {project.links && project.links.length > 0 && (
-              <div className="projectdetail-section-card glass-card">
-                <h3 className="projectdetail-section-title">Project Links</h3>
-                <div className="projectdetail-links">
-                  {project.links.map((linkObj, index) => (
-                    <a key={index} href={linkObj.link} target="_blank" rel="noopener noreferrer" className="projectdetail-link">
-                      <span className="link-icon">
-                        {linkObj.name.toLowerCase().includes('github') ? '🔗' :
-                         linkObj.name.toLowerCase().includes('figma') ? '🎨' :
-                         linkObj.name.toLowerCase().includes('demo') ? '🚀' :
-                         linkObj.name.toLowerCase().includes('website') ? '🌐' : '🔗'}
+            {/* Sidebar */}
+            <div className="projectdetail-sidebar">
+              {/* Skills Section */}
+              {project.skills && project.skills.length > 0 && (
+                <div className="projectdetail-skills-section">
+                  <h3 className="projectdetail-skills-title">Technologies & Skills</h3>
+                  <div className="projectdetail-skills">
+                    {project.skills.map((skill, index) => (
+                      <span key={index} className="projectdetail-skill-tag">
+                        {skill}
                       </span>
-                      <span className="link-text">{linkObj.name}</span>
-                    </a>
-                  ))}
+                    ))}
+                  </div>
                 </div>
-              </div>
-            )}
+              )}
+              
+              {/* Action Links */}
+              {project.links && project.links.length > 0 && (
+                <div className="projectdetail-actions">
+                  <h3 className="projectdetail-actions-title">Project Links</h3>
+                  <div className="projectdetail-links">
+                    {project.links.map((linkObj, index) => (
+                      <a key={index} href={linkObj.link} target="_blank" rel="noopener noreferrer" className="projectdetail-link">
+                        <span className="link-icon">
+                          {linkObj.name.toLowerCase().includes('github') ? '🔗' :
+                           linkObj.name.toLowerCase().includes('figma') ? '🎨' :
+                           linkObj.name.toLowerCase().includes('demo') ? '🚀' :
+                           linkObj.name.toLowerCase().includes('website') ? '🌐' : '🔗'}
+                        </span>
+                        <span className="link-text">{linkObj.name}</span>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </section>
