@@ -7,6 +7,25 @@ import { PERSONAL_INFO } from "../../constants";
 function AboutSection() {
     return (
         <section className="about-section section" id="about">
+            {/* Animated Background Elements */}
+            <div className="about-background-particles">
+                <div className="about-particle"></div>
+                <div className="about-particle"></div>
+                <div className="about-particle"></div>
+                <div className="about-particle"></div>
+                <div className="about-particle"></div>
+                <div className="about-particle"></div>
+                <div className="about-particle"></div>
+            </div>
+            
+            <div className="about-geometric-shapes">
+                <div className="about-shape"></div>
+                <div className="about-shape"></div>
+                <div className="about-shape"></div>
+            </div>
+            
+            <div className="about-grid-overlay"></div>
+            
             <div className="container">
                 <div className="about-content">
                     <div className="about-left">

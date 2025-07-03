@@ -8,6 +8,9 @@ function Navbar() {
   const [activeSection, setActiveSection] = useState('about');
 
   const scrollToSection = (sectionId) => {
+    // Update URL hash
+    window.location.hash = sectionId;
+    
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -22,28 +25,45 @@ function Navbar() {
       setScrolled(offset > 50);
 
       // Update active section based on scroll position
-      const sections = ['about', 'skills', 'projects', 'experience', 'achievements', 'hire'];
+      const sections = ['about', 'skills', 'projects', 'experience', 'education', 'achievements', 'hire'];
       const sectionElements = sections.map(id => document.getElementById(id)).filter(Boolean);
       
       let current = 'about';
       sectionElements.forEach(section => {
         const rect = section.getBoundingClientRect();
-        if (rect.top <= 100 && rect.bottom >= 100) {
+        if (rect.top <= 150 && rect.bottom >= 150) {
           current = section.id;
         }
       });
-      setActiveSection(current);
+      
+      // Only update if the section actually changed to avoid infinite loops
+      setActiveSection(prevActive => {
+        if (current !== prevActive) {
+          // Update URL hash without triggering scroll
+          if (window.location.hash !== `#${current}`) {
+            window.history.replaceState(null, null, `#${current}`);
+          }
+          return current;
+        }
+        return prevActive;
+      });
     };
 
-    // Handle hash navigation on page load
+    // Handle hash navigation on page load and hash changes
     const handleHashNavigation = () => {
       const hash = window.location.hash.replace('#', '');
       if (hash) {
         setActiveSection(hash);
         // Scroll to section after a brief delay to ensure page is loaded
         setTimeout(() => {
-          document.getElementById(hash)?.scrollIntoView({ behavior: 'smooth' });
+          const element = document.getElementById(hash);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
         }, 100);
+      } else {
+        // Default to 'about' if no hash
+        setActiveSection('about');
       }
     };
 
