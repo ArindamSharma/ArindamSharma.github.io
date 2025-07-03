@@ -493,10 +493,10 @@
   }
   
   .projectdetail-quick-stats {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 0.75rem;
-    text-align: center;
+    justify-content: center;
   }
   
   .projectdetail-stat {
@@ -504,20 +504,17 @@
     border-radius: 8px;
     padding: 0.5rem;
     backdrop-filter: blur(10px);
+    text-align: center;
   }
   
   .projectdetail-stat-label {
     font-size: 0.7rem;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
   
   .projectdetail-stat-value {
     font-size: 0.9rem;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
   
   .projectdetail-content {
@@ -604,27 +601,28 @@
   }
   
   .projectdetail-quick-stats {
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     gap: 0.5rem;
-    row-gap: 0.75rem;
+    align-items: flex-start;
+    flex-direction: column;
   }
   
   .projectdetail-stat {
-    padding: 0.4rem 0.25rem;
+    padding: 0.4rem 0.5rem;
+    text-align: center;
+    min-width: 90px;
+    flex: 0 1 auto;
   }
   
   .projectdetail-stat-label {
     font-size: 0.65rem;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
   
   .projectdetail-stat-value {
     font-size: 0.8rem;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
   
   .projectdetail-content {
