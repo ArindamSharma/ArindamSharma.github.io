@@ -1,5 +1,11 @@
 /* Projects List Page - Dark Theme to Match Current UI */
 .projects-list-container {
+  max-width: 1440px;
+  min-width: 320px;
+  width: 100%;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  margin: 0 auto;
   min-height: 100vh;
   background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
   position: relative;
@@ -7,7 +13,7 @@
 
 .projects-list-section {
   position: relative;
-  padding: 120px 0 80px 0;
+  padding: 150px 50px ;
   overflow: hidden;
 }
 
@@ -27,9 +33,9 @@
 .projects-list-section .container {
   position: relative;
   z-index: 1;
-  max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0;
 }
 
 /* Back Button - Projects List */
