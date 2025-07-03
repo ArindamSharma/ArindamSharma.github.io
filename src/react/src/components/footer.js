@@ -3,14 +3,28 @@ import "./footer.css";
 import { PERSONAL_INFO } from "../constants";
 
 // Footer Component
-function Footer({ navigateToProjects }) {
+function Footer({ navigateToProjects, navigateToHome }) {
     const scrollToSection = (sectionId) => {
-        const element = document.getElementById(sectionId);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
+        // Check if we're on the home page (no hash or empty hash)
+        const currentHash = window.location.hash;
+        if (currentHash === '' || currentHash === '#') {
+            // We're on home page, scroll to section
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        } else {
+            // We're not on home page, navigate to home and then scroll
+            window.location.hash = '';
+            setTimeout(() => {
+                const element = document.getElementById(sectionId);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 100); // Small delay to allow page to load
         }
     };
-    
+
     return (
         <footer className="footer">
             <div className="footer-content-columns">

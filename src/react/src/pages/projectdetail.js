@@ -6,7 +6,7 @@ import "./home.css";
 import "./projectdetail.css";
 import ImageRotator from "../components/ImageRotator";
 
-function ProjectDetail({ projectId, navigateToProjects }) {
+function ProjectDetail({ projectId,navigateToHome, navigateToProjects ,navigateToProject}) {
   const project = PERSONAL_INFO.PROJECTS[parseInt(projectId, 10)];
 
   if (!project) {
@@ -25,7 +25,7 @@ function ProjectDetail({ projectId, navigateToProjects }) {
             </div>
           </div>
         </section>
-        <Footer />
+      <Footer navigateToProjects={navigateToProjects} navigateToHome={navigateToHome} navigateToProject={navigateToProject} />
       </div>
     );
   }
@@ -108,7 +108,7 @@ function ProjectDetail({ projectId, navigateToProjects }) {
           </div>
         </div>
       </section>
-      <Footer />
+      <Footer navigateToProjects={navigateToProjects} navigateToProject={navigateToProject} navigateToHome={navigateToHome} />
     </div>
   );
 }

@@ -6,7 +6,7 @@ import "./home.css";
 import "./projectslist.css";
 import ProjectCard from "../components/ProjectCard";
 
-function ProjectsList({ navigateToHome, navigateToProject }) {
+function ProjectsList({ navigateToHome, navigateToProject,navigateToProjects }) {
   // Scroll to top function
   const scrollToTop = () => {
     window.scrollTo({
@@ -54,7 +54,7 @@ function ProjectsList({ navigateToHome, navigateToProject }) {
           </div>
         </div>
       </section>
-      <Footer />
+      <Footer navigateToProjects={navigateToProjects} navigateToProject={navigateToProject} navigateToHome={navigateToHome} />
     </div>
   );
 }

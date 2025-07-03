@@ -11,7 +11,7 @@ import HireSection from "../components/section/hire";
 import "./home.css";
 import "../index.css";
 
-function Home({ navigateToProjects, navigateToProject }) {
+function Home({ navigateToProjects, navigateToProject, navigateToHome }) {
   return (
     <div className="home-container">
       <Navbar />
@@ -22,7 +22,7 @@ function Home({ navigateToProjects, navigateToProject }) {
       <SkillsSection />
       <AchievementsSection />
       <HireSection />
-      <Footer navigateToProjects={navigateToProjects} />
+      <Footer navigateToProjects={navigateToProjects} navigateToProject={navigateToProject} navigateToHome={navigateToHome} />
     </div>
   );
 }
