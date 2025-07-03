@@ -21,16 +21,15 @@ function ProjectsList({ navigateToHome, navigateToProject }) {
       <section className="projects-list-section" id="projects-list">
         <div className="container">
           {/* Back Button */}
-          <button onClick={navigateToHome} className="back-btn">
-            <span className="back-icon">←</span>
+          <button onClick={navigateToHome} className="projectslist-back-btn">
+            <span className="projectslist-back-icon">←</span>
             <span className="back-text">Back</span>
           </button>
           
           <div className="projects-list-header">
             <h2 className="section-title">All Projects</h2>
             <p className="section-description">
-              Explore my complete collection of projects, from web applications to mobile apps, 
-              showcasing diverse technologies and innovative solutions.
+              {PERSONAL_INFO.SECTION_DESCRIPTIONS.projects}
             </p>
           </div>
           

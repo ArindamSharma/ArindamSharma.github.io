@@ -73,6 +73,9 @@ function AchievementsSection() {
     <section className="achievements-section section" id="achievements">
       <div className="container">
         <h2 className="section-title">Achievements & Recognition</h2>
+        <p className="achievements-section-description">
+          {PERSONAL_INFO.SECTION_DESCRIPTIONS.achievements}
+        </p>
         
         <div className="stats-grid">
           {PERSONAL_INFO.ACHIEVEMENT_STATS.map((stat, index) => (

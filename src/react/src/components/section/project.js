@@ -9,7 +9,7 @@ function ProjectSection({ navigateToProjects, navigateToProject }) {
 			<div className="container">
 				<h2 className="section-title">Featured Projects</h2>
 				<p className="projects-subtitle">
-					Explore some of my recent work showcasing various technologies and problem-solving approaches
+					{PERSONAL_INFO.SECTION_DESCRIPTIONS.projectsFeatured}
 				</p>
 				
 				<div className="projects-container">

@@ -29,9 +29,9 @@ function App() {
 	}, []);
 
 	const nav = {
-		home: () => (window.location.hash = ''),
-		projects: () => (window.location.hash = 'projects'),
-		project: (id) => (window.location.hash = `project/${id}`)
+		navigateToHome: () => (window.location.hash = ''),
+		navigateToProjects: () => (window.location.hash = 'projects'),
+		navigateToProject: (id) => (window.location.hash = `project/${id}`)
 	};
 
 	if (page === 'projects') return <ProjectsList {...nav} />;

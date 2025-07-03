@@ -1,7 +1,7 @@
 // Personal Information
 export const PERSONAL_INFO = {
+	
 	name: "Arindam Sharma",
-	about: "Passionate about crafting seamless digital experiences with clean, efficient code. I thrive on solving complex problems, embracing new technologies, and turning ideas into impactful solutions that make a difference.",
 	title: [
 		"Software Developer",
 		"Tech Innovator",
@@ -20,6 +20,16 @@ export const PERSONAL_INFO = {
 		phone: "+91 12345 67890",
 		location: "India",
 		availability: "Available for freelance projects",
+	},
+	SECTION_DESCRIPTIONS: {
+		experience: "A journey through innovative companies and challenging projects, where I've contributed to cutting-edge software solutions, collaborated with talented teams, and continuously grown as a developer.",
+		achievements: "Celebrating milestones, awards, and recognition earned through dedication to excellence in software development, open-source contributions, and continuous learning in the tech industry.",
+		projects: "Explore my complete collection of projects, from web applications to mobile apps, showcasing diverse technologies and innovative solutions.",
+		projectsFeatured: "Explore some of my recent work showcasing various technologies and problem-solving approaches",
+		education: "Academic Background & Qualifications",
+		skills: "Usage across Experiences and Projects",
+		about: "Passionate about crafting seamless digital experiences with clean, efficient code. I thrive on solving complex problems, embracing new technologies, and turning ideas into impactful solutions that make a difference.",
+		contact: "Ready to bring your ideas to life? I'm always excited to work on new projects and collaborate with amazing people.",
 	},
 	SOCIAL_LINKS: [
 		{

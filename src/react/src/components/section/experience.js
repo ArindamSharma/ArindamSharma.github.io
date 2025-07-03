@@ -156,9 +156,8 @@ const ExperienceSection = () => {
     <section className="experience-section section" id="experience">
       <div className="container">
         <h2 className="section-title">Professional Experience</h2>
-        <p className="section-description">
-          A journey through innovative companies and challenging projects, where I've contributed to cutting-edge software solutions, 
-          collaborated with talented teams, and continuously grown as a developer.
+        <p className="experience-section-description">
+          {PERSONAL_INFO.SECTION_DESCRIPTIONS.experience}
         </p>
         
         <div className="experience-carousel-container">
@@ -269,7 +268,7 @@ const ExperienceSection = () => {
                           onBlur={handleCardFocusChange}
                         >
                           {expandedCard === index ? 'View Less' : 'View More'}
-                          <span className="btn-icon">
+                          <span className="experience-btn-icon">
                             {expandedCard === index ? '↑' : '↓'}
                           </span>
                         </button>

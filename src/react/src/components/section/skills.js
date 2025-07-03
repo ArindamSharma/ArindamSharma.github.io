@@ -223,7 +223,7 @@ const Skills = () => {
     <section className="skills-section section" id="skills" ref={skillsRef}>
       <div className="container">
         <h2 className="section-title">Skills & Technologies</h2>
-        <p className="section-subtitle">Usage across Experiences and Projects</p>
+        <p className="section-subtitle">{PERSONAL_INFO.SECTION_DESCRIPTIONS.skills}</p>
         
         <div className="skills-carousel-container">
           <div 

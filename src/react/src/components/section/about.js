@@ -23,7 +23,7 @@ function AboutSection() {
                             />
                         </div>
                         <p className="about-description">
-                            {PERSONAL_INFO.about}
+                            {PERSONAL_INFO.SECTION_DESCRIPTIONS.about}
                         </p>
                         <div className="about-buttons">
                             <a 

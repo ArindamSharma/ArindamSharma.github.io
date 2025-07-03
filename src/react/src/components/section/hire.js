@@ -8,7 +8,7 @@ function HireSection() {
       <div className="container">
         <h2 className="section-title">Let's Work Together</h2>
         <p className="hire-subtitle">
-          Ready to bring your ideas to life? I'm always excited to work on new projects and collaborate with amazing people.
+          {PERSONAL_INFO.SECTION_DESCRIPTIONS.contact}
         </p>
         
         <div className="contact-grid">

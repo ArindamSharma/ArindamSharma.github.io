@@ -18,8 +18,8 @@ function ProjectDetail({ projectId, navigateToProjects }) {
             <div className="projectdetail-not-found">
               <h2 className="section-title">Project Not Found</h2>
               <p className="section-description">The project you're looking for doesn't exist.</p>
-              <button onClick={navigateToProjects} className="back-btn">
-                <span className="back-icon">←</span>
+              <button onClick={navigateToProjects} className="projectdetail-back-btn">
+                <span className="projectdetail-back-icon">←</span>
                 <span className="back-text">Go Back</span>
               </button>
             </div>
@@ -41,8 +41,8 @@ function ProjectDetail({ projectId, navigateToProjects }) {
       <section className="projectdetail-section" id="projectdetail">
         <div className="container">
           {/* Back Button */}
-          <button onClick={navigateToProjects} className="back-btn">
-            <span className="back-icon">←</span>
+          <button onClick={navigateToProjects} className="projectdetail-back-btn">
+            <span className="projectdetail-back-icon">←</span>
             <span className="back-text">Back</span>
           </button>
           

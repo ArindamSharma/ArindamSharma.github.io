@@ -8,7 +8,7 @@ const Education = () => {
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">Education</h2>
-          <p className="section-subtitle">Academic Background & Qualifications</p>
+          <p className="section-subtitle">{PERSONAL_INFO.SECTION_DESCRIPTIONS.education}</p>
         </div>
 
         <div className="education-list">
