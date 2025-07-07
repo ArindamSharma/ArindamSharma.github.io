@@ -3,7 +3,7 @@ import "./footer.css";
 import { PERSONAL_INFO } from "../constants";
 
 // Footer Component
-function Footer({ navigateToProjects, navigateToHome }) {
+function Footer({ navigateToProjects, navigateToHome, navigateToBlogs }) {
     const scrollToSection = (sectionId) => {
         // Check if we're on the home page (no hash or empty hash)
         const currentHash = window.location.hash;
@@ -59,6 +59,9 @@ function Footer({ navigateToProjects, navigateToHome }) {
                         </button>
                         <button onClick={() => scrollToSection('fproject')} className="footer-nav-link">
                             Feature Projects
+                        </button>
+                        <button onClick={navigateToBlogs} className="footer-nav-link">
+                            Blogs
                         </button>
                         <button onClick={() => scrollToSection('experience')} className="footer-nav-link">
                             Experience
