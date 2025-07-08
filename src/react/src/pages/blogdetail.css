@@ -788,7 +788,7 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .blogdetail-container {
     padding: 0 1rem;
   }

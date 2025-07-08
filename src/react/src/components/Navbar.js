@@ -171,6 +171,9 @@ function Navbar() {
             <button onClick={() => scrollToSection('achievements')} className={`mobile-nav-link ${activeSection === 'achievements' ? 'active' : ''}`}>
               <span className="mobile-nav-text">Achievements</span>
             </button>
+            <button onClick={() => { window.location.hash = 'blogs'; setMenuOpen(false); }} className="mobile-nav-link">
+              <span className="mobile-nav-text">Blogs</span>
+            </button>
             <button onClick={() => scrollToSection('hire')} className={`mobile-nav-link ${activeSection === 'hire' ? 'active' : ''}`}>
               <span className="mobile-nav-text">Contact</span>
             </button>

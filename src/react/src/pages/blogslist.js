@@ -41,8 +41,8 @@ function BlogsList({ navigateToHome, navigateToBlog, navigateToBlogs, navigateTo
           </div>
           
           <div className="blogs-list-grid">
-            {PERSONAL_INFO.BLOGS.map((blog) => (
-              <div key={blog.id} className="blog-card">
+            {PERSONAL_INFO.BLOGS.map((blog, index) => (
+              <div key={index} className="blog-card">
                 <div className="blog-image-container">
                   <img src={blog.image} alt={blog.title} className="blog-image" />
                   <div className="blog-category">{blog.category}</div>
@@ -61,7 +61,7 @@ function BlogsList({ navigateToHome, navigateToBlog, navigateToBlogs, navigateTo
                       ))}
                     </div>
                     <button 
-                      onClick={() => navigateToBlog(blog.id)} 
+                      onClick={() => navigateToBlog(index)} 
                       className="blog-read-more-btn"
                     >
                       Read More

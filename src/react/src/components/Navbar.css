@@ -430,7 +430,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .navbar-container {
     padding: 0 1.5rem;
   }
