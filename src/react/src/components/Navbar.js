@@ -14,16 +14,16 @@ function Navbar() {
       window.location.hash = 'projects';
       return;
     }
-    
+
     // Update URL hash for other sections
     window.location.hash = sectionId;
-    
+
     // Map navigation sections to actual element IDs
     let targetElementId = sectionId;
-    if (sectionId === 'fproject') {
-      targetElementId = 'fproject'; // Featured projects now has its own ID
+    if (sectionId === 'fprojects') {
+      targetElementId = 'fprojects'; // Featured projects now has its own ID
     }
-    
+
     const element = document.getElementById(targetElementId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -37,10 +37,18 @@ function Navbar() {
       const offset = window.scrollY;
       setScrolled(offset > 50);
 
+      // Only update sections if we're on the homepage (not on blogs, projects, etc.)
+      const currentHash = window.location.hash.replace('#', '');
+      const homepageSections = ['about', 'skills', 'fprojects', 'experience', 'education', 'achievements', 'hire'];
+
+      // Skip section detection if we're on a non-homepage route
+      if (currentHash && !homepageSections.includes(currentHash)) {
+        return;
+      }
+
       // Update active section based on scroll position
-      const sections = ['about', 'skills', 'fproject', 'experience', 'education', 'achievements', 'hire'];
-      const sectionElements = sections.map(id => document.getElementById(id)).filter(Boolean);
-      
+      const sectionElements = homepageSections.map(id => document.getElementById(id)).filter(Boolean);
+
       let current = 'about';
       sectionElements.forEach(section => {
         const rect = section.getBoundingClientRect();
@@ -48,7 +56,7 @@ function Navbar() {
           current = section.id;
         }
       });
-      
+
       // Only update if the section actually changed to avoid infinite loops
       setActiveSection(prevActive => {
         if (current !== prevActive) {
@@ -71,10 +79,10 @@ function Navbar() {
         setTimeout(() => {
           // Map navigation sections to actual element IDs
           let targetElementId = hash;
-          if (hash === 'fproject') {
-            targetElementId = 'fproject'; // Featured projects now has its own ID
+          if (hash === 'fprojects') {
+            targetElementId = 'fprojects'; // Featured projects now has its own ID
           }
-          
+
           const element = document.getElementById(targetElementId);
           if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
@@ -92,7 +100,7 @@ function Navbar() {
     // Listen for hash changes
     window.addEventListener('hashchange', handleHashNavigation);
     window.addEventListener('scroll', handleScroll);
-    
+
     return () => {
       window.removeEventListener('hashchange', handleHashNavigation);
       window.removeEventListener('scroll', handleScroll);
@@ -110,7 +118,7 @@ function Navbar() {
           {/* <button onClick={() => scrollToSection('about')} className={`nav-link ${activeSection === 'about' ? 'active' : ''}`}>
             <span className="nav-text">About</span>
           </button> */}
-          <button onClick={() => scrollToSection('fproject')} className={`nav-link ${activeSection === 'fproject' ? 'active' : ''}`}>
+          <button onClick={() => scrollToSection('fprojects')} className={`nav-link ${activeSection === 'fprojects' ? 'active' : ''}`}>
             <span className="nav-text">Projects</span>
           </button>
           <button onClick={() => scrollToSection('experience')} className={`nav-link ${activeSection === 'experience' ? 'active' : ''}`}>
@@ -122,10 +130,10 @@ function Navbar() {
           <button onClick={() => scrollToSection('skills')} className={`nav-link ${activeSection === 'skills' ? 'active' : ''}`}>
             <span className="nav-text">Skills</span>
           </button>
-          <a href={PERSONAL_INFO.resumeLink && PERSONAL_INFO.resumeLink !== "#" ? PERSONAL_INFO.resumeLink : "#"} 
-             target={PERSONAL_INFO.resumeLink && PERSONAL_INFO.resumeLink !== "#" ? "_blank" : "_self"}
-             rel={PERSONAL_INFO.resumeLink && PERSONAL_INFO.resumeLink !== "#" ? "noreferrer" : undefined}
-             className="nav-link hire-btn">
+          <a href={PERSONAL_INFO.resumeLink && PERSONAL_INFO.resumeLink !== "#" ? PERSONAL_INFO.resumeLink : "#"}
+            target={PERSONAL_INFO.resumeLink && PERSONAL_INFO.resumeLink !== "#" ? "_blank" : "_self"}
+            rel={PERSONAL_INFO.resumeLink && PERSONAL_INFO.resumeLink !== "#" ? "noreferrer" : undefined}
+            className="nav-link hire-btn">
             <span className="nav-text">View Resume</span>
           </a>
         </div>
@@ -149,7 +157,7 @@ function Navbar() {
             <button onClick={() => scrollToSection('experience')} className={`mobile-nav-link ${activeSection === 'experience' ? 'active' : ''}`}>
               <span className="mobile-nav-text">Experience</span>
             </button>
-            <button onClick={() => scrollToSection('fproject')} className={`mobile-nav-link ${activeSection === 'fproject' ? 'active' : ''}`}>
+            <button onClick={() => scrollToSection('fprojects')} className={`mobile-nav-link ${activeSection === 'fprojects' ? 'active' : ''}`}>
               <span className="mobile-nav-text">Projects</span>
             </button>
             <button onClick={() => scrollToSection('education')} className={`mobile-nav-link ${activeSection === 'education' ? 'active' : ''}`}>
@@ -159,9 +167,9 @@ function Navbar() {
               <span className="mobile-nav-text">Skills</span>
             </button>
             <a href={PERSONAL_INFO.resumeLink && PERSONAL_INFO.resumeLink !== "#" ? PERSONAL_INFO.resumeLink : "#"}
-               target={PERSONAL_INFO.resumeLink && PERSONAL_INFO.resumeLink !== "#" ? "_blank" : "_self"}
-               rel={PERSONAL_INFO.resumeLink && PERSONAL_INFO.resumeLink !== "#" ? "noreferrer" : undefined}
-               className="mobile-nav-link hire-btn-mobile" onClick={() => setMenuOpen(false)}>
+              target={PERSONAL_INFO.resumeLink && PERSONAL_INFO.resumeLink !== "#" ? "_blank" : "_self"}
+              rel={PERSONAL_INFO.resumeLink && PERSONAL_INFO.resumeLink !== "#" ? "noreferrer" : undefined}
+              className="mobile-nav-link hire-btn-mobile" onClick={() => setMenuOpen(false)}>
               <span className="mobile-nav-text">View Resume</span>
             </a>
             <div className="mobile-nav-separator"></div>

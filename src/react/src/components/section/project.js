@@ -5,7 +5,7 @@ import ProjectCard from "../ProjectCard";
 
 function ProjectSection({ navigateToProjects, navigateToProject }) {
 	return (
-		<section className="projects-section section" id="projects">
+		<section className="projects-section section" id="fprojects">
 			<div className="container">
 				<h2 className="section-title">Featured Projects</h2>
 				<p className="projects-subtitle">
