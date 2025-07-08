@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/footer";
+import ImageRotator from "../components/ImageRotator";
 import { PERSONAL_INFO } from "../constants";
 import "./home.css";
 import "./blogdetail.css";
@@ -69,13 +70,18 @@ function BlogDetail({ blogId, navigateToHome, navigateToBlogs, navigateToProject
         );
       
       case 'image':
+        // images property should always be an array
+        const imageSources = contentItem.images || [];
+        
         return (
-          <div key={index} className="blogdetail-content-image-container">
-            <img 
-              src={contentItem.src} 
-              alt={contentItem.alt || 'Blog content image'} 
-              className="blogdetail-content-image"
-            />
+          <div key={index} className="blogdetail-content-image-container"> 
+              <ImageRotator 
+                images={imageSources} 
+                alt={contentItem.alt || 'Blog content image'} 
+                interval={contentItem.interval || 3000}
+                showNavigator={contentItem.showNavigator !== false}
+                className="blogdetail-image-rotator-16-9"
+              />
             {contentItem.caption && (
               <p className="blogdetail-image-caption">{contentItem.caption}</p>
             )}
@@ -167,7 +173,7 @@ function BlogDetail({ blogId, navigateToHome, navigateToBlogs, navigateToProject
               </div>
               <div className="blogdetail-author-details">
                 <span className="blogdetail-author-name">{blog.author}</span>
-                <span className="blogdetail-author-role">Software Engineer</span>
+                <span className="blogdetail-author-role">{PERSONAL_INFO.designation}</span>
               </div>
             </div>
           </div>
@@ -178,7 +184,13 @@ function BlogDetail({ blogId, navigateToHome, navigateToBlogs, navigateToProject
       <section className="blogdetail-featured-image">
         <div className="container">
           <div className="blogdetail-image-container">
-            <img src={blog.image} alt={blog.title} className="blogdetail-image" />
+            <ImageRotator 
+              images={blog.images || []} 
+              alt={blog.title} 
+              interval={4000}
+              showNavigator={blog.images && blog.images.length > 1}
+              className="blogdetail-image-rotator-16-9"
+            />
             <div className="blogdetail-image-overlay"></div>
           </div>
         </div>
@@ -207,7 +219,7 @@ function BlogDetail({ blogId, navigateToHome, navigateToBlogs, navigateToProject
                     </div>
                     <div className="blogdetail-article-author-details">
                       <span className="blogdetail-article-author-name">{blog.author}</span>
-                      <span className="blogdetail-article-author-title">Software Engineer</span>
+                      <span className="blogdetail-article-author-title">{PERSONAL_INFO.title[0]}</span>
                     </div>
                   </div>
                   <div className="blogdetail-article-details">

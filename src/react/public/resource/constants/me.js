@@ -14,6 +14,7 @@ const PERSONAL_INFO = {
 	experience: "3+ Years",
 	profileImage: "/resource/img/1732601951208.jpg",
 	resumeLink: "/resource/Arindam_Sharma_Resume_6.4.2.pdf",
+	noImage: "/resource/img/noimage.jpg",
 	CONTACT_INFO: {
 		email: "arindamsharma1998@gmail.com",
 		location: "India",

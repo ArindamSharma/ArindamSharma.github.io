@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/footer";
+import ImageRotator from "../components/ImageRotator";
 import { PERSONAL_INFO } from "../constants";
 import "./home.css";
 import "./blogslist.css";
@@ -44,7 +45,12 @@ function BlogsList({ navigateToHome, navigateToBlog, navigateToBlogs, navigateTo
             {PERSONAL_INFO.BLOGS.map((blog, index) => (
               <div key={index} className="blog-card">
                 <div className="blog-image-container">
-                  <img src={blog.image} alt={blog.title} className="blog-image" />
+                  <ImageRotator 
+                    images={blog.images || []} 
+                    alt={blog.title} 
+                    interval={4000} // Slower rotation for blog cards
+                    showNavigator={blog.images && blog.images.length > 1}
+                  />
                   <div className="blog-category">{blog.category}</div>
                 </div>
                 <div className="blog-content">

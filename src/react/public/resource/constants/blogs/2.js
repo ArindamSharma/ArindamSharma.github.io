@@ -6,7 +6,7 @@ const blog2 = {
   category: "Machine Learning",
   tags: ["Python", "ML", "Data Science", "AI"],
   summary: "Dive deep into machine learning concepts, algorithms, and practical implementation using Python.",
-  image: "/resource/img/projects/project2.jpg",
+  images: ["/resource/img/projects/project2.jpg"],
   content: [
     {
       type: "paragraph",

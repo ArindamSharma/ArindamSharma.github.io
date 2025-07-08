@@ -6,7 +6,7 @@ const blog3 = {
 	category: "Web Development",
 	tags: ["HTML", "CSS", "JavaScript", "Frontend"],
 	summary: "Explore the journey of web development from simple static pages to complex, interactive applications.",
-	image: "/resource/img/projects/project3.jpg",
+	images: ["/resource/img/projects/project3.jpg"],
 	content: [
 		{
 			type: "paragraph",

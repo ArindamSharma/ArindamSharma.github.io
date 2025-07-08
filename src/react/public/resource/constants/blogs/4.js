@@ -6,7 +6,7 @@ const blog4 = {
 	category: "Tutorial",
 	tags: ["GitHub Copilot", "React", "Web Development", "Portfolio", "AI Programming"],
 	summary: "Learn how to build a stunning portfolio website from scratch using GitHub Copilot as your AI pair programmer. This comprehensive tutorial covers everything from setup to deployment.",
-	image: "/resource/img/projects/project1.jpg",
+	images: ["/resource/img/projects/project1.jpg"],
 	content: [
 		{
 			type: "paragraph",
@@ -67,6 +67,13 @@ const blog4 = {
 			content: "First, you'll need to install the GitHub Copilot extension in VS Code. Open VS Code, go to the Extensions panel, and search for 'GitHub Copilot'. Install the extension and sign in with your GitHub account."
 		},
 		{
+			type: "image",
+			images: ["/resource/img/projects/project2.jpg", "/resource/img/projects/project3.jpg"],
+			alt: "GitHub Copilot installation in VS Code",
+			caption: "Installing GitHub Copilot extension in Visual Studio Code - the setup process is straightforward and integrates seamlessly",
+			interval: 4000
+		},
+		{
 			type: "code",
 			language: "bash",
 			content: "# Verify Node.js installation\nnode --version\nnpm --version\n\n# Install create-react-app globally\nnpm install -g create-react-app\n\n# Create a new React project\nnpx create-react-app my-portfolio\ncd my-portfolio\n\n# Start the development server\nnpm start"
@@ -104,6 +111,12 @@ const blog4 = {
 			content: "I simply started typing 'function Navbar' and Copilot suggested a complete navigation component with modern styling and responsive design:"
 		},
 		{
+			type: "image",
+			images: ["/resource/img/projects/project4.jpg"],
+			alt: "Copilot suggesting React component code",
+			caption: "GitHub Copilot in action - suggesting complete React component structure as you type"
+		},
+		{
 			type: "code",
 			language: "javascript",
 			content: "import React, { useState } from 'react';\nimport './Navbar.css';\n\nfunction Navbar() {\n  const [isMenuOpen, setIsMenuOpen] = useState(false);\n\n  const toggleMenu = () => {\n    setIsMenuOpen(!isMenuOpen);\n  };\n\n  return (\n    <nav className=\"navbar\">\n      <div className=\"nav-container\">\n        <div className=\"nav-logo\">\n          <a href=\"#home\">Arindam Sharma</a>\n        </div>\n        <div className={\\`nav-menu \\${isMenuOpen ? 'active' : ''}\\`}>\n          <a href=\"#home\" className=\"nav-link\">Home</a>\n          <a href=\"#about\" className=\"nav-link\">About</a>\n          <a href=\"#projects\" className=\"nav-link\">Projects</a>\n          <a href=\"#blogs\" className=\"nav-link\">Blogs</a>\n          <a href=\"#contact\" className=\"nav-link\">Contact</a>\n        </div>\n        <div className=\"nav-toggle\" onClick={toggleMenu}>\n          <span className=\"bar\"></span>\n          <span className=\"bar\"></span>\n          <span className=\"bar\"></span>\n        </div>\n      </div>\n    </nav>\n  );\n}\n\nexport default Navbar;"
@@ -116,6 +129,13 @@ const blog4 = {
 		{
 			type: "paragraph",
 			content: "GitHub Copilot is equally impressive when it comes to CSS. It understands modern CSS practices, flexbox, grid, and responsive design patterns. When I started writing CSS for the navbar, Copilot suggested a complete responsive design:"
+		},
+		{
+			type: "image",
+			images: ["/resource/img/projects/project5.jpg", "/resource/img/projects/project6.jpg", "/resource/img/projects/project7.jpg"],
+			alt: "CSS styling suggestions from GitHub Copilot",
+			caption: "Copilot's CSS suggestions include modern practices like flexbox, grid, and smooth animations",
+			interval: 3500
 		},
 		{
 			type: "code",

@@ -6,7 +6,7 @@ const blog1 = {
   category: "Web Development",
   tags: ["React", "Node.js", "JavaScript", "Full Stack"],
   summary: "A comprehensive guide to building scalable web applications using React for the frontend and Node.js for the backend.",
-  image: "/resource/img/projects/project1.jpg",
+  images: ["/resource/img/projects/project1.jpg"],
   content: [
     {
       type: "paragraph",

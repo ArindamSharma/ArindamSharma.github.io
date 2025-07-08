@@ -15,6 +15,7 @@ const getConfig = () => {
     location: "India",
     experience: "3+ Years",
     profileImage: "/resource/img/1732601951208.jpg",
+	noImage: "/resource/img/noimage.jpg",
     resumeLink: "/resource/Arindam_Sharma_Resume_6.4.2.pdf",
     CONTACT_INFO: {
       email: "arindamsharma1998@gmail.com",
