@@ -159,21 +159,17 @@ function BlogDetail({ blogId, navigateToHome, navigateToBlogs, navigateToProject
           </button>
           
           <div className="blogdetail-hero-content">
-            <div className="blogdetail-meta">
-              <span className="blogdetail-category">{blog.category}</span>
-              <span className="blogdetail-separator">•</span>
-              <span className="blogdetail-date">{blog.publishDate}</span>
-              <span className="blogdetail-separator">•</span>
-              <span className="blogdetail-read-time">{blog.readTime}</span>
-            </div>
             <h1 className="blogdetail-title">{blog.title}</h1>
-            <div className="blogdetail-author-info">
-              <div className="blogdetail-author-avatar">
-                <span className="blogdetail-author-initial">{blog.author.charAt(0)}</span>
-              </div>
-              <div className="blogdetail-author-details">
-                <span className="blogdetail-author-name">{blog.author}</span>
-                <span className="blogdetail-author-role">{PERSONAL_INFO.designation}</span>
+            
+            {/* Tags moved here from content section */}
+            <div className="blogdetail-hero-tags">
+              <div className="blogdetail-tags-container">
+                {blog.tags.map((tag, index) => (
+                  <span key={index} className="blogdetail-tag">
+                    <span className="blogdetail-tag-hash">#</span>
+                    {tag}
+                  </span>
+                ))}
               </div>
             </div>
           </div>
@@ -201,57 +197,6 @@ function BlogDetail({ blogId, navigateToHome, navigateToBlogs, navigateToProject
         <div className="container">
           <div className="blogdetail-content-wrapper">
             <div className="blogdetail-content-main">
-              {/* Summary */}
-              <div className="blogdetail-summary-card">
-                <div className="blogdetail-summary-icon">💡</div>
-                <div className="blogdetail-summary-content">
-                  <h3 className="blogdetail-summary-title">Key Takeaway</h3>
-                  <p className="blogdetail-summary-text">{blog.summary}</p>
-                </div>
-              </div>
-
-              {/* Article Info with Author */}
-              <div className="blogdetail-article-info">
-                <div className="blogdetail-article-meta">
-                  <div className="blogdetail-article-author">
-                    <div className="blogdetail-article-author-avatar">
-                      <span className="blogdetail-article-author-initial">{blog.author.charAt(0)}</span>
-                    </div>
-                    <div className="blogdetail-article-author-details">
-                      <span className="blogdetail-article-author-name">{blog.author}</span>
-                      <span className="blogdetail-article-author-title">{PERSONAL_INFO.title[0]}</span>
-                    </div>
-                  </div>
-                  <div className="blogdetail-article-details">
-                    <div className="blogdetail-article-detail">
-                      <span className="blogdetail-article-detail-label">Published</span>
-                      <span className="blogdetail-article-detail-value">{blog.publishDate}</span>
-                    </div>
-                    <div className="blogdetail-article-detail">
-                      <span className="blogdetail-article-detail-label">Read Time</span>
-                      <span className="blogdetail-article-detail-value">{blog.readTime}</span>
-                    </div>
-                    <div className="blogdetail-article-detail">
-                      <span className="blogdetail-article-detail-label">Category</span>
-                      <span className="blogdetail-article-detail-value">{blog.category}</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Tags Section - Moved here */}
-              <div className="blogdetail-tags-section">
-                <h3 className="blogdetail-tags-title">Related Topics</h3>
-                <div className="blogdetail-tags-container">
-                  {blog.tags.map((tag, index) => (
-                    <span key={index} className="blogdetail-tag">
-                      <span className="blogdetail-tag-hash">#</span>
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
-
               {/* Blog Content */}
               <div className="blogdetail-content">
                 <div className="blogdetail-content-body">
@@ -262,16 +207,48 @@ function BlogDetail({ blogId, navigateToHome, navigateToBlogs, navigateToProject
 
             {/* Sidebar */}
             <div className="blogdetail-sidebar">
-              <div className="blogdetail-sidebar-card">
-                <h4 className="blogdetail-sidebar-title">Quick Navigation</h4>
-                <div className="blogdetail-sidebar-toc">
-                  {blog.content
-                    .filter(item => item.type === 'heading')
-                    .map((heading, index) => (
-                      <div key={index} className={`blogdetail-toc-item blogdetail-toc-${heading.level}`}>
-                        {heading.content}
+              {/* Article Info Block with Author and Key Takeaways */}
+              <div className="blogdetail-article-info blogdetail-floating-sidebar">
+                <h3 className="blogdetail-article-info-title">Article Info</h3>
+                
+                <div className="blogdetail-author-section">
+                  <div className="blogdetail-author-avatar">
+                    {PERSONAL_INFO.profileImage ? (
+                      <img 
+                        src={PERSONAL_INFO.profileImage} 
+                        alt={PERSONAL_INFO.name}
+                        className="blogdetail-author-image"
+                      />
+                    ) : (
+                      <div className="blogdetail-author-initials">
+                        {PERSONAL_INFO.name.split(' ').map(name => name.charAt(0)).join('')}
                       </div>
-                    ))}
+                    )}
+                  </div>
+                  <div className="blogdetail-author-details">
+                    <h4 className="blogdetail-author-name">{PERSONAL_INFO.name}</h4>
+                    <p className="blogdetail-author-title">{PERSONAL_INFO.title[0]}</p>
+                  </div>
+                </div>
+                
+                <div className="blogdetail-article-meta">
+                  <div className="blogdetail-meta-item">
+                    <span className="blogdetail-meta-label">Published</span>
+                    <span className="blogdetail-meta-value">{blog.publishDate}</span>
+                  </div>
+                  <div className="blogdetail-meta-item">
+                    <span className="blogdetail-meta-label">Read Time</span>
+                    <span className="blogdetail-meta-value">{blog.readTime}</span>
+                  </div>
+                  <div className="blogdetail-meta-item">
+                    <span className="blogdetail-meta-label">Category</span>
+                    <span className="blogdetail-meta-value">{blog.category}</span>
+                  </div>
+                </div>
+
+                {/* Key Takeaways as Paragraph */}
+                <div className="blogdetail-key-takeaways">
+                  <p className="blogdetail-takeaways-text">{blog.summary}</p>
                 </div>
               </div>
             </div>
