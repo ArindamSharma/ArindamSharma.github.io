@@ -503,12 +503,6 @@
   margin: 0;
 }
 
-/* Navigation */
-/* Not Found */
-.blogdetail-not-found {
-  padding: 80px 0;
-  text-align: center;
-}
 
 .blogdetail-not-found-content {
   max-width: 500px;
@@ -969,12 +963,15 @@
   transform: translateX(3px);
 }
 
-/* Not Found Styles */
+/* Navigation */
+/* Not Found */
 .blogdetail-not-found {
+  text-align: center;
   min-height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 4rem;
   padding: 4rem 0;
 }
 
