@@ -196,6 +196,7 @@ function BlogDetail({ blogId, navigateToHome, navigateToBlogs, navigateToProject
       <section className="blogdetail-content-section">
         <div className="container">
           <div className="blogdetail-content-wrapper">
+            {/* Main Content Area */}
             <div className="blogdetail-content-main">
               {/* Blog Content */}
               <div className="blogdetail-content">
@@ -208,9 +209,9 @@ function BlogDetail({ blogId, navigateToHome, navigateToBlogs, navigateToProject
             {/* Sidebar */}
             <div className="blogdetail-sidebar">
               {/* Article Info Block with Author and Key Takeaways */}
-              <div className="blogdetail-article-info blogdetail-floating-sidebar">
+              <div className="blogdetail-article-info">
                 <h3 className="blogdetail-article-info-title">Article Info</h3>
-                
+                {/* Author Section - Photo left, details right */}
                 <div className="blogdetail-author-section">
                   <div className="blogdetail-author-avatar">
                     {PERSONAL_INFO.profileImage ? (
@@ -231,25 +232,25 @@ function BlogDetail({ blogId, navigateToHome, navigateToBlogs, navigateToProject
                   </div>
                 </div>
                 
-                <div className="blogdetail-article-meta">
-                  <div className="blogdetail-meta-item">
-                    <span className="blogdetail-meta-label">Published</span>
-                    <span className="blogdetail-meta-value">{blog.publishDate}</span>
+                {/* Meta Information - Below author */}
+                <div className="blogdetail-author-meta">
+                  <div className="blogdetail-author-meta-row">
+                    <span className="blogdetail-author-meta-label">Published Date:</span>
+                    <span className="blogdetail-author-meta-value">{blog.publishDate}</span>
                   </div>
-                  <div className="blogdetail-meta-item">
-                    <span className="blogdetail-meta-label">Read Time</span>
-                    <span className="blogdetail-meta-value">{blog.readTime}</span>
+                  <div className="blogdetail-author-meta-row">
+                    <span className="blogdetail-author-meta-label">Read Time:</span>
+                    <span className="blogdetail-author-meta-value">{blog.readTime}</span>
                   </div>
-                  <div className="blogdetail-meta-item">
-                    <span className="blogdetail-meta-label">Category</span>
-                    <span className="blogdetail-meta-value">{blog.category}</span>
+                  <div className="blogdetail-author-meta-row">
+                    <span className="blogdetail-author-meta-label">Category:</span>
+                    <span className="blogdetail-author-meta-value">{blog.category}</span>
                   </div>
                 </div>
-
-                {/* Key Takeaways as Paragraph */}
-                <div className="blogdetail-key-takeaways">
-                  <p className="blogdetail-takeaways-text">{blog.summary}</p>
-                </div>
+                
+                {/* Summary Section */}
+                <h4 className="blogdetail-summary-heading">Summary</h4>
+                <p className="blogdetail-takeaways-text">{blog.summary}</p>
               </div>
             </div>
           </div>
