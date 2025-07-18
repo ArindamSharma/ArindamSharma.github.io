@@ -51,7 +51,7 @@ function AboutSection() {
                             >
                                 Let's Work Together
                             </a>
-                            <a 
+                            {/* <a 
                                 href={PERSONAL_INFO.resumeLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -62,7 +62,7 @@ function AboutSection() {
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 004.561 21h14.878a2 2 0 001.94-1.515L22 17"/>
                                 </svg>
                                 Download CV
-                            </a>
+                            </a> */}
                         </div>
                         <div className="social-links">
                             {PERSONAL_INFO.SOCIAL_LINKS.map((social, index) => (

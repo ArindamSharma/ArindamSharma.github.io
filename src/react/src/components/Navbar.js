@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
-import { PERSONAL_INFO } from "../constants";
+// import { PERSONAL_INFO } from "../constants";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -130,12 +130,16 @@ function Navbar() {
           <button onClick={() => scrollToSection('skills')} className={`nav-link ${activeSection === 'skills' ? 'active' : ''}`}>
             <span className="nav-text">Skills</span>
           </button>
-          <a href={PERSONAL_INFO.resumeLink && PERSONAL_INFO.resumeLink !== "#" ? PERSONAL_INFO.resumeLink : "#"}
+          {/* <a href={PERSONAL_INFO.resumeLink && PERSONAL_INFO.resumeLink !== "#" ? PERSONAL_INFO.resumeLink : "#"}
             target={PERSONAL_INFO.resumeLink && PERSONAL_INFO.resumeLink !== "#" ? "_blank" : "_self"}
             rel={PERSONAL_INFO.resumeLink && PERSONAL_INFO.resumeLink !== "#" ? "noreferrer" : undefined}
             className="nav-link hire-btn">
             <span className="nav-text">View Resume</span>
-          </a>
+            </a> */}
+          <button onClick={() => scrollToSection('hire')} className={`nav-link hire-btn`}>
+            <span className="nav-text">💼 Hire Me!</span>
+          </button>
+          
         </div>
         <button className={`hamburger ${menuOpen ? 'active' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
           <span></span>
@@ -166,12 +170,16 @@ function Navbar() {
             <button onClick={() => scrollToSection('skills')} className={`mobile-nav-link ${activeSection === 'skills' ? 'active' : ''}`}>
               <span className="mobile-nav-text">Skills</span>
             </button>
-            <a href={PERSONAL_INFO.resumeLink && PERSONAL_INFO.resumeLink !== "#" ? PERSONAL_INFO.resumeLink : "#"}
+            {/* <a href={PERSONAL_INFO.resumeLink && PERSONAL_INFO.resumeLink !== "#" ? PERSONAL_INFO.resumeLink : "#"}
               target={PERSONAL_INFO.resumeLink && PERSONAL_INFO.resumeLink !== "#" ? "_blank" : "_self"}
               rel={PERSONAL_INFO.resumeLink && PERSONAL_INFO.resumeLink !== "#" ? "noreferrer" : undefined}
               className="mobile-nav-link hire-btn-mobile" onClick={() => setMenuOpen(false)}>
               <span className="mobile-nav-text">View Resume</span>
-            </a>
+            </a> */}
+            <button onClick={() => scrollToSection('hire')} className={`mobile-nav-link hire-btn-mobile ${activeSection === 'hire' ? 'active' : ''}`}>
+              <span className="mobile-nav-text">💼 Hire Me!</span>
+            </button>
+
             <div className="mobile-nav-separator"></div>
             <button onClick={() => { window.location.hash = 'projects'; setMenuOpen(false); }} className="mobile-nav-link">
               <span className="mobile-nav-text">All Projects</span>
@@ -182,9 +190,9 @@ function Navbar() {
             <button onClick={() => { window.location.hash = 'blogs'; setMenuOpen(false); }} className="mobile-nav-link">
               <span className="mobile-nav-text">Blogs</span>
             </button>
-            <button onClick={() => scrollToSection('hire')} className={`mobile-nav-link ${activeSection === 'hire' ? 'active' : ''}`}>
+            {/* <button onClick={() => scrollToSection('hire')} className={`mobile-nav-link ${activeSection === 'hire' ? 'active' : ''}`}>
               <span className="mobile-nav-text">Contact</span>
-            </button>
+            </button> */}
           </div>
         </div>
       )}

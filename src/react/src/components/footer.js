@@ -72,6 +72,12 @@ function Footer({ navigateToProjects, navigateToHome, navigateToBlogs }) {
                         <button onClick={() => scrollToSection('hire')} className="footer-nav-link">
                             Contact
                         </button>
+                        <a href={PERSONAL_INFO.resumeLink && PERSONAL_INFO.resumeLink !== "#" ? PERSONAL_INFO.resumeLink : "#"}
+                        target={PERSONAL_INFO.resumeLink && PERSONAL_INFO.resumeLink !== "#" ? "_blank" : "_self"}
+                        rel={PERSONAL_INFO.resumeLink && PERSONAL_INFO.resumeLink !== "#" ? "noreferrer" : undefined}
+                        className="footer-nav-link">
+                            <span className="mobile-nav-text">Resume</span>
+                        </a>
                     </div>
                 </div>
             </div>
